@@ -48,7 +48,7 @@
 			{% if site.font_awesome.enabled %}
 				post_div = post_div + '<i class="icon-pencil"></i> ';
 			{% endif %}
-			post_div = post_div + 'Published on ' + post.date + '.<br>';
+			post_div = post_div + 'Published on ' + post.date + '<br>';
 
 			if (post.category !== null && post.category.length > 0) {
 				{% if site.font_awesome.enabled %}
@@ -65,7 +65,7 @@
 				{% if site.font_awesome.enabled %}
 					post_div = post_div + '<i class="icon-tags"></i> ';
 				{% endif %}
-				post_div = post_div + 'Tags: ';
+				post_div = post_div + 'Tagged ';
 				var prev_tag = '';
 				var first_tag = true ;
 				for (var k = 0; k < post.tags.length; k++) {

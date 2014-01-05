@@ -5,9 +5,11 @@ exclude: true
 
 {% assign index_page_html = null %}
 {% capture index_page_html %}
+	<script type="text/javascript">
+	var index = true;
+	</script>
 	{% for p in paginator.posts %}
 		<div class="ghpb-post">
-			<div class="">
 				{% if p.title %}
 					<h2><a href="{{ site.url }}{{ p.url }}" style="color: black;">{{ p.title }}</a></h2>
 				{% else %}
@@ -15,6 +17,14 @@ exclude: true
 				{% endif %}
 				{% if p.subtitle %}
 					<h4>{{ p.subtitle }}</h4>
+				{% endif %}
+
+				{% if p.image %}
+				<div class="row">
+					<div class="span5 offset1">
+						<a href="{{ site.url }}{{ p.url }}"><img src="{{ p.image }}" /></a>
+					</div>
+				</div>
 				{% endif %}
 
 				{% if p.alert or p.notice %}
@@ -43,7 +53,7 @@ exclude: true
 							{% if site.font_awesome.enabled %}
 								<i class="icon-pencil"></i> 
 							{% endif %}
-							Published on {{ p.date | date_to_long_string }}.
+							Published on {{ p.date | date_to_long_string }}
 							<br>
 
 							{% assign enable_disqus_show_comments = false %}
@@ -82,7 +92,7 @@ exclude: true
 								{% if site.font_awesome.enabled %}
 									<i class="icon-tags"></i> 
 								{% endif %}
-								Tags: 
+								Tagged 
 								{% assign index_post_first_tag = true %}
 								{% assign index_post_prev_tag = '' %}
 								{% for index_post_i in (1..index_post_number_of_tags) %}
@@ -104,7 +114,6 @@ exclude: true
 						</div>
 					</small>
 				</div>
-			</div>
 		</div>
 		<br>
 		<br>

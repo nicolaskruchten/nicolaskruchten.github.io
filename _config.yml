@@ -220,7 +220,7 @@ navbar :
   tags :
     enabled : true
   github_projects :
-    enabled : false
+    enabled : true
   social_links :
     enabled : false
   external_links :
@@ -285,6 +285,11 @@ social_links :
   links :
     - link :
       enabled : true
+      name : Email
+      font_awesome_icon : icon-envelope
+      url : mailto:nicolas@kruchten.com
+    - link :
+      enabled : true
       name : GitHub
       font_awesome_icon : icon-github-alt
       url : https://github.com/nicolaskruchten
@@ -298,7 +303,6 @@ social_links :
       name : Twitter
       font_awesome_icon : icon-twitter
       url : http://www.twitter.com/nicolaskruchten
-
 
 # These are a list of GitHub projects that the blog owner would like to
 # showcase. Although the intent is the projects showcased would be the
@@ -321,11 +325,14 @@ social_links :
 #     name : gh-pages-blog
 #     url : https://github.com/thedereck/gh-pages-blog
 github_projects :
-  header : GitHub Projects
+  header : Notable Projects
   projects :
   - project :
-    name : gh-pages-blog
-    url : https://github.com/thedereck/gh-pages-blog
+    name : PivotTable.js
+    url : https://github.com/nicolaskruchten/pivottable
+  - project :
+    name : RTBkit
+    url : https://github.com/rtbkit/rtbkit
 
 
 # These are links to other websites outside of the blog that are not part of

@@ -1,19 +1,21 @@
 ---
 layout : post
 title : Near-Real-Time Election Results Dashboard
+image: http://nicolas.kruchten.com/content/wp-content/uploads/2013/12/lection_2013_and_Messages-e1386158952969-1024x752.png
+github: nicolaskruchten/election2013
+relatedtag: open data
 tags:
-    - coffeescript
-    - electiondata
-    - protovis
+    - open data
     - visualization
 ---
 
-<p style="text-align: center;"><a href="http://nicolas.kruchten.com/content/wp-content/uploads/2013/12/lection_2013_and_Messages-e1386158952969.png" rel="lightbox[660]"><img class="aligncenter  wp-image-661" alt="Élection_2013_and_Messages" src="http://nicolas.kruchten.com/content/wp-content/uploads/2013/12/lection_2013_and_Messages-e1386158952969-1024x752.png" width="378" height="277" /></a></p>
 <p>There was a municipal election here in Montreal on November 3, and I had the opportunity to help build an election results dashboard to be projected on the big screen at the election-night party for the political party I support: <a href="http://projetmontreal.org/" target="_blank">Projet Montréal</a>. The dashboard is <a href="http://nicolaskruchten.github.io/election2013/" target="_blank">still up with final results</a>. I worked with Nicolas Marchildon, who had put together a similar system for the 2009 election.</p>
 
 <!-- more -->
 <p><span id="more-660"></span>The basic mechanics of both the 2009 and the 2013 systems are simple: <a href="http://election-montreal.qc.ca/index.fr.html" target="_blank">Élection Montréal</a> publishes an XML feed of election results via FTP which we can download once every 2 minutes, then parse and display the results. This feed isn&#8217;t public: to get access you have to register ahead of time and tell them which IP address you will be downloading from etc, and we encountered some performance problems, but it worked well enough.</p>
 <p>The other Nicolas and I met up the day before the election and split up responsibilities: he would handle the back-end which grabbed the data from Élection Montreal and would transform it from XML to JSON, and I would build a single-page-app front-end in CoffeeScript to poll his server and display the JSON. Nicolas&#8217; back-end did some fancy things like figure out which Projet candidates were &#8216;taking the lead&#8217; in the vote counts and would tweet them from the <a href="https://twitter.com/ProjetMtl2013" target="_blank">@ProjetMtl2013</a> account, and added this information into the JSON feed as well so we could display the candidates&#8217; faces when they took the lead, as in the image below. We decided that the front-end would consist of 4 different &#8216;panels&#8217; which changed the results they were displaying every minute or so, so keep people&#8217;s interest. I&#8217;m sure people who work in the visualization department for TV stations have similar conversations.</p>
-<p><a href="http://nicolas.kruchten.com/content/wp-content/uploads/2013/12/photo-e1386158539651.jpg" rel="lightbox[660]"><img class="aligncenter size-large wp-image-662" alt="photo" src="http://nicolas.kruchten.com/content/wp-content/uploads/2013/12/photo-e1386158539651-1024x768.jpg" width="600" height="450" /></a></p>
+
+<img src="http://nicolas.kruchten.com/content/wp-content/uploads/2013/12/photo-e1386158539651-1024x768.jpg" />
+
 <p>Overall this was a fun project I worked on for 8-10 hours and I was pleased with the results. People cheered every time a candidate took the lead, and this even led some newscaster to comment on our dashboard on-air! In fact, I think more people saw this dashboard on TV behind the newscaster than were actually in the room.</p>
 <p>My front-end <a href="https://github.com/nicolaskruchten/election2013" target="_blank">code is available on GitHub</a>, and so is the other Nicolas&#8217; <a href="https://github.com/elecnix/resultats-mtl" target="_blank">back-end code</a>.</p>

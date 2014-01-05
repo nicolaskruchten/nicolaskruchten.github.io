@@ -1,21 +1,23 @@
 ---
 layout : post
 title : Graphing Silvia Temperature on iPad
+github: nicolaskruchten/coffeegraph
+relatedtag: silvia
 tags:
     - arduino
-    - hardware
     - silvia
+    - visualization
 --- 
 
 <div class="text-center">
-                            <object type="application/x-shockwave-flash" wmode="opaque" width="400" height="265" data="http%3A%2F%2Fwww.flickr.com%2Fapps%2Fvideo%2Fstewart.swf%3Fv%3D137818%26photo_id%3D5608043281%26photo_secret%3D59e7f44451" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000">
-                                <param name="movie" value="http%3A%2F%2Fwww.flickr.com%2Fapps%2Fvideo%2Fstewart.swf%3Fv%3D137818%26photo_id%3D5608043281%26photo_secret%3D59e7f44451"></param>
-                                <param name="bgcolor" value="#000000"></param>
-                                <param name="allowFullScreen" value="true"></param>
-                                <param name="wmode" value="opaque" />
-                                <embed type="application/x-shockwave-flash" src="http://www.flickr.com/apps/video/stewart.swf?v=137818&photo_id=5608043281&photo_secret=59e7f44451" bgcolor="#000000" allowfullscreen="true" flashvars="intl_lang=en-us&amp;photo_secret=59e7f44451&amp;photo_id=5608043281" height="265" width="400" wmode="opaque"></embed>
-                            </object>
-                        </div>
+    <object type="application/x-shockwave-flash" wmode="opaque" style="max-width: 100%" width="400" height="265" data="http%3A%2F%2Fwww.flickr.com%2Fapps%2Fvideo%2Fstewart.swf%3Fv%3D137818%26photo_id%3D5608043281%26photo_secret%3D59e7f44451" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000">
+        <param name="movie" value="http%3A%2F%2Fwww.flickr.com%2Fapps%2Fvideo%2Fstewart.swf%3Fv%3D137818%26photo_id%3D5608043281%26photo_secret%3D59e7f44451"></param>
+        <param name="bgcolor" value="#000000"></param>
+        <param name="allowFullScreen" value="true"></param>
+        <param name="wmode" value="opaque" />
+        <embed type="application/x-shockwave-flash" src="http://www.flickr.com/apps/video/stewart.swf?v=137818&photo_id=5608043281&photo_secret=59e7f44451" bgcolor="#000000" allowfullscreen="true" flashvars="intl_lang=en-us&amp;photo_secret=59e7f44451&amp;photo_id=5608043281" style="max-width: 100%" height="265" width="400" wmode="opaque"></embed>
+    </object>
+</div>
 <br />                    
 <p>So I finally got around to working on my <a href="http://nicolas.kruchten.com/content/2010/12/silvia-mod-plan">Silvia Mod Plan</a>, getting all the way to Step 5! The video above is a demo of the setup I have to show a real-time graph on my iPad of the boiler temperature in the Silvia.</p>
 <p>Having installed the thermocouple in the Silvia and played with my <a href="http://code.google.com/p/tc4-shield/">TC4 shield</a>, my initial plan was to use the Arduino to transmit data to my iMac using <a href="http://www.digi.com/products/wireless-wired-embedded-solutions/zigbee-rf-modules/zigbee-mesh-module/xbee-zb-module.jsp#overview">XBee</a> as a wireless serial link, where I would run a <a href="http://nodejs.org/">NodeJS</a> process which would read data from the USB port and which would communicate with the iPad via a WebSocket over Wifi (phew, mouthful!). Ideally the Arduino would speak Wifi but in the meantime I figured I&#8217;d play with this setup. I chose NodeJS because it seemed really easy to set up <a href="http://socket.io/">WebSockets using socket.io</a>, and that seemed like a good way to feed data to <a href="http://smoothiecharts.org/">Smoothie Charts</a> for real-time graphing. I rewrote the code in <a href="http://jashkenas.github.com/coffee-script/">CoffeeScript</a>, because it&#8217;s the best way to write NodeJS code IMO (a discovery I made after writing the first version of this code 4 months ago) and because it&#8217;s so fitting for this project!</p>
@@ -23,8 +25,9 @@ tags:
 <p>The first snag I ran into was the fact that there doesn&#8217;t seem to be a good way to read from a USB port from Node, and it felt too much like my day-job to write an add-on in C++ to do it, so I had to work around. My solution was to run a separate Python process which would read data from the USB port and would POST to the NodeJS web server whenever the Arduino sent a temperature reading.</p>
 <p>The second snag I ran into was the fact that the XBee didn&#8217;t seem to be able to transmit all the way to my iMac, so I hung the XBee from my laptop, located halfway between the iMac and the Silvia and ran the Python script there, POSTing over Wifi to the iMac. Then I smartened up and installed the NodeJS process on my laptop. So really, this system is just a convoluted way of doing what could have been done using a USB cable to graph data on my laptop, but bouncing signals around over multiple protocols, machines and wireless technologies is so much more fun!</p>
 <p>The code is, of course, up on Github: <a href="https://github.com/nicolaskruchten/coffeegraph">https://github.com/nicolaskruchten/coffeegraph</a></p>
-                        <div class="text-center"><a href="http://www.flickr.com/photos/nicolaskruchten/5608059329"><img class="flickr medium" title="Inside Silvia" alt="Inside Silvia" src="http://farm6.static.flickr.com/5267/5608059329_265a12c584.jpg" /></a></div>
-                    
-                        <div class="text-center"><a href="http://www.flickr.com/photos/nicolaskruchten/5608642978"><img class="flickr medium" title="iPad Screenshot" alt="iPad Screenshot" src="http://farm6.static.flickr.com/5141/5608642978_808d83b093.jpg" /></a></div>
-                    
-                        <div class="text-center"><a href="http://www.flickr.com/photos/nicolaskruchten/5608642900"><img class="flickr medium" title="Silvia and Arduino" alt="Silvia and Arduino" src="http://farm6.static.flickr.com/5310/5608642900_6579f7515f.jpg" /></a></div>
+
+<img src="http://farm6.static.flickr.com/5267/5608059329_265a12c584.jpg" />
+
+<img src="http://farm6.static.flickr.com/5141/5608642978_808d83b093.jpg" />
+
+<img src="http://farm6.static.flickr.com/5310/5608642900_6579f7515f.jpg" />

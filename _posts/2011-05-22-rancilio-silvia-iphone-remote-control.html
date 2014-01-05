@@ -1,23 +1,22 @@
 ---
 layout : post
 title : Rancilio Silvia iPhone Remote Control
+image: http://nicolas.kruchten.com/content/wp-content/uploads/2011/05/IMG_0288.png
+github: nicolaskruchten/silvia
+relatedtag: silvia
 tags:
     - arduino
-    - hardware
-    - iphone
-    - mod
-    - pid
-    - remote control
     - silvia
-    - wifi
 --- 
 
-<p style="text-align: center;"><a href="http://nicolas.kruchten.com/content/wp-content/uploads/2011/05/IMG_0288.png" rel="lightbox[313]"><img class="aligncenter size-full wp-image-315" style="border: 1px solid gray;" title="Silvia iPhone app" src="http://nicolas.kruchten.com/content/wp-content/uploads/2011/05/IMG_0288.png" alt="Silvia iPhone app" width="211" height="317" /></a></p>
+
 <p>This is a screenshot of what I pull up on my iPhone every morning now after its alarm clock wakes me up. That&#8217;s right, it&#8217;s an interface to turn on my espresso machine so that it will warm up to a specific temperature by the time I&#8217;m done snoozing! I can even look at a real-time plot of the temperature to confirm that it&#8217;s holding where it should be and doesn&#8217;t need to bumped up or down a degree.</p>
 <!-- more -->
-<p><span id="more-313"></span>More screenshots:</p>
-<div id="attachment_316" style="width: 330px" class="wp-caption aligncenter"><a href="http://nicolas.kruchten.com/content/wp-content/uploads/2011/05/IMG_0276.png" rel="lightbox[313]"><img class="size-full wp-image-316" title="Silvia iPhone app icon" src="http://nicolas.kruchten.com/content/wp-content/uploads/2011/05/IMG_0276.png" alt="Silvia iPhone app icon" width="320" height="480" /></a><p class="wp-caption-text">Silvia iPhone app icon (second from the bottom on the left)</p></div>
-<div id="attachment_317" style="width: 490px" class="wp-caption aligncenter"><a href="http://nicolas.kruchten.com/content/wp-content/uploads/2011/05/IMG_0287.png" rel="lightbox[313]"><img class="size-full wp-image-317" title="Silvia iPhone graph" src="http://nicolas.kruchten.com/content/wp-content/uploads/2011/05/IMG_0287.png" alt="Silvia iPhone graph" width="480" height="320" /></a><p class="wp-caption-text">Silvia iPhone graph</p></div>
+
+<img src="http://nicolas.kruchten.com/content/wp-content/uploads/2011/05/IMG_0276.png" />
+
+<img src="http://nicolas.kruchten.com/content/wp-content/uploads/2011/05/IMG_0287.png" />
+
 <h2>Why?</h2>
 <p>As outlined in <a href="http://nicolas.kruchten.com/content/2010/12/silvia-mod-plan/">this previous post where I laid out my plan</a>, I wanted the extra precision of digital temperature control in my Silvia, but I didn&#8217;t want to slap a PID box on the side of it with an LED readout of the temperature. So I decided to build my own controller, and I opted to add Wifi to it for a web-based interface, which also opened up the possibility of turning it on remotely from bed, so it would be all warmed up by the time I was ready for my morning shot of espresso. Additionally, the controller automatically shuts off 1 hour after first being activated, so I essentially leave my Silvia powered up all the time, and the boiler only turns on when I ask it to.</p>
 <h2>How?</h2>
@@ -26,12 +25,7 @@ tags:
 <p>The whole thing is right now tucked away on the shelf beneath my Silvia, totally invisible to the casual eye, but I&#8217;ll probably put it in a little box or something just to hide exposed wires. (<em>Update Jan 2012</em>: in order to keep the connection stable I actually ended up hanging the controller on the wall hidden behind the Silvia.)</p>
 <h2>Thoughts</h2>
 <p>So I didn&#8217;t quite implement everything in the original plan, and I haven&#8217;t yet been able to run the entire app directly on the controller, nor have I been able to set up WebSockets through the Wifi shield, but overall I managed to accomplish the original design goals with a minimum of fuss, and hey, I use this thing every morning to make great espresso, so I&#8217;m a happy camper!</p>
-<h2>Links</h2>
-<ul>
-<li><a href="https://github.com/nicolaskruchten/arduino/tree/master/SilviaController" target="_blank">Arduino sketch on GitHub</a></li>
-<li><a href="https://github.com/nicolaskruchten/silvia" target="_blank">web-based &#8220;iPhone app&#8221; code on GitHub</a></li>
-<li><a href="http://nicolas.kruchten.com/content/tag/silvia/">other posts about this</a></li>
-</ul>
+
 <h2>Thanks</h2>
 <ul>
 <li>Jim Galt from PIDKits.com for all his advice</li>

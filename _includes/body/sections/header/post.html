@@ -38,10 +38,11 @@
 			<small>
 				<div class="span6">
 
+
 					{% if site.font_awesome.enabled %}
 						<i class="icon-pencil"></i> 
 					{% endif %}
-					Published on {{ page.date | date_to_long_string }}.
+					Published on {{ page.date | date_to_long_string }}
 					<br>
 					{% if page.category.size > 0 %}
 						{% if site.font_awesome.enabled %}
@@ -58,7 +59,7 @@
 						{% if site.font_awesome.enabled %}
 							<i class="icon-tags"></i> 
 						{% endif %}
-						Tags: 
+						Tagged 
 						{% assign page_tag_first = true %}
 						{% assign prev_page_tag = '' %}
 						{% for page_i in (1..number_of_page_tags) %}
@@ -74,6 +75,15 @@
 								<a href="{{ site.url }}/filter.html?tag={{ page_tag }}">{{ page_tag | replace: '___', ' ' }}</a>
 							{% endif %}
 						{% endfor %}
+						<br>
+					{% endif %}
+
+					{% if page.github %}
+						<i class="icon-github"></i> 
+					Github repository at 
+						<a href="http://github.com/{{page.github}}" target="_blank">
+							{{page.github}}
+						</a>
 						<br>
 					{% endif %}
 				</div>

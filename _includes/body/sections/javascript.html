@@ -4,5 +4,19 @@
 	{% include body/sections/javascript/bootstrap.html %}
 	{% include body/sections/javascript/google-analytics.html %}
 	{% include body/sections/javascript/disqus.html %}
+    <script>
+    $(function(){
+        $('.ghpb-post > img').each(function(){
+            $(this).bind("click", function(){
+                window.location = $(this).attr("src");
+            });
+            $(this)
+                .css({"padding-bottom": "20px", "cursor": "pointer"})
+                .wrap('<div class="row">')
+                .wrap('<div class="span5 offset1 text-center">')
+                ;
+        });
+    });
+    </script>
 {% endcapture %}
 {{ section_github_projects_html | strip_newlines | remove:'	' }}

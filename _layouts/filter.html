@@ -6,4 +6,4 @@
 		{% include body/filter.html %}
 	</html>
 {% endcapture %}
-{{ layout_filter_html | strip_newlines | remove:'	' }}
+{{ layout_filter_html | strip_newlines | remove:'	' | replace:'http://nicolas.kruchten.com',site.url}}

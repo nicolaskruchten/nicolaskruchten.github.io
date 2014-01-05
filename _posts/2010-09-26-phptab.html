@@ -1,0 +1,52 @@
+---
+layout : post
+title : PHPTab
+tags:
+    - open source
+    - software
+--- 
+
+<p style="text-align: center;"><a href="http://nicolas.kruchten.com/content/wp-content/uploads/2010/09/screenshot.gif" rel="lightbox[41]"><img class="aligncenter size-medium wp-image-63" style="border: 1px solid black;" title="screenshot" src="http://nicolas.kruchten.com/content/wp-content/uploads/2010/09/screenshot-300x211.gif" alt="" width="300" height="211" /></a></p>
+
+<h2>The Problem</h2>
+<p>You&#8217;re part of a small-to-medium group of people who trust each other  and have some reason to spend time and money together (e.g. you have a  few housemates or you work in a friendly office environment). It&#8217;s a  huge hassle to constantly be requesting separate bills or lending each  other money and losing track of who owes who how much and for what. You  waste time quibbling over small amounts and people in your group don&#8217;t  like lending each other money or picking up the tab for lunch.</p>
+<h2>The Solution</h2>
+<p>Using this simple web application, a group of people who trust each  other can keep a running tab of how much they owe each other. This is  handy for figuring out such things as who should pay for groceries next  time (e.g. whoever owes the most) and generally makes people more  easy-going about spotting each other money or picking up lunch, as they  know they can keep track of it. With PHPTab, any member of your group  can be as lenient or penny-counting as they want, without ever having to  actually be constantly be trading small sums of money. It&#8217;s just a  matter of &#8220;putting it on their tab&#8221;.</p>
+<!-- more -->
+
+<h2>Features</h2>
+<ul>
+<li>Any member of the group with a computer/internet connection (and probably the password) can log or view the current debt</li>
+<li>The interface is intuitive: A owes B $X for reason Y (e.g. Nick owes Mike $15 because of a sushi lunch)</li>
+<li>Macros can represent one-to-many payments in any ratio (e.g Nick  paid for his, Anna&#8217;s and Mike&#8217;s food, but they don&#8217;t all eat the same  amount)</li>
+<li>It&#8217;s easy to add/remove people and macros</li>
+<li>It&#8217;s easy to modify if you want to add bells &amp; whistles or change the look&#8217;n'feel</li>
+</ul>
+<h2>Requirements</h2>
+<p>Access to a web server with PHP &amp; MySQL installed, and a little bit of web-savvy.</p>
+<h2>Documentation</h2>
+<h3>Installation</h3>
+<ol>
+<li>Edit dbinfo.php:
+<ol>
+<li>enter the MySQL database hostname, username, password and database name</li>
+<li>enter the prefix you would like the tables to have (using this  feature, you can use multiple independent instances of PHPTab in the  same database without them colliding)</li>
+</ol>
+</li>
+<li>Upload all the files to your web server</li>
+<li>(Optional but recommended) Use .htaccess or something similar to put a password on the directory</li>
+</ol>
+<h3>Usage</h3>
+<p>Using the system is really simple, just fill in the form to record a  transaction. &#8216;From&#8217; and &#8216;to&#8217; indicate who is doing the lending or paying  and who is doing the receiving, respectively. One cannot go &#8216;from&#8217; a  macro but if you really know what you&#8217;re doing, you can go &#8216;from&#8217; a  person &#8216;to&#8217; a macro with a negative value. An interesting feature is  that the &#8216;amount&#8217; can be a simple mathematical expression  like  (1+(2*3)).</p>
+<h3>People and Macros</h3>
+<p>Before using PHPTab, and at various time during use, you will need to  add people or macros to the system. A person is one who can owe money. A  macro is sort of a shortcut which can split debt according to given  ratios. For example, Nick and Mike are people but NickandMike could be a  macro that splits debt between Nick and Mike 50-50.</p>
+<p>You can create macros and people by clicking on &#8216;edit targets&#8217; on the  main page. Under &#8216;splits&#8217; when creating a macro, you can specify them  in any form, they are normalized. For example, saying Nick: 3 and Mike: 2  will result in Nick owing 60% and Mike 40%. The same effect can be  achieved by using 6 and 4 or 0.6 and 0.4 or 30 and 20 etc etc. This is  handy when doing simple ratios like 3:4:5. You can view the splits for  macros in the system at the &#8216;view macros&#8217; page.</p>
+<p>You can also &#8216;deactivate&#8217; people or macros on that page, so that they  no longer appear in the from/to lists and no more transactions can  involve them. Note that only people with a balance of zero may be  deactivated, otherwise all the math gets thrown off. For the same  reason, if you deactivate a person, any macro they are a part of will be  deactivated, and the &#8216;delete&#8217; button will be hidden for any  transactions they took part in.</p>
+<h2>GitHub</h2>
+<ul>
+<li><a href="http://github.com/nicolaskruchten/PHPTab">http://github.com/nicolaskruchten/PHPTab</a></li>
+</ul>
+<h2>Acknowledgements</h2>
+<p>A few bug fixes were contibuted by Adam Hasselbalch Hansen. Thanks Adam!</p>
+<h2>License</h2>
+<p>This software is licensed under the <a href="http://creativecommons.org/licenses/GPL/2.0/">CC-GNU GPL</a>.</p>

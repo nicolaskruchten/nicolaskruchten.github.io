@@ -1,0 +1,31 @@
+---
+layout : post
+title : hackMTL Inbox Social Network Visualization
+tags:
+    - context.io
+    - gephi
+    - hackmtl
+    - inbox
+    - protovis
+    - social network
+    - software
+    - visualization
+--- 
+
+<p style="text-align: center;"><a href="http://nicolas.kruchten.com/content/wp-content/uploads/2010/11/screenshot_04.png" rel="lightbox[250]"><img class="size-medium wp-image-254 aligncenter" title="screenshot_04" src="http://nicolas.kruchten.com/content/wp-content/uploads/2010/11/screenshot_04-300x271.png" alt="" width="300" height="271" /></a></p>
+<p>On Saturday I attended <a href="http://mtl.hackdays.ca/" target="_blank">hackMTL</a>, a one-day hackfest/competition. The ground rules called for creating an app using at least one of a list of <a href="http://mtl.hackdays.ca/2010/11/24/hackmtl-ready-set-go-apis/" target="_blank">API&#8217;s</a>. The one that caught my eye was the <a href="http://developer.dokdok.com/" target="_blank">DokDok API</a> (now <a href="http://context.io/" target="_blank">Context.io</a>), which basically gives you programatic read access to your GMail inbox via HTTP/JSON. Since June or so I&#8217;ve been doing more and more visualization of data that I work with (first at Bell then at <a href="http://www.recoset.com/" target="_blank">Recoset</a>) so I figured I&#8217;d see if I could make an app that could make a neat picture of my social network, as it&#8217;s represented in my inbox. I didn&#8217;t quite finish an &#8220;app&#8221; per se during hackMTL but I did manage to make a pretty picture (above). The <a href="https://github.com/nicolaskruchten/hackMTL" target="_blank">code is up on GitHub</a>, and basically it&#8217;s a Python script that creates a JSON file which is rendered using <a href="http://vis.stanford.edu/protovis/ex/" target="_blank">Protovis</a>. The circles/graph nodes represent email addresses (aka people) and the links between nodes indicate that the two parties were on the same GMail thread.</p>
+<!-- more -->
+<p><span id="more-250"></span>After the competition was over, back at home, I manually applied some colours to the graph above to create the graph below, based on a loose intuitive sense of the various social networks I&#8217;m a part of (yellow is Vancouver people, red is Montreal, orange is Family, blue is EWB and green is Toronto). So the visualization nicely clusters what I consider to be my social networks, and the overlaps roughly correspond to people who co-exist in multiple spheres (Vancouver friends who moved to TO or Montreal, EWB friends who live in Toronto etc).</p>
+<p style="text-align: center;"><a href="http://nicolas.kruchten.com/content/wp-content/uploads/2010/11/screenshot_02.png" rel="lightbox[250]"><img class="alignnone size-medium wp-image-252" title="screenshot_02" src="http://nicolas.kruchten.com/content/wp-content/uploads/2010/11/screenshot_02-272x300.png" alt="" width="272" height="300" /></a></p>
+<p>Upon looking at the data some more, however, it dawned on me that I shouldn&#8217;t treat GMail threads as edges between nodes but rather as nodes in their own right. Basically a thread that multiple people participate in kind of represents a very temporary community that all the participants are linked to. I ran with this idea using <a href="http://gephi.org/" target="_blank">Gephi</a>, an industrial-strength graph analysis tool, given that I was no longer shackled by the competition&#8217;s &#8220;app&#8221; focus, and made the graph below. I didn&#8217;t manually colour this one given the number of nodes but basically red circles are people and grey dots are threads. The various clusters of people in my life are much more easily distinguishable in this graph, and really matches well with my intuition about the structure of the networks I&#8217;m a part of. My EWB network stretches from the center up and to the right. Bottom middle is my family. The left-hand side is basically high-school and Montreal friends (some of whom in fact are also friends with each other), and the cluster in the middle is non-EWB university friends.</p>
+<p style="text-align: center;"><a href="http://nicolas.kruchten.com/content/wp-content/uploads/2010/11/screenshot_03.png" rel="lightbox[250]"><img class="alignnone size-medium wp-image-253" title="screenshot_03" src="http://nicolas.kruchten.com/content/wp-content/uploads/2010/11/screenshot_03-300x255.png" alt="" width="300" height="255" /></a></p>
+<p>So that&#8217;s what came out of my hackMTL efforts. Lessons learned:</p>
+<ul>
+<li>email is messy: the same people have many addresses which breaks up the network structure</li>
+<li>people blast emails to huge lists all the time, which obscures finer details, so lots of filtering was required</li>
+<li>crawling a social graph takes a long time and many requests, and two strategies can help: caching and not doing depth-first search but rather keeping a &#8216;hit list&#8217; of most-commonly-seen addresses to crawl next</li>
+<li>The <a href="http://www.dokdok.com" target="_blank">DokDok</a> guys are really friendly, and their tech is awesome</li>
+<li><a href="http://www.graphviz.org">graphviz</a> is terrible at this sort of thing, <a href="http://vis.stanford.edu/protovis/ex/" target="_blank">Protovis</a> is better, but <a href="http://gephi.org">Gephi</a> is awesome</li>
+</ul>
+<p>Here&#8217;s what <a href="http://rpmmtl.com/" target="_blank">RPM Montreal</a> looked like during the day:</p>
+<p style="text-align: center;"><a href="http://nicolas.kruchten.com/content/wp-content/uploads/2010/11/IMG_0108.jpg" rel="lightbox[250]"><img class="aligncenter size-large wp-image-261" title="hackMTL Panorama at RPM" src="http://nicolas.kruchten.com/content/wp-content/uploads/2010/11/IMG_0108-1024x294.jpg" alt="" width="600" height="172" /></a></p>

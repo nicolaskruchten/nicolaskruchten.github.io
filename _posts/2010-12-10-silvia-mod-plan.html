@@ -1,0 +1,32 @@
+---
+layout : post
+title : Silvia Mod Plan
+tags:
+    - arduino
+    - hardware
+    - silvia
+--- 
+<p style="text-align: center;"><a href="http://nicolas.kruchten.com/content/wp-content/uploads/2010/10/espresso.jpg" rel="lightbox[203]"><img class="aligncenter size-large wp-image-204" title="espresso" src="http://nicolas.kruchten.com/content/wp-content/uploads/2010/10/espresso-1024x768.jpg" alt="" width="422" height="317" /></a></p>
+
+<p>So in October I finally bought the Rancilio Silvia I&#8217;d been coveting (after coveting a <a href="http://www.lapavoni.it/line_det.asp?idf=1">La Pavoni</a> manual espresso machine first!) with the intention of modding it to add digital temperature control to it, as many have done. This basically involves replacing the stock thermostat with a thermocouple and solid-state relay, plugged into a digital control unit which does <a href="http://en.wikipedia.org/wiki/PID_controller">PID control</a>. Now being a software guy who likes to tinker with his Arduino, I pretty quickly decided that I wouldn&#8217;t use a standard industrial controller but I would build a custom one (kind of like <a href="http://growdown.blogspot.com/2008/04/arduino-and-silvia-two-italians-one.html">this one</a>, but read on for differences). In addition, I decided I didn&#8217;t want to hang anything from the Silvia or make any <a href="http://pidkits.com/">externally-visible</a> modifications, partly for esthetic reasons, but mostly because I&#8217;m not too good at making good-looking hardware myself. So I decided I would build something I could control wirelessly, from my iPhone for example. &#8220;Control&#8221; in this case basically means occasionally changing the set point of the controller, and maybe turning it on remotely. One other feature which would be nice would be a timed on/off feature, like &#8220;on 30min before I wake up&#8221; and &#8220;off after 1h of disuse&#8221; or something like that.</p>
+<!-- more -->
+
+<p style="text-align: center;"><a href="http://nicolas.kruchten.com/content/wp-content/uploads/2010/12/IMG_0109.jpg" rel="lightbox[266]"><img class="size-medium wp-image-272 aligncenter" style="border: 1px solid gray;" title="Silvia Mod Components" src="http://nicolas.kruchten.com/content/wp-content/uploads/2010/12/IMG_0109-225x300.jpg" alt="Silvia Mod Components" width="225" height="300" /></a></p>
+<p>With this rough set of goals in mind, I did some research and found out that modding something like a Silvia is pretty dangerous if you do it wrong, what with mains power and all. I didn&#8217;t want to take any chances, so I contacted the fine gentleman behind <a href="http://pidkits.com">PidKits.com</a>, got some excellent advice, and subsequently ordered from him the set of parts pictured above (basically everything I would need except the controller itself). I&#8217;m pretty pleased with this, because frankly, picking out the right gauge of wire to not die while tinkering is really not the part of this hobby that I like most. Jim even offered to sell me a <a href="http://code.google.com/p/tc4-shield/">TC4 shield</a> to interface the thermocouple and SSR to the Arduino, which I took him up on. Basically the TC4 does two things the Arduino can do, but better: analog-to-digital conversion (but with higher resolution and amplification for thermocouples) and pulse-width modulation (but stepped up to control an SSR). In the picture above, the green board on the left is the TC4 (v1) and the black box on the right is the SSR.</p>
+<p>So, armed with most of the hardware I need (still looking into buying a <a href="http://asynclabs.com/store?page=shop.product_details&amp;flypage=flypage.tpl&amp;product_id=26&amp;category_id=6">Wifi Shield</a>), what&#8217;s the plan?</p>
+<ol>
+<li>Attach the TC4 to the Arduino and figure out how to use it to read the temperature of the thermocouple and send it back to my Mac via serial USB.</li>
+<li>Replace the serial USB with my trusty pair of XBee transceivers so report the temperature telemetry back wirelessly.</li>
+<li>Build a web server that would run on my Mac to receive the wireless temperature data and graph it as slickly as possible.</li>
+<li>Install the thermocouple in the Silvia.</li>
+<li>Test the above by graphing temperature curves on the iPad in real time.</li>
+<li>Test the Arduino-driving-SSR-through-TC4 with LED&#8217;s or something like that.</li>
+<li>Code up a simple P controller.</li>
+<li>Install the SSR in the Silvia</li>
+<li>Test the P controller on the actual Silvia, watching the temperature curve on the iPad, then move Silvia back to stock thermostat.</li>
+<li>Code up a fancier PID controller and test it.</li>
+<li>Install the Arduino-powering wires in the Silvia.</li>
+<li>Install the Arduino semi-permanently in or behind the Silvia, in a case of some kind.</li>
+<li>Move from Xbee to Wifi so I can stop running a web server on my iMac with an Xbee module hanging off the back. (this is the really exciting part, I think: putting a whole webserver in my espresso machine!)</li>
+<li>Install a real-time clock or set up NTP over Wifi to gain the ability for the system to start heating on a schedule.</li>
+</ol>

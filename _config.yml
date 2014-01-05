@@ -175,11 +175,11 @@ sections:
     content :
       enabled : true
     social_links :
-      enabled : true
+      enabled : false
     github_projects :
       enabled : false
   social_links :
-    enabled : false
+    enabled : true
   github_projects :
     enabled : false
   external_links :
@@ -290,6 +290,16 @@ social_links :
       url : mailto:nicolas@kruchten.com
     - link :
       enabled : true
+      name : Résumé
+      font_awesome_icon : icon-file-alt
+      url : http://nicolas.kruchten.com/cv.html
+    - link :
+      enabled : true
+      name : Datacratic Blog
+      font_awesome_icon : icon-flag
+      url : http://datacratic.com/site/blogs/nicolas-kruchten
+    - link :
+      enabled : true
       name : GitHub
       font_awesome_icon : icon-github-alt
       url : https://github.com/nicolaskruchten
@@ -303,6 +313,11 @@ social_links :
       name : Twitter
       font_awesome_icon : icon-twitter
       url : http://www.twitter.com/nicolaskruchten
+    - link :
+      enabled : true
+      name : RSS Feed
+      font_awesome_icon : icon-rss
+      url : http://nicolas.kruchten.com/rss.xml
 
 # These are a list of GitHub projects that the blog owner would like to
 # showcase. Although the intent is the projects showcased would be the
@@ -358,11 +373,11 @@ github_projects :
 #       name : Lowcountry Blues Club
 #       url : http://lowcountrybluesclub.blogspot.com
 external_links :
-  header : More Great gh-pages-blog Sites
+  header : None
   links :
     - link :
-      name : The Dereck
-      url: http://thedereck.github.io
+      name : Résumé
+      url: http://nicolas.kruchten.com/cv.html
 
 
 # These are the bootstrap settings. These bootstrap settings will control both

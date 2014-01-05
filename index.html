@@ -7,11 +7,11 @@ exclude: true
 {% capture index_page_html %}
 	{% for p in paginator.posts %}
 		<div class="ghpb-post">
-			<div class="well ghpb-well-outline">
+			<div class="">
 				{% if p.title %}
 					<h2><a href="{{ site.url }}{{ p.url }}" style="color: black;">{{ p.title }}</a></h2>
 				{% else %}
-					<h2><a href="{{ site.url }}{{ p.url }}" style="color: black;>{{ site.description }}</a></h2>
+					<h2><a href="{{ site.url }}{{ p.url }}" style="color: black;">{{ site.description }}</a></h2>
 				{% endif %}
 				{% if p.subtitle %}
 					<h4>{{ p.subtitle }}</h4>
@@ -35,7 +35,6 @@ exclude: true
 				<br>
 				{{ p.excerpt }}
 
-				<br>
 				<div class="row">
 					<small>
 						<div class="span3">

@@ -6,4 +6,4 @@
 		{% include body/page.html %}
 	</html>
 {% endcapture %}
-{{ layout_page_html | remove:'	' }}
+{{ layout_page_html | remove:'	'| replace:'http://nicolas.kruchten.com',site.url }}

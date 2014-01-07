@@ -5,7 +5,7 @@
 	{% include body/sections/javascript/disqus.html %}
     <script>
     $(function(){
-        $('.ghpb-post > img').each(function(){
+        $('.ghpb-post > img').add('.ghpb-post > p > img').each(function(){
             $(this).bind("click", function(){
                 window.location = $(this).attr("src");
             });

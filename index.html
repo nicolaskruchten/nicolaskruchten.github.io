@@ -22,7 +22,7 @@ exclude: false
 				{% if p.image %}
 				<div class="row">
 					<div class="span5 offset1">
-						<a href="{{ site.url }}{{ p.url }}"><img src="{{ p.image }}" /></a>
+						<a href="{{ site.url }}{{ p.url }}"><img src="{{ p.image }}" alt="{{ p.title }}" /></a>
 					</div>
 				</div>
 				{% endif %}
@@ -46,8 +46,8 @@ exclude: false
 				{{ p.excerpt }}
 				
 				<div class="row">
-					<small>
-						<div class="span5">
+					<div class="span5">
+						<small>
 
 
 							{% if site.font_awesome.enabled %}
@@ -111,8 +111,8 @@ exclude: false
 						</div>
 						<div span="span1">
 							<p class="pull-right"><a href="{{ site.url }}{{ p.url }}">Full post &raquo;</a></p>
-						</div>
-					</small>
+						</small>
+					</div>
 				</div>
 		</div>
 		<br>

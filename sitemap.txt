@@ -1,0 +1,7 @@
+---
+layout: sitemap
+exclude: true
+otherurls:
+    - /cv.html
+    - /pivottable
+---

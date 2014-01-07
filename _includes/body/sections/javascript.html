@@ -1,5 +1,4 @@
-{% assign section_github_projects_html = null %}
-{% capture section_github_projects_html %}
+
 	{% include body/sections/javascript/jquery.html %}
 	{% include body/sections/javascript/bootstrap.html %}
 	{% include body/sections/javascript/google-analytics.html %}
@@ -18,5 +17,3 @@
         });
     });
     </script>
-{% endcapture %}
-{{ section_github_projects_html | strip_newlines | remove:'	' }}

@@ -582,5 +582,5 @@ disqus :
 analytics :
   enabled : false
   google_analytics :
-    enabled : false
-    tracking_id : UA-1234567
+    enabled : true
+    tracking_id : UA-46914903-1

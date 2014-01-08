@@ -35,7 +35,7 @@ Finally, if we draw lines between the face midpoints, we create three new triang
 
 So how does this visualization technique help us understand what happened in the recent Montreal mayoral election? The following visualization shows us each of the 52 electoral districts as points in a ternary plot, and I drew an actual map of Montreal next to it. The [interactive version][iv] lets you mouse over the points to light up which region it represents. The points are sized by the number of votes in the district and this is represented in the map by colour intensity. 
 
-My takeaway from the pattern in the ternary plot is that where Coderre won, he won big, whereas whereas Bergeron won, he didn't crush it in the same way. Joly did best in the least populated districts. Furthermore, there aren't many points deep into the zone between Coderre and Bergeron: either Joly came second or it was a very close three-way race. 
+My takeaway from the pattern in the ternary plot is that where Coderre won, he won big (i.e. the north end of the island), whereas whereas Bergeron won (in the middle), he didn't crush it in the same way. Joly did best in the least populated districts (in the west). Furthermore, there aren't many points deep into the zone between Coderre and Bergeron: either Joly came second or it was a close three-way race. 
 
 I believe that it's easier to come to these sorts of conclusion by looking at a ternary plot with 52 dots on it than it would be by looking at 52 pie-charts!
 
@@ -43,7 +43,7 @@ I believe that it's easier to come to these sorts of conclusion by looking at a 
 
 Please note carefully that this visualization ignores all the other candidates including Côté, who got 10% of the vote. I did a quick sanity check, and while Côte did carry one or two districts, he did so by a very small margin and those districts were reasonably close to being four-way ties so they end up in the middle of the triangle and this visualization doesn't paint too distorted a picture.
 
-I also made a similar plot in R to show the results for the nearly 4,000 'sections' or ballot-boxes in Montreal, which shows off how well this technique scales compared to small multiples of pie-charts. My conclusions from above still hold with respect to rank: Joly came in second to either Bergeron or Coderre in many more places than Bergeron and Coderre came second to each other.
+I also made a similar plot in R to show the results for the nearly 4,000 'sections' or ballot-boxes in Montreal, which shows off how well this technique scales compared to small multiples of pie-charts. My conclusions from above still hold with respect to rank: Joly came in second to either Bergeron or Coderre (or they came in second to her) in many more places than they came second to each other.
 
 ![Ternary Plot by Section](http://nicolas.kruchten.com/images/ternary/ternary_by_section.png)
 

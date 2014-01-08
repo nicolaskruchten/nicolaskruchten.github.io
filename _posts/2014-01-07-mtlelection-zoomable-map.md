@@ -26,8 +26,8 @@ My R code, the TopoJSON command and the CoffeeScript code are all [available on 
 [map]: http://nicolas.kruchten.com/mtlelection2013bysection/
 [cm]: http://en.wikipedia.org/wiki/Choropleth_map
 [dm]: http://nicolas.kruchten.com/content/2013/12/dot-map-of-2013-montreal-election-results/
-[lj]: leafletjs.com
-[od]: donnees.ville.montreal.qc.ca/group/election-referendum
+[lj]: http://leafletjs.com
+[od]: http://donnees.ville.montreal.qc.ca/group/election-referendum
 [mb]: http://bost.ocks.org/mike/
 [pv]: http://mbostock.github.io/protovis/ex/
 [d3]: http://d3js.org/

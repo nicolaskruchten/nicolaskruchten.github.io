@@ -23,6 +23,8 @@ So I wrote a simple R script which uses the fantastic [reshape2][rs] library fro
 
 My R code, the TopoJSON command and the CoffeeScript code are all [available on Github][repo].
 
+Edit: this map was made using only data from election day, and does not include data from the advance polling days, as it is not available down to the ballot-box level.
+
 [map]: http://nicolas.kruchten.com/mtlelection2013bysection/
 [cm]: http://en.wikipedia.org/wiki/Choropleth_map
 [dm]: http://nicolas.kruchten.com/content/2013/12/dot-map-of-2013-montreal-election-results/

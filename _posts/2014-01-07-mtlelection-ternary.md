@@ -33,7 +33,7 @@ Finally, if we draw lines between the face midpoints, we create three new triang
 
 ![Majorities](http://nicolas.kruchten.com/images/ternary/majorities.png)
 
-So how does this visualization technique help us understand what happened in the recent Montreal mayoral election? The following visualization shows us each of the 52 electoral districts as points in a ternary plot, and I drew an actual map of Montreal next to it. The [interactive version][iv] lets you mouse over the points to light up which region it represents. The points are sized by the number of votes in the district and this is represented in the map by colour intensity. 
+So how does this visualization technique help us understand what happened in the recent Montreal mayoral election? The following visualization shows us each of the 52 electoral districts as points in a ternary plot, and I drew an actual map of Montreal next to it. The [interactive version][iv] lets you mouse over the points to light up which region it represents. The points in the ternary plot are sized by the number of votes in the district. 
 
 My takeaway from the pattern in the ternary plot is that where Coderre won, he won big (i.e. the north end of the island), whereas whereas Bergeron won (in the middle), he didn't crush it in the same way. Joly did best in the least populated districts (in the west). Furthermore, there aren't many points deep into the zone between Coderre and Bergeron: either Joly came second or it was a close three-way race. 
 

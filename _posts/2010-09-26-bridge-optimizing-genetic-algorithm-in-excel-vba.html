@@ -9,6 +9,9 @@ tags:
 
 
 <p>In the fall of 2003, my classmates and I were given an assignment in our Bridge Design course, to model the <a href="http://en.wikipedia.org/wiki/Salginatobel_Bridge">Salginatobel Bridge</a> as a truss and analyse it using the <a href="http://en.wikipedia.org/wiki/Direct_stiffness_method">Stiffness Method</a> in Excel (ignoring buckling effects). As an additional challenge, we were to be awarded bonus marks if we could improve upon the efficiency of this, our professor&#8217;s favourite bridge, by moving the members around.</p>
+
+<!-- more -->
+
 <p>Many hours of work and 10 versions later (as inidicated by the filename of the download below!), my teammate and I had a functional model of this bridge in Excel, and I decided to take up the professor&#8217;s challenge by applying a <a href="http://nicolas.kruchten.com/content/wp-content/uploads/2010/09/thesis.pdf">Genetic Algorithm</a> to it. I chose the member positions as the &#8216;genome&#8217; and the displacement as the &#8216;unfitness&#8217; function. I implemented the GA logic in a few VBA macros that copy-paste genome values into the model&#8217;s input cells and copy-paste the resulting output back into the genome list. The results were surprising: the GA invariably bunched up all of the columns to the left and right of the bridge! Upon seeing this result, our professor got a little red in the face as he realized that this is indeed the most efficient solution to the model he has asked us to use: <a href="http://en.wikipedia.org/wiki/Truss">truss</a> members by definition only carry axial loads, so a single flat member across the span will show no displacement as it won&#8217;t be modelled to bend!</p>
 <h2>Download</h2>
 <ul>

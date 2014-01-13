@@ -316,6 +316,11 @@ social_links :
       url : http://www.twitter.com/nicolaskruchten
     - link :
       enabled : true
+      name: Google+
+      font_awesome_icon : icon-google-plus
+      url : https://plus.google.com/u/0/109686031518200863270?rel=author
+    - link :
+      enabled : true
       name : RSS Feed
       font_awesome_icon : icon-rss
       url : http://nicolas.kruchten.com/rss.xml

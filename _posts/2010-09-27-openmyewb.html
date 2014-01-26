@@ -12,12 +12,15 @@ tags:
 <p>From October 2005 to May 2010, myEWB.ca was Engineers Without Borders  Canada&#8217;s official online community system. During that time, tens of  thousands of people used myEWB to participate in thousands of online  conversations, send millions of emails, schedule hundreds of events,  share files, apply to serve overseas, register for conferences, pay  their membership dues and otherwise collaboratively work towards  eradicating poverty. As the team leader and major contributor to the  myEWB project, I am proud to be able to host a small page for OpenMyEWB:  the now-open-sourced software that powered myEWB.ca.</p>
 
 <!-- more -->
-<h2>Why myEWB?</h2>
+<h3>Why myEWB?</h3>
 <p>At the time of its inception (Spring 2005), no open-source or  reasonably-priced software was available to replace the existing EWB  Intranet, and meet EWB&#8217;s evolving needs. As a distributed organization  with centralized IT, EWB needed a federated online community system:  each chapter needed to be able to manage its own discussion board,  membership list, files, events etc, within a single centrally  administered system, which would provide certain types of cross-chapter  functionality (e.g. a central database, national mailing list, national  discussion board etc). None of the alternatives considered at the time  (Drupal, XOOPS, phpBB etc) provided this functionality. So it was  decided that the Intranet would be replaced by a new home-grown system:  myEWB. Launched in the Fall of 2005 with a small but powerful  feature-set, myEWB.ca continued to evolve to adapt to EWB&#8217;s changing  needs, with the eventual inclusion of all of the features listed below  and more.</p>
-<h2>OpenMyEWB</h2>
+
+<p>I did a 'short bit' presentation at <a href="http://www.bitnorth.com/2009/" target="_blank">Bitnorth 2009</a> about my feelings on myEWB and its history. The presentation is available as <a href="http://nicolas.kruchten.com/content/myEWB_bitnorth.pdf" target="_blank">PDF</a>, <a href="http://nicolas.kruchten.com/content/myEWB_bitnorth.pptx" target="_blank">PowerPoint</a> and <a href="http://nicolas.kruchten.com/content/myEWB_bitnorth.mp3" target="_blank">MP3</a>.</p>
+
+<h3>OpenMyEWB</h3>
 <p>OpenMyEWB is a lightly-refactored fork of the main myEWB.ca codebase.  All user-visible references to Engineers Without Borders were removed,  and the system was made a bit more generic and configurable. Some  features, such as myEWB&#8217;s original chapter reporting module, the LDAP  email-creation integration and the live chat system, were deemed to be  too EWB-specific or to have too many dependencies and were removed.</p>
 <p>OpenMyEWB is being made available as open-source partly on principle,  as software that was built for and by a non-profit and should be  shared, and partly in the hopes that some other organization might  eventually use it or be inspired by it.</p>
-<h2>Features</h2>
+<h3>Features</h3>
 <ul>
 <li>A federated structure: each chapter had its own set of online  community/groupware features, as did the organization as a whole.  Chapter members were by definition also EWB members, simplifying mailing  list and membership management. Chapter executives had administrative  powers over their members, National staff had full administrative  powers.</li>
 <li>Standard online community/groupware features: discussion boards,  mailing lists (with archiving), event calendars, file sharing, online  &#8220;whiteboards&#8221;, membership &amp; contact information management (N.B.  photo sharing beyond profile pictures was never in myEWB&#8217;s feature-set).</li>
@@ -30,14 +33,14 @@ tags:
 <li>Built-in Dashboard with live graphs summarizing system activity and usage.</li>
 <li>Detailed logging, with email error alerts.</li>
 </ul>
-<h2>Architecture &amp; Dependencies</h2>
+<h3>Architecture &amp; Dependencies</h3>
 <p>OpenMyEWB is a Java servlet-based system which can be deployed using  Tomcat. It uses Hibernate as an object-relational mapping layer on top  of mySQL and uses Velocity as a template layer. Its mailer system is  written in Perl, using Mail::Bulkmail. Logging is courtesy of log4j and  jQuery is used for JavaScript effects/AJAX. Graphing is courtesy of  JFreeChart. The OpenMyEWB stack is similar in structure to its more  modern web-framework cousins Rails and Django, having evolved partly  inspired by them, but is nowhere nearly as generalized. That said, we  found it flexible enough to add/remove complex sets of features in a  fairly decoupled way without too much fuss.</p>
 <p>Anyone wanting to deploy an installation of OpenMyEWB will need  access to a host capable of running Tomcat or another servlet container,  as well as a mySQL database. For bulk-mailing, access to Perl will be  required, as will an SMTP server. With a bit of modification, OpenMyEWB  could be made to run on other databases, such as PostgreSQL, and the  Perl components could conceivably be replaced by another equivalent  system written in any language.</p>
-<h2>Documentation</h2>
+<h3>Documentation</h3>
 <p>Installation and administration of OpenMyEWB is not for the faint of  heart or the non-technical, and its release is more of a vanity project  of only academic interest but if anyone wants to make a serious go of  using it or learning from it, I would gladly help out a little bit. A  readme can be found in the zip file with basic installation and  configuration instructions.</p>
-<h2>Licensing</h2>
+<h3>Licensing</h3>
 <p>OpenMyEWB is being released under the <a href="http://www.gnu.org/copyleft/gpl.html">General Public License, v3</a>,  Copyright 2005-2009 Nicolas Kruchten, Francis Kung, Engineers Without  Borders Canada, Michael Trauttmansdorff, Jon Fishbein, David Kadish</p>
-<h2>GitHub</h2>
+<h3>GitHub</h3>
 <ul>
 <li><a href="http://github.com/nicolaskruchten/OpenMyEWB">http://github.com/nicolaskruchten/OpenMyEWB</a></li>
 </ul>

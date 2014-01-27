@@ -27,7 +27,7 @@
 						{{ content }}
 
 						{% if page.relatedtag %}
-							<h3>Other posts tagged "{{page.relatedtag}}"</h3>
+							<h3 style="border-top: 1px solid #eee;">Other posts tagged "{{page.relatedtag}}"</h3>
 							<ul>
 							{% for related_post in site.tags[page.relatedtag] %}
 								{% if page.title != related_post.title%}

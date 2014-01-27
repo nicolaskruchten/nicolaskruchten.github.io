@@ -8,13 +8,13 @@ tags:
     - tools
 --- 
 
-<h2>The Problem</h2>
+<h3>The Problem</h3>
 <p>You&#8217;re part of a small-to-medium group of people who trust each other  and have some reason to spend time and money together (e.g. you have a  few housemates or you work in a friendly office environment). It&#8217;s a  huge hassle to constantly be requesting separate bills or lending each  other money and losing track of who owes who how much and for what. You  waste time quibbling over small amounts and people in your group don&#8217;t  like lending each other money or picking up the tab for lunch.</p>
-<h2>The Solution</h2>
+<h3>The Solution</h3>
 <p>Using this simple web application, a group of people who trust each  other can keep a running tab of how much they owe each other. This is  handy for figuring out such things as who should pay for groceries next  time (e.g. whoever owes the most) and generally makes people more  easy-going about spotting each other money or picking up lunch, as they  know they can keep track of it. With PHPTab, any member of your group  can be as lenient or penny-counting as they want, without ever having to  actually be constantly be trading small sums of money. It&#8217;s just a  matter of &#8220;putting it on their tab&#8221;.</p>
 <!-- more -->
 
-<h2>Features</h2>
+<h3>Features</h3>
 <ul>
 <li>Any member of the group with a computer/internet connection (and probably the password) can log or view the current debt</li>
 <li>The interface is intuitive: A owes B $X for reason Y (e.g. Nick owes Mike $15 because of a sushi lunch)</li>
@@ -22,9 +22,9 @@ tags:
 <li>It&#8217;s easy to add/remove people and macros</li>
 <li>It&#8217;s easy to modify if you want to add bells &amp; whistles or change the look&#8217;n'feel</li>
 </ul>
-<h2>Requirements</h2>
+<h3>Requirements</h3>
 <p>Access to a web server with PHP &amp; MySQL installed, and a little bit of web-savvy.</p>
-<h2>Documentation</h2>
+<h3>Documentation</h3>
 <h3>Installation</h3>
 <ol>
 <li>Edit dbinfo.php:
@@ -42,11 +42,11 @@ tags:
 <p>Before using PHPTab, and at various time during use, you will need to  add people or macros to the system. A person is one who can owe money. A  macro is sort of a shortcut which can split debt according to given  ratios. For example, Nick and Mike are people but NickandMike could be a  macro that splits debt between Nick and Mike 50-50.</p>
 <p>You can create macros and people by clicking on &#8216;edit targets&#8217; on the  main page. Under &#8216;splits&#8217; when creating a macro, you can specify them  in any form, they are normalized. For example, saying Nick: 3 and Mike: 2  will result in Nick owing 60% and Mike 40%. The same effect can be  achieved by using 6 and 4 or 0.6 and 0.4 or 30 and 20 etc etc. This is  handy when doing simple ratios like 3:4:5. You can view the splits for  macros in the system at the &#8216;view macros&#8217; page.</p>
 <p>You can also &#8216;deactivate&#8217; people or macros on that page, so that they  no longer appear in the from/to lists and no more transactions can  involve them. Note that only people with a balance of zero may be  deactivated, otherwise all the math gets thrown off. For the same  reason, if you deactivate a person, any macro they are a part of will be  deactivated, and the &#8216;delete&#8217; button will be hidden for any  transactions they took part in.</p>
-<h2>GitHub</h2>
+<h3>GitHub</h3>
 <ul>
 <li><a href="http://github.com/nicolaskruchten/PHPTab">http://github.com/nicolaskruchten/PHPTab</a></li>
 </ul>
-<h2>Acknowledgements</h2>
+<h3>Acknowledgements</h3>
 <p>A few bug fixes were contibuted by Adam Hasselbalch Hansen. Thanks Adam!</p>
-<h2>License</h2>
+<h3>License</h3>
 <p>This software is licensed under the <a href="http://creativecommons.org/licenses/GPL/2.0/">CC-GNU GPL</a>.</p>

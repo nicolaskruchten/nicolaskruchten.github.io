@@ -13,7 +13,7 @@ The Montreal municipal elections were just over two months ago but I played with
 
 <!-- more -->
 
-Before diving into the technical details though, I should mention that I wanted to make a [choropleth map][cm], in contrast to my [previous dot map][dm], at a ballot-box level (called 'section' level in the original data-set), and to display it on top of an actual Montreal street map. The dot map was neat but didn't really for much interactivity and actually made it pretty hard to read the results accurately or, ironically, mentally map the data onto Montreal itself, for lack of landmarks. I wanted to be able to mouse over a specific city block (i.e. mine!) and see the underlying numbers displayed in a pie chart. After playing with the notion of colouring the polygons in a blended red-green-blue colour scheme for the top 3 candidates like in my dot-map, I decided to colour the polygons by the 'winner' of each little area, which exposes the fact that even though he only got 10% of the overall vote, the fourth-place candidate Marcel Côté actually carried some neighbourhoods.
+Before diving into the technical details though, I should mention that I wanted to make a [choropleth map][cm], in contrast to my [previous dot map][dm], at a ballot-box level (called 'section' level in the original data-set), and to display it on top of an actual Montreal street map. The dot map was neat but didn't really for much interactivity and actually made it pretty hard to read the results accurately or, ironically, mentally map the data onto Montreal itself, for lack of landmarks. I wanted to be able to mouse over a specific city block (i.e. mine!) and see the underlying numbers displayed in a pie chart. After playing with the notion of colouring the polygons in a blended red-green-blue colour scheme for the top 3 candidates like in my dot-map, I decided to colour the polygons by the 'winner' of each little area, which exposes the fact that even though he only got 10% of the overall vote, the fourth-place candidate Marcel Côté actually carried some neighbourhoods. The intensity of the colour of each polygon is proportional to the 'vote density', or the number of votes over the area of the polygon, so that large, unpopulated areas don't visually dominate the map.
 
 The election results data comes from the [Montreal Open Data Portal][od] in the form of per-ballot-box results (number of votes per candidate) in a CSV file and per-ballot-box polygons in GeoJSON format: the catchment area for the households whose votes go into the box. I turned to a library called [Leaflet.js][lj] as a base framework for displaying a zoomable street map, Google Maps style, and then I just needed to draw some coloured polygons on top. The big challenge was that the actual results CSV file is 9 megs and the polygons GeoJSON file is 13 megs.
 
@@ -25,6 +25,10 @@ My R code, the TopoJSON command and the CoffeeScript code are all [available on 
 
 Edit: this map was made using only data from election day, and does not include data from the advance polling days, as it is not available down to the ballot-box level.
 
+Edit: the explanation above applies to [version 1.0][v1] of this map, which only included results for the election for the Mayor of Montreal. [Version 2.0][v2] of the map, which is the one that's live now, includes results for all 103 races, with various data compression tricks to achieve a further reduction in the size of the data being downloaded to less than 1 meg (JSON plus CSV).
+
+[v1]: https://github.com/nicolaskruchten/mtlelection2013bysection/releases/tag/v1.0
+[v1]: https://github.com/nicolaskruchten/mtlelection2013bysection/releases/tag/v2.0
 [map]: http://nicolas.kruchten.com/mtlelection2013bysection/
 [cm]: http://en.wikipedia.org/wiki/Choropleth_map
 [dm]: http://nicolas.kruchten.com/content/2013/12/dot-map-of-2013-montreal-election-results/

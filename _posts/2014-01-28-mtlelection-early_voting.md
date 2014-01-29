@@ -29,6 +29,8 @@ The graph below, based on the [ternary chart technique][tc] I detailed in anothe
 
 I doubt that early voters are distributed randomly or uniformly throughout the district they live in (apparently early voters are often senior citizens, or motivated partisans like me). It's therefore hard to say that one should mentally ascribe 20% more votes per ballot-box in my maps, skewed towards Coderre, but certainly despite their apparent precision, they leave out a fair number of votes.
 
+The R code I used to generate the graphs above is up on [Github][repo].
+
 [tc]: http://nicolas.kruchten.com/content/2014/01/mtlelection-ternary/
 [repo]: https://github.com/nicolaskruchten/mtlelection2013bydistrict
 [od]: http://donnees.ville.montreal.qc.ca/group/election-referendum

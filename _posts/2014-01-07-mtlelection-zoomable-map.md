@@ -23,14 +23,15 @@ So I wrote a simple R script which uses the fantastic [reshape2][rs] library fro
 
 My R code, the TopoJSON command and the CoffeeScript code are all [available on Github][repo].
 
-Edit: this map was made using only data from election day, and does not include data from the advance polling days, as it is not available down to the ballot-box level.
+**Edit**: this map was made using only data from election day, and does not include data from the advance polling days, as it is not available down to the ballot-box level. See [my analysis of early voting for more details][ev] on how this impacts the map.
 
-Edit: the explanation above applies to [version 1.0][v1] of this map, which only included results for the election for the Mayor of Montreal. [Version 2.0][v2] of the map, which is the one that's live now, includes results for all 103 races, with various data compression tricks to achieve a further reduction in the size of the data being downloaded to less than 1 meg (JSON plus CSV).
+**Edit**: the explanation above applies to [version 1.0][v1] of this map, which only included results for the election for the Mayor of Montreal. [Version 2.0][v2] of the map, which is the one that's live now, includes results for all 103 races, with various data compression tricks to achieve a further reduction in the size of the data being downloaded to less than 1 meg (JSON plus CSV).
 
 [v1]: https://github.com/nicolaskruchten/mtlelection2013bysection/releases/tag/v1.0
-[v1]: https://github.com/nicolaskruchten/mtlelection2013bysection/releases/tag/v2.0
+[v2]: https://github.com/nicolaskruchten/mtlelection2013bysection/releases/tag/v2.0
 [map]: http://nicolas.kruchten.com/mtlelection2013bysection/
 [cm]: http://en.wikipedia.org/wiki/Choropleth_map
+[ev]: http://nicolas.kruchten.com/content/2014/01/mtlelection-early-voting/
 [dm]: http://nicolas.kruchten.com/content/2013/12/dot-map-of-2013-montreal-election-results/
 [lj]: http://leafletjs.com
 [od]: http://donnees.ville.montreal.qc.ca/group/election-referendum

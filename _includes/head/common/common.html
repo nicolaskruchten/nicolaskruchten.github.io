@@ -32,8 +32,11 @@
 	{% elsif site.favicon.enabled and site.favicon.remote.enabled %}
 		<link rel="icon" type="image/{{ site.favicon.remote.type }}" href="{{ site.favicon.remote.full_url }}" />
 	{% endif %}
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:700|Open+Sans' rel='stylesheet' type='text/css'>
 	<style>
-	p { line-height: 25px; }
+	body { font-family: 'Open Sans'; -webkit-font-smoothing: antialiased;}
+	h1, h2, h3, h4, h5, h6 {font-family: 'Roboto Slab'; font-weight: normal;}
+	p { line-height: 1.5; }
 	</style>
 		<script>
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

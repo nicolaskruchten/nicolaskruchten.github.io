@@ -3,9 +3,9 @@ layout : post
 title : Volunteer Database for Santropol Roulant
 image: http://nicolas.kruchten.com/images/Volunteers.png
 github: nicolaskruchten/volunteerdb
-relatedtag: Tools
+relatedtag: tools
 tags:
-    - Tools
+    - tools
 ---
 
 There's an organization in Montreal I think is awesome called [Santropol Roulant][sr] which, among other things, has a meals-on-wheels operation. They have hundreds of volunteers and wanted to upgrade the system they used to store their volunteer information, so I helped them out, and I've [open-sourced the results][repo], in case any other non-profit wants a very simple volunteer-list management system.

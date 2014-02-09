@@ -10,6 +10,8 @@ tags:
 
 There's an organization in Montreal I think is awesome called [Santropol Roulant][sr] which, among other things, has a meals-on-wheels operation. They have hundreds of volunteers and wanted to upgrade the system they used to store their volunteer information, so I helped them out, and I've [open-sourced the results][repo], in case any other non-profit wants a very simple volunteer-list management system.
 
+<!-- more -->
+
 They had an existing system to manage volunteer information as part of a custom-made PHP web application so we didn't want to drift too too far from that. The core use-cases were to maintain volunteer contact (create, update, delete) information and retrieve it (search, read). The major pain-point in the old application was the edit form and the lack of usability in the form validation.
 
 I chose [CakePHP][cp] (2.2.3) as a framework to build on, so that it would be easier to find people to do maintenance later on. Also, being a well-tested framework, it correctly handles accented characters in form input, which was a major shortcoming of the existing application.

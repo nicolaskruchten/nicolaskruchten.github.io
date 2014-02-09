@@ -13,7 +13,7 @@
 						"author" : "{{ javascript_post.author | replace: '"', '\"' }}" , 
 						"description" : "{{ javascript_post.description | replace: '"', '\"' }}" , 
 						"url" : "{{ site.url }}{{ javascript_post.url | replace: '"', '\"' }}" , 
-						"date" : "{{ javascript_post.date | date_to_long_string | replace: '"', '\"' }}" , 
+						"date" : "{{ javascript_post.date | date: "%B %-d, %Y" | replace: '"', '\"' }}" , 
 						"category" : "{{ javascript_post.category | replace: ' ', '___' | capitalize | replace: '"', '\"' }}" , 
 						"tags" : 
 							[

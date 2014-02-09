@@ -42,7 +42,7 @@
 					{% if site.font_awesome.enabled %}
 						<i class="icon-pencil"></i> 
 					{% endif %}
-					Published on {{ page.date | date_to_long_string }}
+					Published on {{ page.date | date: "%B %-d, %Y" }}
 					<br>
 					{% if page.category.size > 0 %}
 						{% if site.font_awesome.enabled %}

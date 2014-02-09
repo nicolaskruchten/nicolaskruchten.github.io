@@ -11,7 +11,10 @@ exclude: false
 	{% for p in paginator.posts %}
 		<div class="ghpb-post">
 				{% if p.title %}
-					<h2><a href="{{ site.url }}{{ p.url }}" style="color: black;">{{ p.title }}</a></h2>
+					<h2>
+						<small>{{ p.date | date: "%B %-d, %Y" }}</small>
+						<br />
+						<a href="{{ site.url }}{{ p.url }}" style="color: black;">{{ p.title }}</a></h2>
 				{% else %}
 					<h2><a href="{{ site.url }}{{ p.url }}" style="color: black;">{{ site.description }}</a></h2>
 				{% endif %}
@@ -45,78 +48,10 @@ exclude: false
 				<br>
 				{{ p.excerpt }}
 				
-				<div class="row">
-					<div class="span5">
-						<small>
+				<p class="pull-right" style="margin-top: -25px"><small><a href="{{ site.url }}{{ p.url }}">Full post &raquo;</a>
+				</small></p>
 
-
-							{% if site.font_awesome.enabled %}
-								<i class="icon-pencil"></i> 
-							{% endif %}
-							Published on {{ p.date | date_to_long_string }}
-							<br>
-
-							{% assign enable_disqus_show_comments = false %}
-							{% if site.disqus.enabled and site.disqus.show_comment_count and p.disqus == null %}
-								{% assign enable_disqus_show_comments = true %}
-							{% elsif site.disqus.enabled and site.disqus.show_comment_count and p.disqus.enabled == null %}
-								{% assign enable_disqus_show_comments = true %}
-							{% elsif site.disqus.enabled and site.disqus.show_comment_count and p.disqus.enabled %}
-								{% assign enable_disqus_show_comments = true %}
-							{% endif %}
-
-							{% if enable_disqus_show_comments %}
-								{% if site.font_awesome.enabled %}
-									<i class="icon-comments"></i> 
-								{% endif %}
-								<a href="{{ site.url }}{{ p.url }}#disqus_thread">Comments</a>
-								<br>
-							{% endif %}
-
-							{% if p.tags.size > 0 %}
-								{% assign index_post_tag_names = null %}
-								{% capture index_post_tag_names %}
-									{% for index_post_t in p.tags %}
-										{{ index_post_t | replace: ' ', '___' }}
-									{% endfor %}
-								{% endcapture %}
-
-								{% capture index_post_sorted_tag_names %}
-									{{ index_post_tag_names | split:' ' | sort | join:' ' }}
-								{% endcapture %}
-
-								{% capture index_post_number_of_tags %}
-									{{ index_post_sorted_tag_names | number_of_words }}
-								{% endcapture %}
-
-								{% if site.font_awesome.enabled %}
-									<i class="icon-tags"></i> 
-								{% endif %}
-								Tagged 
-								{% assign index_post_first_tag = true %}
-								{% assign index_post_prev_tag = '' %}
-								{% for index_post_i in (1..index_post_number_of_tags) %}
-									{% capture index_post_tag %}{{ index_post_sorted_tag_names | truncatewords:index_post_i | remove:'...' | split:' ' | last }}{% endcapture %}
-									{% if index_post_prev_tag != index_post_tag %}
-										{% if index_post_first_tag %}
-											{% assign index_post_first_tag = false %}
-										{% else %}
-											, 
-										{% endif %}
-										{% assign index_post_prev_tag = index_post_tag %}
-										<a href="{{ site.url }}/filter.html?tag={{ index_post_tag }}">{{ index_post_tag | replace: '___', ' ' }}</a>
-									{% endif %}
-								{% endfor %}
-							{% endif %}
-						</small>
-					</div>
-					<div style="span1">
-						<p class="pull-right"><small><a href="{{ site.url }}{{ p.url }}">Full post &raquo;</a>
-						</small></p>
-					</div>
-				</div>
 		</div>
-		<br>
 		<br>
 	{% endfor %}
 
@@ -130,7 +65,7 @@ exclude: false
 						<a href="{{ site.url }}/page{{paginator.previous_page}}" class="previous">&laquo; Previous</a>
 					{% endif %}
 				{% endif %}
-				<span class="page_number">Page {{paginator.page}} of {{paginator.total_pages}}</span>
+				 &nbsp; <span class="page_number">Page {{paginator.page}} of {{paginator.total_pages}}</span> &nbsp; 
 
 				{% if paginator.next_page %}
 					<a href="{{ site.url }}/page{{paginator.next_page}}" class="next">Next &raquo;</a>

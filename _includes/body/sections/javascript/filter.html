@@ -19,9 +19,9 @@
 							[
 								{% for javascript_post_tag in javascript_post.tags %}
 									{% if forloop.first %}
-										"{{ javascript_post_tag | replace: ' ', '___' | replace: '"', '\"' | downcase }}"
+										"{{ javascript_post_tag | replace: ' ', '___' | replace: '"', '\"'  }}"
 									{% else %}
-										, "{{ javascript_post_tag | replace: ' ', '___' | replace: '"', '\"' | downcase }}"
+										, "{{ javascript_post_tag | replace: ' ', '___' | replace: '"', '\"' }}"
 									{% endif %}
 								{% endfor %}
 							]
@@ -108,7 +108,7 @@
 			$('div.page-header > h1').html('No category or tag supplied');
 			$('div[name="filter-body"]').html('<p>A category or a tag must be supplied as a parameter in order to get a filtered list of posts.</p>');
 		} else if (requested_tag !== null) {
-			$('div.page-header > h1').append(' tagged "' + requested_tag.replace(/___/g, ' ') + '"');
+			$('div.page-header > h1').text(requested_tag.replace(/___/g, ' '));
 			for (var i = 0; i < posts.length; i++) {
 				if (posts[i].tags !== null) {
 					for (var j = 0; j < posts[i].tags.length; j++) {

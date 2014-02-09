@@ -30,7 +30,7 @@
 				{% assign section_prev_tag = '' %}
 				{% for section_tag_i in (1..section_number_of_tags) %}
 					{% assign section_tag = null %}
-					{% capture section_tag %}{{ section_sorted_tag_names | truncatewords:section_tag_i | remove:'...' | split:' ' | last | downcase }}{% endcapture %}
+					{% capture section_tag %}{{ section_sorted_tag_names | truncatewords:section_tag_i | remove:'...' | split:' ' | last }}{% endcapture %}
 
 					{% if section_prev_tag != section_tag %}
 						{% assign section_prev_tag = section_tag %}
@@ -50,7 +50,7 @@
 									{% for navlist_tag_p_tag in navlist_tag_p.tags %}
 
 										{% assign navlist_tag_p_tag_name = null %}
-										{% capture navlist_tag_p_tag_name %}{{ navlist_tag_p_tag | replace: ' ', '___' | downcase }}{% endcapture %}
+										{% capture navlist_tag_p_tag_name %}{{ navlist_tag_p_tag | replace: ' ', '___' }}{% endcapture %}
 
 										{% if navlist_tag_p_tag_name == section_tag %}
 											{% if navlist_tag_p_match == false %}

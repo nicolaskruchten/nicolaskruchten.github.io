@@ -33,7 +33,7 @@
 					{% for navbar_tag_i in (1..navbar_number_of_tags) %}
 
 						{% assign navbar_tag = null %}
-						{% capture navbar_tag %}{{ navbar_sorted_tag_names | truncatewords:navbar_tag_i | remove:'...' | split:' ' | last | downcase }}{% endcapture %}
+						{% capture navbar_tag %}{{ navbar_sorted_tag_names | truncatewords:navbar_tag_i | remove:'...' | split:' ' | last }}{% endcapture %}
 
 						{% if navbar_prev_tag != navbar_tag %}
 							{% assign navbar_prev_tag = navbar_tag %}
@@ -50,7 +50,7 @@
 										{% assign navbar_tags_p_match = false %}
 										{% for navbar_tags_p_tag in navbar_tags_p.tags %}
 											{% assign navbar_tags_p_tag_name = null %}
-											{% capture navbar_tags_p_tag_name %}{{ navbar_tags_p_tag | replace: ' ', '___' | downcase }}{% endcapture %}
+											{% capture navbar_tags_p_tag_name %}{{ navbar_tags_p_tag | replace: ' ', '___' }}{% endcapture %}
 
 											{% if navbar_tags_p_tag_name == navbar_tag %}
 												{% if navbar_tags_p_match == false %}

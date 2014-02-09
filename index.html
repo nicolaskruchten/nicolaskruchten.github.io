@@ -96,7 +96,7 @@ exclude: false
 								{% assign index_post_first_tag = true %}
 								{% assign index_post_prev_tag = '' %}
 								{% for index_post_i in (1..index_post_number_of_tags) %}
-									{% capture index_post_tag %}{{ index_post_sorted_tag_names | truncatewords:index_post_i | remove:'...' | split:' ' | last | downcase }}{% endcapture %}
+									{% capture index_post_tag %}{{ index_post_sorted_tag_names | truncatewords:index_post_i | remove:'...' | split:' ' | last }}{% endcapture %}
 									{% if index_post_prev_tag != index_post_tag %}
 										{% if index_post_first_tag %}
 											{% assign index_post_first_tag = false %}
@@ -140,4 +140,4 @@ exclude: false
 	</div>
 
 {% endcapture %}
-{{ index_page_html | remove:'	' }}
+{{ index_page_html | strip_newlines | remove:'	' }}

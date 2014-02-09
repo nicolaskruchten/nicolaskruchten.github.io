@@ -3,10 +3,10 @@ layout : post
 title : Early Voting in the 2013 Montreal Election
 image: http://nicolas.kruchten.com/images/early/mosaic.png
 github: nicolaskruchten/mtlelection2013bydistrict
-relatedtag: open data
+relatedtag: Open Data
 tags:
-    - open data
-    - visualization
+    - Open Data
+    - Visualization
 ---
 
 Recently I made some maps of the 2013 Montreal municipal elections, showing voting results down to the ballot-box level, using data from the [Montreal Open Data Portal][od]. It turns out, however, that not all of the ballot boxes in that data set are associated with a small geographical area like the ones shown in my [by-ballot-box map][map], and furthermore, those ballot boxes have very different numbering schemes than the ones that do match up with small block-sized areas, numbers like 901 and 601 and 001A instead of small numbers from 1 to 100ish, like the others.

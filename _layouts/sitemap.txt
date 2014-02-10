@@ -1,5 +1,4 @@
 {% for p in site.pages %}{% unless p.exclude %}{{site.url}}{{ p.url }}
 {% endunless %}{% endfor %}{% for p in site.posts %}{{site.url}}{{ p.url }}
-{% endfor %}{% for t in site.tags %}{{site.url}}/filter.html?tag={{ t | first }}
 {% endfor %}{% for p in page.otherurls %}{{site.url}}{{ p }}
 {% endfor %}

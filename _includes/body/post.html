@@ -17,36 +17,47 @@
 			<div class="row">
 				<div class="span7 offset1">
 					<div class="ghpb-post">
-						{% include body/sections/header/post.html %}
-						{% include body/sections/alerts_and_notices/post.html %}
+
+						<h2>
+							<small>{{ page.date | date: "%B %-d, %Y" }}</small>
+							<br />
+							{{ page.title }}
+						</h2>
 
 						{% if page.image %}
 							<img src="{{ page.image }}" alt="{{page.title}}" />
 						{% endif %}
 
 						{{ content }}
-
-						{% if page.relatedtag %}
-							<h3 style="border-top: 1px solid #eee;">More {{page.relatedtag}} posts</h3>
-							<ul>
-							{% for related_post in site.tags[page.relatedtag] %}
-								{% if page.title != related_post.title%}
-									<li><a href="{{ site.url }}{{ related_post.url }}">{{related_post.title}}</a></li>
-								{% endif %}
-							{% endfor%}
-							</ul>
-						{% endif %}
-						<br />
-						
-
-						{% if enable_disqus %}
-							<br>
-							<br>
-							<div id="disqus_thread"></div>
-							<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-							<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-						{% endif %}
 					</div>
+					<br />
+					{% if page.relatedtag or page.github %}
+					<div class="row" style="border-top: 1px solid #eee;">
+						<div class="span4">
+							{% if page.relatedtag %}
+								<h3><i class="icon-tags"></i> More {{page.relatedtag}} posts</h3>
+								<ul>
+								{% for related_post in site.tags[page.relatedtag] %}
+									{% if page.title != related_post.title%}
+										<li><a href="{{ site.url }}{{ related_post.url }}">{{related_post.title}}</a></li>
+									{% endif %}
+								{% endfor%}
+								</ul>
+							{% endif %}
+							
+						</div>
+						<div class="span3">
+							{% if page.github %}
+								<h3><i class="icon-github"></i> Github Repository</h3>
+								<p>
+								Code from this post is up on Github at <a href="https://github.com/{{page.github}}" target="_blank">{{page.github}}</a>
+								</p>
+							{% endif %}
+
+						</div>
+					</div>
+					{% endif %}
+
 				</div>
 				<div class="span3">
 					{% include body/sections/brief-bio.html %}

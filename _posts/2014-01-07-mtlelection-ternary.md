@@ -47,8 +47,6 @@ I also made a similar plot in R to show the results for the nearly 4,000 'sectio
 
 ![Ternary Plot by Section](http://nicolas.kruchten.com/images/ternary/ternary_by_section.png)
 
-The D3 and/or R code for generating all the graphics shown here is [available on Github][repo]
-
 [repo]: https://github.com/nicolaskruchten/mtlelection2013bydistrict
 [iv]: http://nicolas.kruchten.com/mtlelection2013bydistrict
 [viz]: http://nicolas.kruchten.com/filter.html?tag=open___data

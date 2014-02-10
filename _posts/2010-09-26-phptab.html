@@ -24,7 +24,6 @@ tags:
 </ul>
 <h3>Requirements</h3>
 <p>Access to a web server with PHP &amp; MySQL installed, and a little bit of web-savvy.</p>
-<h3>Documentation</h3>
 <h3>Installation</h3>
 <ol>
 <li>Edit dbinfo.php:
@@ -37,16 +36,12 @@ tags:
 <li>(Optional but recommended) Use .htaccess or something similar to put a password on the directory</li>
 </ol>
 <h3>Usage</h3>
-<p>Using the system is really simple, just fill in the form to record a  transaction. &#8216;From&#8217; and &#8216;to&#8217; indicate who is doing the lending or paying  and who is doing the receiving, respectively. One cannot go &#8216;from&#8217; a  macro but if you really know what you&#8217;re doing, you can go &#8216;from&#8217; a  person &#8216;to&#8217; a macro with a negative value. An interesting feature is  that the &#8216;amount&#8217; can be a simple mathematical expression  like  (1+(2*3)).</p>
+<p>Using the system is really simple, just fill in the form to record a  transaction. &#8216;From&#8217; and &#8216;to&#8217; indicate who is doing the lending or paying  and who is doing the receiving, respectively. One cannot go &#8216;from&#8217; a  macro but if you really know what you&#8217;re doing, you can go &#8216;from&#8217; a  person &#8216;to&#8217; a macro with a negative value.</p>
 <h3>People and Macros</h3>
 <p>Before using PHPTab, and at various time during use, you will need to  add people or macros to the system. A person is one who can owe money. A  macro is sort of a shortcut which can split debt according to given  ratios. For example, Nick and Mike are people but NickandMike could be a  macro that splits debt between Nick and Mike 50-50.</p>
 <p>You can create macros and people by clicking on &#8216;edit targets&#8217; on the  main page. Under &#8216;splits&#8217; when creating a macro, you can specify them  in any form, they are normalized. For example, saying Nick: 3 and Mike: 2  will result in Nick owing 60% and Mike 40%. The same effect can be  achieved by using 6 and 4 or 0.6 and 0.4 or 30 and 20 etc etc. This is  handy when doing simple ratios like 3:4:5. You can view the splits for  macros in the system at the &#8216;view macros&#8217; page.</p>
 <p>You can also &#8216;deactivate&#8217; people or macros on that page, so that they  no longer appear in the from/to lists and no more transactions can  involve them. Note that only people with a balance of zero may be  deactivated, otherwise all the math gets thrown off. For the same  reason, if you deactivate a person, any macro they are a part of will be  deactivated, and the &#8216;delete&#8217; button will be hidden for any  transactions they took part in.</p>
-<h3>GitHub</h3>
-<ul>
-<li><a href="http://github.com/nicolaskruchten/PHPTab">http://github.com/nicolaskruchten/PHPTab</a></li>
-</ul>
+
 <h3>Acknowledgements</h3>
 <p>A few bug fixes were contibuted by Adam Hasselbalch Hansen. Thanks Adam!</p>
-<h3>License</h3>
-<p>This software is licensed under the <a href="http://creativecommons.org/licenses/GPL/2.0/">CC-GNU GPL</a>.</p>
+

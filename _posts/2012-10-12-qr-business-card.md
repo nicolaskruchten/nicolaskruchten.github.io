@@ -1,6 +1,6 @@
 ---
 layout: post
-title: QR-Code Business Card
+title: My QR-Code Business Card
 image: http://nicolas.kruchten.com/images/card_back.png
 relatedtag: Datacratic
 tags:

@@ -287,12 +287,12 @@ social_links :
     - link :
       enabled : true
       name : Email
-      font_awesome_icon : icon-envelope
+      font_awesome_icon : icon-envelope-alt
       url : mailto:nicolas@kruchten.com
     - link :
       enabled : true
       name : Résumé
-      font_awesome_icon : icon-file-alt
+      font_awesome_icon : icon-file-text-alt
       url : http://nicolas.kruchten.com/cv.html
     - link :
       enabled : true
@@ -304,6 +304,11 @@ social_links :
       name : GitHub
       font_awesome_icon : icon-github-alt
       url : https://github.com/nicolaskruchten
+    - link :
+      enabled : true
+      name : StackOverflow
+      font_awesome_icon : icon-stackexchange
+      url : http://stackoverflow.com/users/112871/nicolaskruchten
     - link :
       enabled : true
       name : Linkedin

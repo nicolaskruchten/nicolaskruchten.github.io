@@ -28,6 +28,7 @@ brand : nicolas.kruchten.com
 description : false
 url : http://nicolas.kruchten.com
 #url : http://air.local:4000
+markdown: kramdown
 email : nicolas@kruchten.com
 author: Nicolas Kruchten
 

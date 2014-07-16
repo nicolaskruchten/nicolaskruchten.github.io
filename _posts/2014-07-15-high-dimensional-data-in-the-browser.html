@@ -1,0 +1,15 @@
+---
+layout : redirect
+title : Visualizing High-Dimensional Data in the Browser with SVD, t-SNE and Three.js
+dest: http://datacratic.com/site/blog/visualizing-high-dimensional-data-browser-svd-t-sne-and-threejs
+tags:
+    - Datacratic
+    - Visualization
+--- 
+
+
+<p style="text-align: center;">
+<iframe allowfullscreen="" frameborder="0" height="315" src="//www.youtube.com/embed/tAyxViXNExw" width="420"></iframe></p>
+
+
+Data visualization, by definition, involves making a two- or three-dimensional picture of data, so when the data being visualized inherently has many more dimensions than two or three, a big component of data visualization is dimensionality reduction. Dimensionality reduction is also often the first step in a big-data machine-learning pipeline, because most machine-learning algorithms suffer from the Curse of Dimensionality: more dimensions in the input means you need exponentially more training data to create a good model. Datacratic’s products operate on billions of data points (big data) in tens of thousands of dimensions (big problem), and in this post, we show off a proof of concept for interactively visualizing this kind of data in a browser, in 3D (of course, the images on the screen are two-dimensional but we use motion and perspective to evoke a third dimension).

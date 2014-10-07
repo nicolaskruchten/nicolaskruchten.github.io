@@ -1,6 +1,6 @@
 ---
 layout : post
-title : VisMtl: Maps, Tools, Stories
+title : "VisMtl: Maps, Tools, Stories"
 image: http://nicolas.kruchten.com/images/vismtl.jpg
 relatedtag: Visualization
 tags:

@@ -2,6 +2,7 @@
 layout : post
 title : "VisMtl: Maps, Tools, Stories"
 image: http://nicolas.kruchten.com/images/vismtl.jpg
+github: nicolaskruchten/vismtl
 relatedtag: Visualization
 tags:
     - Visualization

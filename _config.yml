@@ -307,6 +307,11 @@ social_links :
       url : https://github.com/nicolaskruchten
     - link :
       enabled : true
+      name : Goodreads
+      font_awesome_icon : icon-book
+      url : https://goodreads.com/nicolaskruchten
+    - link :
+      enabled : true
       name : StackOverflow
       font_awesome_icon : icon-stackexchange
       url : http://stackoverflow.com/users/112871/nicolaskruchten

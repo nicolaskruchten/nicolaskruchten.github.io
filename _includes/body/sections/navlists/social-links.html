@@ -10,19 +10,9 @@
 		{% endfor %}
 
 		{% if section_enabled_social_link %}
-			<div class="well ghpb-well-navlist">
+			<div class=" ghpb-well-navlist">
 				<ul class="nav nav-list ghpb-nav-list">
-					<li class="nav-header ghpb-nav-header">
-						{% if site.font_awesome.enabled %}
-							<i class="icon-circle-blank"></i> 
-						{% endif %}
 
-						{% if site.social_links.follow_name %}
-							Follow {{ site.social_links.follow_name }}
-						{% else %}
-							Follow Me
-						{% endif %}
-					</li>
 					{% for section_social_link in site.social_links.links %}
 						{% if section_social_link.enabled %}
 							<li>

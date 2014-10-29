@@ -1,7 +1,6 @@
 {% if site.sections.brief_bio.enabled %}
 	{% assign section_brief_bio_html = null %}
 	{% capture section_brief_bio_html %}
-		<div class="well">
 			{% if site.sections.brief_bio.image.enabled %}
 
 					<img style="width: 200px; margin: 0 auto;" alt="Nicolas Kruchten" src="{{ site.sections.brief_bio.image.url }}" class="thumbnail">
@@ -16,7 +15,6 @@
 			{% endif %}
 			{% include body/sections/brief_bio/social-links.html %}
 			{% include body/sections/brief_bio/github-projects.html %}
-		</div>
 	{% endcapture %}
 	{{ section_brief_bio_html | strip_newlines | remove:'	' }}
 {% endif %}

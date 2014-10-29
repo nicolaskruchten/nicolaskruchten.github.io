@@ -1,3 +1,6 @@
+
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:400');
+
 .ghpb-well-outline {
   background-color: transparent; 
 }
@@ -23,6 +26,33 @@
 
 .ghpb-post p {
   font-size: 18px;
-  line-height: 1.6;
-  margin-bottom: 20px;
+  line-height: 1.8;
+  margin-bottom: 22px;
 }
+
+  @font-face {
+  font-family: 'Museo Slab 700';
+  src: url('../font/Museo_Slab_700-webfont.eot');
+  src: url('../font/Museo_Slab_700-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../font/Museo_Slab_700-webfont.woff') format('woff'),
+       url('../font/Museo_Slab_700-webfont.ttf') format('truetype'),
+       url('../font/Museo_Slab_700-webfont.svg#MuseoSlab700Regular') format('svg');
+  font-weight: bold;
+  font-style: normal;
+
+}
+
+
+    body { 
+      font-family: 'Open Sans'; 
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility
+    }
+    h1, h2, h3, h4, h5, h6, .brand {font-family: 'Museo Slab 700';}
+    p { line-height: 1.5; }
+    
+    li [class^="icon-"], .nav li [class^="icon-"], li [class*=" icon-"], .nav li [class*=" icon-"] {
+    display: inline-block;
+    width: 1.25em;
+    text-align: center;
+    }

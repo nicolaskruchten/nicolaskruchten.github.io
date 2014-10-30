@@ -30,6 +30,11 @@
   margin-bottom: 22px;
 }
 
+.bio p {
+  margin: 10px auto;
+  width: 240px;
+}
+
   @font-face {
   font-family: 'Museo Slab 700';
   src: url('../font/Museo_Slab_700-webfont.eot');

@@ -3,12 +3,11 @@
 	{% capture section_brief_bio_html %}
 			{% if site.sections.brief_bio.image.enabled %}
 
-					<img style="width: 200px; margin: 0 auto;" alt="Nicolas Kruchten" src="{{ site.sections.brief_bio.image.url }}" class="thumbnail">
+					<img style="width: 150px; margin: 0 auto;" alt="Nicolas Kruchten" src="{{ site.sections.brief_bio.image.url }}" class="thumbnail">
 
 			{% endif %}
 			
 			{% if site.sections.brief_bio.content.enabled %}
-				<br>
 				<div class="text-center">
 					{% include content/brief-bio.html %}
 				</div>

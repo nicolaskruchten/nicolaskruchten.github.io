@@ -30,6 +30,12 @@
   margin-bottom: 22px;
 }
 
+.ghpb-post li {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 5px;
+}
+
 .bio p {
   margin: 10px auto;
   width: 240px;

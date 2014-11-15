@@ -3,7 +3,7 @@ layout: redirect
 title: Peeking Into the Black Box, Part 3 - Beyond Surplus
 dest: http://datacratic.com/site/blog/peeking-black-box-part-3-beyond-surplus
 tags:
-    - RTB
+    - Real-Time Bidding
     - Datacratic
 ---
 

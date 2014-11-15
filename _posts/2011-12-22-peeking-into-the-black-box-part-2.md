@@ -4,7 +4,7 @@ title: Peeking Into the Black Box, Part 2 - Algorithm Meets World
 image: http://nicolas.kruchten.com/content/wp-content/uploads/2011/12/Prezi006.jpg
 dest: http://datacratic.com/site/blog/peeking-black-box-part-2-algorithm-meets-world
 tags:
-    - RTB
+    - Real-Time Bidding
     - Datacratic
 ---
 

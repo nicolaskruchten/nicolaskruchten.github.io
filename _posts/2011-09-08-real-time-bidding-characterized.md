@@ -3,7 +3,7 @@ layout: redirect
 title: Real Time Bidding, Characterized
 dest: http://datacratic.com/site/blog/real-time-bidding-characterized
 tags:
-    - RTB
+    - Real-Time Bidding
     - Datacratic
 ---
 

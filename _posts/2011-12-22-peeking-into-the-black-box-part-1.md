@@ -4,7 +4,7 @@ title: Peeking Into the Black Box, Part 1 - Datacratic’s RTB Algorithms
 image: http://nicolas.kruchten.com/content/wp-content/uploads/2011/12/Surplus.png
 dest: http://datacratic.com/site/blog/peeking-black-box-part-1-datacratic%E2%80%99s-rtb-algorithms
 tags:
-    - RTB
+    - Real-Time Bidding
     - Datacratic
 ---
 

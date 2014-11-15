@@ -2,9 +2,9 @@
 layout : post
 title : A Modest Proposal for Ethical Ad Blocking
 image: http://nicolas.kruchten.com/images/modest/youradhere.png
-relatedtag: RTB
+relatedtag: Real-Time Bidding
 tags:
-    - RTB
+    - Real-Time Bidding
 ---
 
 If you've ever been browsing the web and been annoyed by those [One Weird Trick ads][owt], or by ads for that product you looked at online last month and then bought offline, you've probably given a thought to blocking ads altogether. The response to this idea, from people who run websites for a living, ranges from "it's unethical" to "it's stealing!". According to them, the reason you get to use a website without paying for it yourself is that in exchange you see ads and website owners gets paid by the advertisers. That’s a polite summary of the great [Ad-Blocking Debate][abd], which has been going on since the early days of the commercial web. I'm not going to take sides here; rather I'll propose a compromise enabled by a recent development in online advertising technology. I'm going to describe a "weird trick," if you will: how to use the same system as those ads that follow you around to *block* ads, all the while ensuring that the websites you frequent have nothing to complain about.

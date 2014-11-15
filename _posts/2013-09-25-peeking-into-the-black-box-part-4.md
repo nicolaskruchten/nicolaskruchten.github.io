@@ -3,7 +3,7 @@ layout: redirect
 title: Peeking Into the Black Box, Part 4 - Shady Bidding
 dest: http://datacratic.com/site/blog/peeking-black-box-part-4-shady-bidding
 tags:
-    - RTB
+    - Real-Time Bidding
     - Datacratic
 ---
 

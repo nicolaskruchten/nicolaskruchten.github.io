@@ -1640,7 +1640,7 @@ year,month,borough,district,category,calls
 2008,2,Rosemont-La Petite-Patrie,Vieux-Rosemont,Taxes,26
 2008,2,Rosemont-La Petite-Patrie,Vieux-Rosemont,Voirie,15
 2008,2,Saint-Laurent,Cote-de-Liesse,Anomaly - Stationnement,1
-2008,2,Saint-Laurent,Cote-de-Liesse,Anomaly - Surveillance,337
+2008,2,Saint-Laurent,Cote-de-Liesse,Anomaly - Surveillance,338
 2008,2,Saint-Laurent,Cote-de-Liesse,Arbre,4
 2008,2,Saint-Laurent,Cote-de-Liesse,Autre,280
 2008,2,Saint-Laurent,Cote-de-Liesse,Chien,10
@@ -1654,7 +1654,7 @@ year,month,borough,district,category,calls
 2008,2,Saint-Laurent,Cote-de-Liesse,Neige,145
 2008,2,Saint-Laurent,Cote-de-Liesse,Parc,12
 2008,2,Saint-Laurent,Cote-de-Liesse,Permis,8
-2008,2,Saint-Laurent,Cote-de-Liesse,Securite,8
+2008,2,Saint-Laurent,Cote-de-Liesse,Securite,7
 2008,2,Saint-Laurent,Cote-de-Liesse,Signalisation,27
 2008,2,Saint-Laurent,Cote-de-Liesse,Stationnement,56
 2008,2,Saint-Laurent,Cote-de-Liesse,Taxes,33
@@ -2583,7 +2583,7 @@ year,month,borough,district,category,calls
 2008,3,Rosemont-La Petite-Patrie,Vieux-Rosemont,Taxes,15
 2008,3,Rosemont-La Petite-Patrie,Vieux-Rosemont,Voirie,50
 2008,3,Saint-Laurent,Cote-de-Liesse,Anomaly - Stationnement,5
-2008,3,Saint-Laurent,Cote-de-Liesse,Anomaly - Surveillance,232
+2008,3,Saint-Laurent,Cote-de-Liesse,Anomaly - Surveillance,233
 2008,3,Saint-Laurent,Cote-de-Liesse,Arbre,7
 2008,3,Saint-Laurent,Cote-de-Liesse,Autre,252
 2008,3,Saint-Laurent,Cote-de-Liesse,Chien,15
@@ -2597,7 +2597,7 @@ year,month,borough,district,category,calls
 2008,3,Saint-Laurent,Cote-de-Liesse,Neige,252
 2008,3,Saint-Laurent,Cote-de-Liesse,Parc,5
 2008,3,Saint-Laurent,Cote-de-Liesse,Permis,16
-2008,3,Saint-Laurent,Cote-de-Liesse,Securite,8
+2008,3,Saint-Laurent,Cote-de-Liesse,Securite,7
 2008,3,Saint-Laurent,Cote-de-Liesse,Signalisation,23
 2008,3,Saint-Laurent,Cote-de-Liesse,Stationnement,9
 2008,3,Saint-Laurent,Cote-de-Liesse,Taxes,26
@@ -3556,7 +3556,7 @@ year,month,borough,district,category,calls
 2008,4,Rosemont-La Petite-Patrie,Vieux-Rosemont,Taxes,2
 2008,4,Rosemont-La Petite-Patrie,Vieux-Rosemont,Voirie,96
 2008,4,Saint-Laurent,Cote-de-Liesse,Anomaly - Maisons fleuries,1
-2008,4,Saint-Laurent,Cote-de-Liesse,Anomaly - Surveillance,215
+2008,4,Saint-Laurent,Cote-de-Liesse,Anomaly - Surveillance,216
 2008,4,Saint-Laurent,Cote-de-Liesse,Arbre,25
 2008,4,Saint-Laurent,Cote-de-Liesse,Autre,262
 2008,4,Saint-Laurent,Cote-de-Liesse,Chien,64
@@ -3570,12 +3570,12 @@ year,month,borough,district,category,calls
 2008,4,Saint-Laurent,Cote-de-Liesse,Neige,6
 2008,4,Saint-Laurent,Cote-de-Liesse,Parc,15
 2008,4,Saint-Laurent,Cote-de-Liesse,Permis,15
-2008,4,Saint-Laurent,Cote-de-Liesse,Securite,4
+2008,4,Saint-Laurent,Cote-de-Liesse,Securite,3
 2008,4,Saint-Laurent,Cote-de-Liesse,Signalisation,22
 2008,4,Saint-Laurent,Cote-de-Liesse,Stationnement,8
 2008,4,Saint-Laurent,Cote-de-Liesse,Taxes,85
 2008,4,Saint-Laurent,Cote-de-Liesse,Voirie,51
-2008,4,Saint-Laurent,Norman-McLaren,Anomaly - Surveillance,115
+2008,4,Saint-Laurent,Norman-McLaren,Anomaly - Surveillance,116
 2008,4,Saint-Laurent,Norman-McLaren,Arbre,31
 2008,4,Saint-Laurent,Norman-McLaren,Autre,200
 2008,4,Saint-Laurent,Norman-McLaren,Chien,65
@@ -3588,7 +3588,7 @@ year,month,borough,district,category,calls
 2008,4,Saint-Laurent,Norman-McLaren,Environnement,52
 2008,4,Saint-Laurent,Norman-McLaren,Parc,15
 2008,4,Saint-Laurent,Norman-McLaren,Permis,5
-2008,4,Saint-Laurent,Norman-McLaren,Securite,5
+2008,4,Saint-Laurent,Norman-McLaren,Securite,4
 2008,4,Saint-Laurent,Norman-McLaren,Signalisation,16
 2008,4,Saint-Laurent,Norman-McLaren,Stationnement,61
 2008,4,Saint-Laurent,Norman-McLaren,Taxes,58
@@ -4052,6 +4052,7 @@ year,month,borough,district,category,calls
 2008,5,L'Ile-Bizard-Sainte-Genevieve,Denis-Benjamin-Viger,Parc,2
 2008,5,L'Ile-Bizard-Sainte-Genevieve,Denis-Benjamin-Viger,Securite,29
 2008,5,L'Ile-Bizard-Sainte-Genevieve,Denis-Benjamin-Viger,Voirie,31
+2008,5,L'Ile-Bizard-Sainte-Genevieve,Jacques-Bizard,Anomaly - Maisons fleuries,1
 2008,5,L'Ile-Bizard-Sainte-Genevieve,Jacques-Bizard,Anomaly - Stationnement,1
 2008,5,L'Ile-Bizard-Sainte-Genevieve,Jacques-Bizard,Arbre,7
 2008,5,L'Ile-Bizard-Sainte-Genevieve,Jacques-Bizard,Autre,11
@@ -4062,7 +4063,6 @@ year,month,borough,district,category,calls
 2008,5,L'Ile-Bizard-Sainte-Genevieve,Jacques-Bizard,Eau,3
 2008,5,L'Ile-Bizard-Sainte-Genevieve,Jacques-Bizard,Eclairage,1
 2008,5,L'Ile-Bizard-Sainte-Genevieve,Jacques-Bizard,Egout,3
-2008,5,L'Ile-Bizard-Sainte-Genevieve,Jacques-Bizard,Environnement,1
 2008,5,L'Ile-Bizard-Sainte-Genevieve,Jacques-Bizard,Neige,2
 2008,5,L'Ile-Bizard-Sainte-Genevieve,Jacques-Bizard,Permis,2
 2008,5,L'Ile-Bizard-Sainte-Genevieve,Jacques-Bizard,Securite,30
@@ -4207,6 +4207,7 @@ year,month,borough,district,category,calls
 2008,5,Le Plateau-Mont-Royal,Mile-End,Stationnement,26
 2008,5,Le Plateau-Mont-Royal,Mile-End,Taxes,15
 2008,5,Le Plateau-Mont-Royal,Mile-End,Voirie,114
+2008,5,Mercier-Hochelaga-Maisonneuve,Hochelaga,Anomaly - Maisons fleuries,6
 2008,5,Mercier-Hochelaga-Maisonneuve,Hochelaga,Anomaly - Stationnement,25
 2008,5,Mercier-Hochelaga-Maisonneuve,Hochelaga,Arbre,31
 2008,5,Mercier-Hochelaga-Maisonneuve,Hochelaga,Autre,37
@@ -4217,7 +4218,7 @@ year,month,borough,district,category,calls
 2008,5,Mercier-Hochelaga-Maisonneuve,Hochelaga,Eau,40
 2008,5,Mercier-Hochelaga-Maisonneuve,Hochelaga,Eclairage,15
 2008,5,Mercier-Hochelaga-Maisonneuve,Hochelaga,Egout,21
-2008,5,Mercier-Hochelaga-Maisonneuve,Hochelaga,Environnement,40
+2008,5,Mercier-Hochelaga-Maisonneuve,Hochelaga,Environnement,34
 2008,5,Mercier-Hochelaga-Maisonneuve,Hochelaga,Parc,12
 2008,5,Mercier-Hochelaga-Maisonneuve,Hochelaga,Permis,21
 2008,5,Mercier-Hochelaga-Maisonneuve,Hochelaga,Securite,8
@@ -4523,9 +4524,9 @@ year,month,borough,district,category,calls
 2008,5,Rosemont-La Petite-Patrie,Vieux-Rosemont,Stationnement,7
 2008,5,Rosemont-La Petite-Patrie,Vieux-Rosemont,Taxes,6
 2008,5,Rosemont-La Petite-Patrie,Vieux-Rosemont,Voirie,89
-2008,5,Saint-Laurent,Cote-de-Liesse,Anomaly - Maisons fleuries,494
+2008,5,Saint-Laurent,Cote-de-Liesse,Anomaly - Maisons fleuries,497
 2008,5,Saint-Laurent,Cote-de-Liesse,Anomaly - Stationnement,1
-2008,5,Saint-Laurent,Cote-de-Liesse,Anomaly - Surveillance,147
+2008,5,Saint-Laurent,Cote-de-Liesse,Anomaly - Surveillance,148
 2008,5,Saint-Laurent,Cote-de-Liesse,Arbre,60
 2008,5,Saint-Laurent,Cote-de-Liesse,Autre,344
 2008,5,Saint-Laurent,Cote-de-Liesse,Chien,34
@@ -4535,15 +4536,15 @@ year,month,borough,district,category,calls
 2008,5,Saint-Laurent,Cote-de-Liesse,Eau,43
 2008,5,Saint-Laurent,Cote-de-Liesse,Eclairage,17
 2008,5,Saint-Laurent,Cote-de-Liesse,Egout,6
-2008,5,Saint-Laurent,Cote-de-Liesse,Environnement,134
+2008,5,Saint-Laurent,Cote-de-Liesse,Environnement,131
 2008,5,Saint-Laurent,Cote-de-Liesse,Parc,27
 2008,5,Saint-Laurent,Cote-de-Liesse,Permis,17
-2008,5,Saint-Laurent,Cote-de-Liesse,Securite,6
+2008,5,Saint-Laurent,Cote-de-Liesse,Securite,5
 2008,5,Saint-Laurent,Cote-de-Liesse,Signalisation,15
 2008,5,Saint-Laurent,Cote-de-Liesse,Stationnement,3
 2008,5,Saint-Laurent,Cote-de-Liesse,Taxes,64
 2008,5,Saint-Laurent,Cote-de-Liesse,Voirie,49
-2008,5,Saint-Laurent,Norman-McLaren,Anomaly - Maisons fleuries,444
+2008,5,Saint-Laurent,Norman-McLaren,Anomaly - Maisons fleuries,447
 2008,5,Saint-Laurent,Norman-McLaren,Anomaly - Surveillance,26
 2008,5,Saint-Laurent,Norman-McLaren,Arbre,47
 2008,5,Saint-Laurent,Norman-McLaren,Autre,240
@@ -4554,7 +4555,7 @@ year,month,borough,district,category,calls
 2008,5,Saint-Laurent,Norman-McLaren,Eau,24
 2008,5,Saint-Laurent,Norman-McLaren,Eclairage,24
 2008,5,Saint-Laurent,Norman-McLaren,Egout,1
-2008,5,Saint-Laurent,Norman-McLaren,Environnement,56
+2008,5,Saint-Laurent,Norman-McLaren,Environnement,53
 2008,5,Saint-Laurent,Norman-McLaren,Parc,19
 2008,5,Saint-Laurent,Norman-McLaren,Permis,9
 2008,5,Saint-Laurent,Norman-McLaren,Securite,1
@@ -4595,6 +4596,7 @@ year,month,borough,district,category,calls
 2008,5,Saint-Leonard,Saint-Leonard-Ouest,Signalisation,6
 2008,5,Saint-Leonard,Saint-Leonard-Ouest,Taxes,214
 2008,5,Saint-Leonard,Saint-Leonard-Ouest,Voirie,50
+2008,5,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Anomaly - Maisons fleuries,8
 2008,5,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Anomaly - Stationnement,42
 2008,5,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Arbre,41
 2008,5,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Autre,64
@@ -4605,7 +4607,7 @@ year,month,borough,district,category,calls
 2008,5,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Eau,55
 2008,5,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Eclairage,25
 2008,5,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Egout,22
-2008,5,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Environnement,77
+2008,5,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Environnement,69
 2008,5,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Neige,1
 2008,5,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Parc,28
 2008,5,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Permis,26
@@ -5472,7 +5474,7 @@ year,month,borough,district,category,calls
 2008,6,Rosemont-La Petite-Patrie,Vieux-Rosemont,Voirie,101
 2008,6,Saint-Laurent,Cote-de-Liesse,Anomaly - Maisons fleuries,33
 2008,6,Saint-Laurent,Cote-de-Liesse,Anomaly - Stationnement,1
-2008,6,Saint-Laurent,Cote-de-Liesse,Anomaly - Surveillance,538
+2008,6,Saint-Laurent,Cote-de-Liesse,Anomaly - Surveillance,539
 2008,6,Saint-Laurent,Cote-de-Liesse,Arbre,92
 2008,6,Saint-Laurent,Cote-de-Liesse,Autre,457
 2008,6,Saint-Laurent,Cote-de-Liesse,Chien,20
@@ -5486,7 +5488,7 @@ year,month,borough,district,category,calls
 2008,6,Saint-Laurent,Cote-de-Liesse,Neige,1
 2008,6,Saint-Laurent,Cote-de-Liesse,Parc,164
 2008,6,Saint-Laurent,Cote-de-Liesse,Permis,12
-2008,6,Saint-Laurent,Cote-de-Liesse,Securite,4
+2008,6,Saint-Laurent,Cote-de-Liesse,Securite,3
 2008,6,Saint-Laurent,Cote-de-Liesse,Signalisation,22
 2008,6,Saint-Laurent,Cote-de-Liesse,Stationnement,18
 2008,6,Saint-Laurent,Cote-de-Liesse,Taxes,61
@@ -6424,7 +6426,7 @@ year,month,borough,district,category,calls
 2008,7,Rosemont-La Petite-Patrie,Vieux-Rosemont,Stationnement,15
 2008,7,Rosemont-La Petite-Patrie,Vieux-Rosemont,Taxes,12
 2008,7,Rosemont-La Petite-Patrie,Vieux-Rosemont,Voirie,70
-2008,7,Saint-Laurent,Cote-de-Liesse,Anomaly - Surveillance,1038
+2008,7,Saint-Laurent,Cote-de-Liesse,Anomaly - Surveillance,1040
 2008,7,Saint-Laurent,Cote-de-Liesse,Arbre,84
 2008,7,Saint-Laurent,Cote-de-Liesse,Autre,582
 2008,7,Saint-Laurent,Cote-de-Liesse,Chien,74
@@ -6437,7 +6439,7 @@ year,month,borough,district,category,calls
 2008,7,Saint-Laurent,Cote-de-Liesse,Environnement,160
 2008,7,Saint-Laurent,Cote-de-Liesse,Parc,307
 2008,7,Saint-Laurent,Cote-de-Liesse,Permis,11
-2008,7,Saint-Laurent,Cote-de-Liesse,Securite,11
+2008,7,Saint-Laurent,Cote-de-Liesse,Securite,9
 2008,7,Saint-Laurent,Cote-de-Liesse,Signalisation,19
 2008,7,Saint-Laurent,Cote-de-Liesse,Stationnement,19
 2008,7,Saint-Laurent,Cote-de-Liesse,Taxes,73
@@ -7366,7 +7368,7 @@ year,month,borough,district,category,calls
 2008,8,Rosemont-La Petite-Patrie,Vieux-Rosemont,Stationnement,4
 2008,8,Rosemont-La Petite-Patrie,Vieux-Rosemont,Taxes,6
 2008,8,Rosemont-La Petite-Patrie,Vieux-Rosemont,Voirie,56
-2008,8,Saint-Laurent,Cote-de-Liesse,Anomaly - Surveillance,668
+2008,8,Saint-Laurent,Cote-de-Liesse,Anomaly - Surveillance,673
 2008,8,Saint-Laurent,Cote-de-Liesse,Arbre,60
 2008,8,Saint-Laurent,Cote-de-Liesse,Autre,409
 2008,8,Saint-Laurent,Cote-de-Liesse,Chien,138
@@ -7380,12 +7382,12 @@ year,month,borough,district,category,calls
 2008,8,Saint-Laurent,Cote-de-Liesse,Neige,1
 2008,8,Saint-Laurent,Cote-de-Liesse,Parc,158
 2008,8,Saint-Laurent,Cote-de-Liesse,Permis,11
-2008,8,Saint-Laurent,Cote-de-Liesse,Securite,13
+2008,8,Saint-Laurent,Cote-de-Liesse,Securite,8
 2008,8,Saint-Laurent,Cote-de-Liesse,Signalisation,22
 2008,8,Saint-Laurent,Cote-de-Liesse,Stationnement,7
 2008,8,Saint-Laurent,Cote-de-Liesse,Taxes,25
 2008,8,Saint-Laurent,Cote-de-Liesse,Voirie,57
-2008,8,Saint-Laurent,Norman-McLaren,Anomaly - Surveillance,119
+2008,8,Saint-Laurent,Norman-McLaren,Anomaly - Surveillance,120
 2008,8,Saint-Laurent,Norman-McLaren,Arbre,55
 2008,8,Saint-Laurent,Norman-McLaren,Autre,412
 2008,8,Saint-Laurent,Norman-McLaren,Chien,98
@@ -7398,7 +7400,7 @@ year,month,borough,district,category,calls
 2008,8,Saint-Laurent,Norman-McLaren,Environnement,87
 2008,8,Saint-Laurent,Norman-McLaren,Parc,124
 2008,8,Saint-Laurent,Norman-McLaren,Permis,5
-2008,8,Saint-Laurent,Norman-McLaren,Securite,3
+2008,8,Saint-Laurent,Norman-McLaren,Securite,2
 2008,8,Saint-Laurent,Norman-McLaren,Signalisation,12
 2008,8,Saint-Laurent,Norman-McLaren,Stationnement,32
 2008,8,Saint-Laurent,Norman-McLaren,Taxes,24
@@ -8305,7 +8307,7 @@ year,month,borough,district,category,calls
 2008,9,Rosemont-La Petite-Patrie,Vieux-Rosemont,Stationnement,10
 2008,9,Rosemont-La Petite-Patrie,Vieux-Rosemont,Taxes,2
 2008,9,Rosemont-La Petite-Patrie,Vieux-Rosemont,Voirie,47
-2008,9,Saint-Laurent,Cote-de-Liesse,Anomaly - Surveillance,944
+2008,9,Saint-Laurent,Cote-de-Liesse,Anomaly - Surveillance,949
 2008,9,Saint-Laurent,Cote-de-Liesse,Arbre,63
 2008,9,Saint-Laurent,Cote-de-Liesse,Autre,468
 2008,9,Saint-Laurent,Cote-de-Liesse,Chien,230
@@ -8318,7 +8320,7 @@ year,month,borough,district,category,calls
 2008,9,Saint-Laurent,Cote-de-Liesse,Environnement,92
 2008,9,Saint-Laurent,Cote-de-Liesse,Parc,136
 2008,9,Saint-Laurent,Cote-de-Liesse,Permis,11
-2008,9,Saint-Laurent,Cote-de-Liesse,Securite,13
+2008,9,Saint-Laurent,Cote-de-Liesse,Securite,8
 2008,9,Saint-Laurent,Cote-de-Liesse,Signalisation,16
 2008,9,Saint-Laurent,Cote-de-Liesse,Stationnement,13
 2008,9,Saint-Laurent,Cote-de-Liesse,Taxes,26
@@ -8589,6 +8591,7 @@ year,month,borough,district,category,calls
 2008,10,Ahuntsic-Cartierville,Ahuntsic,Taxes,4
 2008,10,Ahuntsic-Cartierville,Ahuntsic,Voirie,56
 2008,10,Ahuntsic-Cartierville,Bordeaux-Cartierville,Anomaly - Stationnement,4
+2008,10,Ahuntsic-Cartierville,Bordeaux-Cartierville,Anomaly - Surveillance,2
 2008,10,Ahuntsic-Cartierville,Bordeaux-Cartierville,Arbre,66
 2008,10,Ahuntsic-Cartierville,Bordeaux-Cartierville,Autre,16
 2008,10,Ahuntsic-Cartierville,Bordeaux-Cartierville,Chien,4
@@ -8601,7 +8604,7 @@ year,month,borough,district,category,calls
 2008,10,Ahuntsic-Cartierville,Bordeaux-Cartierville,Environnement,6
 2008,10,Ahuntsic-Cartierville,Bordeaux-Cartierville,Parc,5
 2008,10,Ahuntsic-Cartierville,Bordeaux-Cartierville,Permis,3
-2008,10,Ahuntsic-Cartierville,Bordeaux-Cartierville,Securite,3
+2008,10,Ahuntsic-Cartierville,Bordeaux-Cartierville,Securite,1
 2008,10,Ahuntsic-Cartierville,Bordeaux-Cartierville,Signalisation,26
 2008,10,Ahuntsic-Cartierville,Bordeaux-Cartierville,Stationnement,3
 2008,10,Ahuntsic-Cartierville,Bordeaux-Cartierville,Taxes,3
@@ -8715,6 +8718,7 @@ year,month,borough,district,category,calls
 2008,10,Cote-des-Neiges-Notre-Dame-de-Grace,Darlington,Taxes,2
 2008,10,Cote-des-Neiges-Notre-Dame-de-Grace,Darlington,Voirie,31
 2008,10,Cote-des-Neiges-Notre-Dame-de-Grace,Loyola,Anomaly - Stationnement,9
+2008,10,Cote-des-Neiges-Notre-Dame-de-Grace,Loyola,Anomaly - Surveillance,2
 2008,10,Cote-des-Neiges-Notre-Dame-de-Grace,Loyola,Arbre,52
 2008,10,Cote-des-Neiges-Notre-Dame-de-Grace,Loyola,Autre,10
 2008,10,Cote-des-Neiges-Notre-Dame-de-Grace,Loyola,Collecte - Dechets,30
@@ -8727,7 +8731,7 @@ year,month,borough,district,category,calls
 2008,10,Cote-des-Neiges-Notre-Dame-de-Grace,Loyola,Neige,1
 2008,10,Cote-des-Neiges-Notre-Dame-de-Grace,Loyola,Parc,7
 2008,10,Cote-des-Neiges-Notre-Dame-de-Grace,Loyola,Permis,12
-2008,10,Cote-des-Neiges-Notre-Dame-de-Grace,Loyola,Securite,3
+2008,10,Cote-des-Neiges-Notre-Dame-de-Grace,Loyola,Securite,1
 2008,10,Cote-des-Neiges-Notre-Dame-de-Grace,Loyola,Signalisation,24
 2008,10,Cote-des-Neiges-Notre-Dame-de-Grace,Loyola,Stationnement,3
 2008,10,Cote-des-Neiges-Notre-Dame-de-Grace,Loyola,Voirie,50
@@ -9251,7 +9255,7 @@ year,month,borough,district,category,calls
 2008,10,Rosemont-La Petite-Patrie,Vieux-Rosemont,Stationnement,4
 2008,10,Rosemont-La Petite-Patrie,Vieux-Rosemont,Taxes,5
 2008,10,Rosemont-La Petite-Patrie,Vieux-Rosemont,Voirie,44
-2008,10,Saint-Laurent,Cote-de-Liesse,Anomaly - Surveillance,938
+2008,10,Saint-Laurent,Cote-de-Liesse,Anomaly - Surveillance,941
 2008,10,Saint-Laurent,Cote-de-Liesse,Arbre,43
 2008,10,Saint-Laurent,Cote-de-Liesse,Autre,390
 2008,10,Saint-Laurent,Cote-de-Liesse,Chien,131
@@ -9265,7 +9269,7 @@ year,month,borough,district,category,calls
 2008,10,Saint-Laurent,Cote-de-Liesse,Neige,3
 2008,10,Saint-Laurent,Cote-de-Liesse,Parc,68
 2008,10,Saint-Laurent,Cote-de-Liesse,Permis,18
-2008,10,Saint-Laurent,Cote-de-Liesse,Securite,15
+2008,10,Saint-Laurent,Cote-de-Liesse,Securite,12
 2008,10,Saint-Laurent,Cote-de-Liesse,Signalisation,12
 2008,10,Saint-Laurent,Cote-de-Liesse,Stationnement,13
 2008,10,Saint-Laurent,Cote-de-Liesse,Taxes,20
@@ -10219,7 +10223,7 @@ year,month,borough,district,category,calls
 2008,11,Rosemont-La Petite-Patrie,Vieux-Rosemont,Taxes,5
 2008,11,Rosemont-La Petite-Patrie,Vieux-Rosemont,Voirie,44
 2008,11,Saint-Laurent,Cote-de-Liesse,Anomaly - Stationnement,1
-2008,11,Saint-Laurent,Cote-de-Liesse,Anomaly - Surveillance,976
+2008,11,Saint-Laurent,Cote-de-Liesse,Anomaly - Surveillance,978
 2008,11,Saint-Laurent,Cote-de-Liesse,Arbre,28
 2008,11,Saint-Laurent,Cote-de-Liesse,Autre,285
 2008,11,Saint-Laurent,Cote-de-Liesse,Chien,11
@@ -10233,7 +10237,7 @@ year,month,borough,district,category,calls
 2008,11,Saint-Laurent,Cote-de-Liesse,Neige,11
 2008,11,Saint-Laurent,Cote-de-Liesse,Parc,43
 2008,11,Saint-Laurent,Cote-de-Liesse,Permis,20
-2008,11,Saint-Laurent,Cote-de-Liesse,Securite,8
+2008,11,Saint-Laurent,Cote-de-Liesse,Securite,6
 2008,11,Saint-Laurent,Cote-de-Liesse,Signalisation,11
 2008,11,Saint-Laurent,Cote-de-Liesse,Stationnement,8
 2008,11,Saint-Laurent,Cote-de-Liesse,Taxes,15
@@ -11191,7 +11195,7 @@ year,month,borough,district,category,calls
 2008,12,Rosemont-La Petite-Patrie,Vieux-Rosemont,Taxes,6
 2008,12,Rosemont-La Petite-Patrie,Vieux-Rosemont,Voirie,38
 2008,12,Saint-Laurent,Cote-de-Liesse,Anomaly - Stationnement,2
-2008,12,Saint-Laurent,Cote-de-Liesse,Anomaly - Surveillance,468
+2008,12,Saint-Laurent,Cote-de-Liesse,Anomaly - Surveillance,469
 2008,12,Saint-Laurent,Cote-de-Liesse,Arbre,23
 2008,12,Saint-Laurent,Cote-de-Liesse,Autre,199
 2008,12,Saint-Laurent,Cote-de-Liesse,Chien,2
@@ -11205,12 +11209,12 @@ year,month,borough,district,category,calls
 2008,12,Saint-Laurent,Cote-de-Liesse,Neige,154
 2008,12,Saint-Laurent,Cote-de-Liesse,Parc,15
 2008,12,Saint-Laurent,Cote-de-Liesse,Permis,5
-2008,12,Saint-Laurent,Cote-de-Liesse,Securite,6
+2008,12,Saint-Laurent,Cote-de-Liesse,Securite,5
 2008,12,Saint-Laurent,Cote-de-Liesse,Signalisation,13
 2008,12,Saint-Laurent,Cote-de-Liesse,Stationnement,11
 2008,12,Saint-Laurent,Cote-de-Liesse,Taxes,32
 2008,12,Saint-Laurent,Cote-de-Liesse,Voirie,26
-2008,12,Saint-Laurent,Norman-McLaren,Anomaly - Surveillance,161
+2008,12,Saint-Laurent,Norman-McLaren,Anomaly - Surveillance,162
 2008,12,Saint-Laurent,Norman-McLaren,Arbre,22
 2008,12,Saint-Laurent,Norman-McLaren,Autre,174
 2008,12,Saint-Laurent,Norman-McLaren,Chien,4
@@ -11224,7 +11228,7 @@ year,month,borough,district,category,calls
 2008,12,Saint-Laurent,Norman-McLaren,Neige,90
 2008,12,Saint-Laurent,Norman-McLaren,Parc,17
 2008,12,Saint-Laurent,Norman-McLaren,Permis,7
-2008,12,Saint-Laurent,Norman-McLaren,Securite,3
+2008,12,Saint-Laurent,Norman-McLaren,Securite,2
 2008,12,Saint-Laurent,Norman-McLaren,Signalisation,6
 2008,12,Saint-Laurent,Norman-McLaren,Stationnement,31
 2008,12,Saint-Laurent,Norman-McLaren,Taxes,17
@@ -12155,7 +12159,7 @@ year,month,borough,district,category,calls
 2009,1,Rosemont-La Petite-Patrie,Vieux-Rosemont,Taxes,6
 2009,1,Rosemont-La Petite-Patrie,Vieux-Rosemont,Voirie,22
 2009,1,Saint-Laurent,Cote-de-Liesse,Anomaly - Stationnement,1
-2009,1,Saint-Laurent,Cote-de-Liesse,Anomaly - Surveillance,707
+2009,1,Saint-Laurent,Cote-de-Liesse,Anomaly - Surveillance,710
 2009,1,Saint-Laurent,Cote-de-Liesse,Arbre,5
 2009,1,Saint-Laurent,Cote-de-Liesse,Autre,168
 2009,1,Saint-Laurent,Cote-de-Liesse,Chien,23
@@ -12169,7 +12173,7 @@ year,month,borough,district,category,calls
 2009,1,Saint-Laurent,Cote-de-Liesse,Neige,66
 2009,1,Saint-Laurent,Cote-de-Liesse,Parc,18
 2009,1,Saint-Laurent,Cote-de-Liesse,Permis,15
-2009,1,Saint-Laurent,Cote-de-Liesse,Securite,6
+2009,1,Saint-Laurent,Cote-de-Liesse,Securite,3
 2009,1,Saint-Laurent,Cote-de-Liesse,Signalisation,12
 2009,1,Saint-Laurent,Cote-de-Liesse,Stationnement,3
 2009,1,Saint-Laurent,Cote-de-Liesse,Taxes,18
@@ -13125,7 +13129,7 @@ year,month,borough,district,category,calls
 2009,2,Rosemont-La Petite-Patrie,Vieux-Rosemont,Taxes,37
 2009,2,Rosemont-La Petite-Patrie,Vieux-Rosemont,Voirie,23
 2009,2,Saint-Laurent,Cote-de-Liesse,Anomaly - Stationnement,2
-2009,2,Saint-Laurent,Cote-de-Liesse,Anomaly - Surveillance,243
+2009,2,Saint-Laurent,Cote-de-Liesse,Anomaly - Surveillance,244
 2009,2,Saint-Laurent,Cote-de-Liesse,Arbre,6
 2009,2,Saint-Laurent,Cote-de-Liesse,Autre,226
 2009,2,Saint-Laurent,Cote-de-Liesse,Chien,178
@@ -13139,7 +13143,7 @@ year,month,borough,district,category,calls
 2009,2,Saint-Laurent,Cote-de-Liesse,Neige,43
 2009,2,Saint-Laurent,Cote-de-Liesse,Parc,10
 2009,2,Saint-Laurent,Cote-de-Liesse,Permis,10
-2009,2,Saint-Laurent,Cote-de-Liesse,Securite,9
+2009,2,Saint-Laurent,Cote-de-Liesse,Securite,8
 2009,2,Saint-Laurent,Cote-de-Liesse,Signalisation,12
 2009,2,Saint-Laurent,Cote-de-Liesse,Stationnement,9
 2009,2,Saint-Laurent,Cote-de-Liesse,Taxes,48
@@ -15065,7 +15069,7 @@ year,month,borough,district,category,calls
 2009,4,Rosemont-La Petite-Patrie,Vieux-Rosemont,Stationnement,4
 2009,4,Rosemont-La Petite-Patrie,Vieux-Rosemont,Taxes,8
 2009,4,Rosemont-La Petite-Patrie,Vieux-Rosemont,Voirie,47
-2009,4,Saint-Laurent,Cote-de-Liesse,Anomaly - Surveillance,365
+2009,4,Saint-Laurent,Cote-de-Liesse,Anomaly - Surveillance,369
 2009,4,Saint-Laurent,Cote-de-Liesse,Arbre,37
 2009,4,Saint-Laurent,Cote-de-Liesse,Autre,173
 2009,4,Saint-Laurent,Cote-de-Liesse,Chien,103
@@ -15079,7 +15083,7 @@ year,month,borough,district,category,calls
 2009,4,Saint-Laurent,Cote-de-Liesse,Neige,1
 2009,4,Saint-Laurent,Cote-de-Liesse,Parc,10
 2009,4,Saint-Laurent,Cote-de-Liesse,Permis,29
-2009,4,Saint-Laurent,Cote-de-Liesse,Securite,7
+2009,4,Saint-Laurent,Cote-de-Liesse,Securite,3
 2009,4,Saint-Laurent,Cote-de-Liesse,Signalisation,19
 2009,4,Saint-Laurent,Cote-de-Liesse,Stationnement,2
 2009,4,Saint-Laurent,Cote-de-Liesse,Taxes,66
@@ -15720,7 +15724,9 @@ year,month,borough,district,category,calls
 2009,5,Le Plateau-Mont-Royal,Mile-End,Stationnement,30
 2009,5,Le Plateau-Mont-Royal,Mile-End,Taxes,14
 2009,5,Le Plateau-Mont-Royal,Mile-End,Voirie,117
+2009,5,Mercier-Hochelaga-Maisonneuve,Hochelaga,Anomaly - Maisons fleuries,7
 2009,5,Mercier-Hochelaga-Maisonneuve,Hochelaga,Anomaly - Stationnement,35
+2009,5,Mercier-Hochelaga-Maisonneuve,Hochelaga,Anomaly - Surveillance,1
 2009,5,Mercier-Hochelaga-Maisonneuve,Hochelaga,Arbre,36
 2009,5,Mercier-Hochelaga-Maisonneuve,Hochelaga,Autre,28
 2009,5,Mercier-Hochelaga-Maisonneuve,Hochelaga,Chien,27
@@ -15730,11 +15736,11 @@ year,month,borough,district,category,calls
 2009,5,Mercier-Hochelaga-Maisonneuve,Hochelaga,Eau,44
 2009,5,Mercier-Hochelaga-Maisonneuve,Hochelaga,Eclairage,13
 2009,5,Mercier-Hochelaga-Maisonneuve,Hochelaga,Egout,19
-2009,5,Mercier-Hochelaga-Maisonneuve,Hochelaga,Environnement,25
+2009,5,Mercier-Hochelaga-Maisonneuve,Hochelaga,Environnement,18
 2009,5,Mercier-Hochelaga-Maisonneuve,Hochelaga,Neige,1
 2009,5,Mercier-Hochelaga-Maisonneuve,Hochelaga,Parc,26
 2009,5,Mercier-Hochelaga-Maisonneuve,Hochelaga,Permis,24
-2009,5,Mercier-Hochelaga-Maisonneuve,Hochelaga,Securite,8
+2009,5,Mercier-Hochelaga-Maisonneuve,Hochelaga,Securite,7
 2009,5,Mercier-Hochelaga-Maisonneuve,Hochelaga,Signalisation,33
 2009,5,Mercier-Hochelaga-Maisonneuve,Hochelaga,Stationnement,22
 2009,5,Mercier-Hochelaga-Maisonneuve,Hochelaga,Taxes,12
@@ -16040,9 +16046,9 @@ year,month,borough,district,category,calls
 2009,5,Rosemont-La Petite-Patrie,Vieux-Rosemont,Stationnement,7
 2009,5,Rosemont-La Petite-Patrie,Vieux-Rosemont,Taxes,15
 2009,5,Rosemont-La Petite-Patrie,Vieux-Rosemont,Voirie,72
-2009,5,Saint-Laurent,Cote-de-Liesse,Anomaly - Maisons fleuries,546
+2009,5,Saint-Laurent,Cote-de-Liesse,Anomaly - Maisons fleuries,550
 2009,5,Saint-Laurent,Cote-de-Liesse,Anomaly - Stationnement,1
-2009,5,Saint-Laurent,Cote-de-Liesse,Anomaly - Surveillance,291
+2009,5,Saint-Laurent,Cote-de-Liesse,Anomaly - Surveillance,292
 2009,5,Saint-Laurent,Cote-de-Liesse,Arbre,76
 2009,5,Saint-Laurent,Cote-de-Liesse,Autre,236
 2009,5,Saint-Laurent,Cote-de-Liesse,Chien,77
@@ -16052,15 +16058,15 @@ year,month,borough,district,category,calls
 2009,5,Saint-Laurent,Cote-de-Liesse,Eau,69
 2009,5,Saint-Laurent,Cote-de-Liesse,Eclairage,28
 2009,5,Saint-Laurent,Cote-de-Liesse,Egout,14
-2009,5,Saint-Laurent,Cote-de-Liesse,Environnement,99
+2009,5,Saint-Laurent,Cote-de-Liesse,Environnement,95
 2009,5,Saint-Laurent,Cote-de-Liesse,Parc,21
 2009,5,Saint-Laurent,Cote-de-Liesse,Permis,21
-2009,5,Saint-Laurent,Cote-de-Liesse,Securite,12
+2009,5,Saint-Laurent,Cote-de-Liesse,Securite,11
 2009,5,Saint-Laurent,Cote-de-Liesse,Signalisation,19
 2009,5,Saint-Laurent,Cote-de-Liesse,Stationnement,3
 2009,5,Saint-Laurent,Cote-de-Liesse,Taxes,39
 2009,5,Saint-Laurent,Cote-de-Liesse,Voirie,57
-2009,5,Saint-Laurent,Norman-McLaren,Anomaly - Maisons fleuries,388
+2009,5,Saint-Laurent,Norman-McLaren,Anomaly - Maisons fleuries,392
 2009,5,Saint-Laurent,Norman-McLaren,Anomaly - Surveillance,155
 2009,5,Saint-Laurent,Norman-McLaren,Arbre,72
 2009,5,Saint-Laurent,Norman-McLaren,Autre,177
@@ -16071,7 +16077,7 @@ year,month,borough,district,category,calls
 2009,5,Saint-Laurent,Norman-McLaren,Eau,20
 2009,5,Saint-Laurent,Norman-McLaren,Eclairage,11
 2009,5,Saint-Laurent,Norman-McLaren,Egout,4
-2009,5,Saint-Laurent,Norman-McLaren,Environnement,64
+2009,5,Saint-Laurent,Norman-McLaren,Environnement,60
 2009,5,Saint-Laurent,Norman-McLaren,Neige,1
 2009,5,Saint-Laurent,Norman-McLaren,Parc,12
 2009,5,Saint-Laurent,Norman-McLaren,Permis,16
@@ -16111,6 +16117,7 @@ year,month,borough,district,category,calls
 2009,5,Saint-Leonard,Saint-Leonard-Ouest,Stationnement,4
 2009,5,Saint-Leonard,Saint-Leonard-Ouest,Taxes,108
 2009,5,Saint-Leonard,Saint-Leonard-Ouest,Voirie,42
+2009,5,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Anomaly - Maisons fleuries,3
 2009,5,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Anomaly - Stationnement,46
 2009,5,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Arbre,44
 2009,5,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Autre,49
@@ -16121,7 +16128,7 @@ year,month,borough,district,category,calls
 2009,5,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Eau,54
 2009,5,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Eclairage,19
 2009,5,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Egout,15
-2009,5,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Environnement,111
+2009,5,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Environnement,108
 2009,5,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Neige,1
 2009,5,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Parc,43
 2009,5,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Permis,26
@@ -17029,7 +17036,7 @@ year,month,borough,district,category,calls
 2009,6,Saint-Laurent,Cote-de-Liesse,Stationnement,2
 2009,6,Saint-Laurent,Cote-de-Liesse,Taxes,50
 2009,6,Saint-Laurent,Cote-de-Liesse,Voirie,52
-2009,6,Saint-Laurent,Norman-McLaren,Anomaly - Surveillance,31
+2009,6,Saint-Laurent,Norman-McLaren,Anomaly - Surveillance,32
 2009,6,Saint-Laurent,Norman-McLaren,Arbre,54
 2009,6,Saint-Laurent,Norman-McLaren,Autre,194
 2009,6,Saint-Laurent,Norman-McLaren,Chien,59
@@ -17042,7 +17049,6 @@ year,month,borough,district,category,calls
 2009,6,Saint-Laurent,Norman-McLaren,Environnement,70
 2009,6,Saint-Laurent,Norman-McLaren,Parc,3
 2009,6,Saint-Laurent,Norman-McLaren,Permis,14
-2009,6,Saint-Laurent,Norman-McLaren,Securite,1
 2009,6,Saint-Laurent,Norman-McLaren,Signalisation,12
 2009,6,Saint-Laurent,Norman-McLaren,Stationnement,47
 2009,6,Saint-Laurent,Norman-McLaren,Taxes,50
@@ -17964,7 +17970,7 @@ year,month,borough,district,category,calls
 2009,7,Rosemont-La Petite-Patrie,Vieux-Rosemont,Taxes,7
 2009,7,Rosemont-La Petite-Patrie,Vieux-Rosemont,Voirie,62
 2009,7,Saint-Laurent,Cote-de-Liesse,Anomaly - Stationnement,1
-2009,7,Saint-Laurent,Cote-de-Liesse,Anomaly - Surveillance,186
+2009,7,Saint-Laurent,Cote-de-Liesse,Anomaly - Surveillance,187
 2009,7,Saint-Laurent,Cote-de-Liesse,Arbre,66
 2009,7,Saint-Laurent,Cote-de-Liesse,Autre,415
 2009,7,Saint-Laurent,Cote-de-Liesse,Chien,55
@@ -17977,7 +17983,7 @@ year,month,borough,district,category,calls
 2009,7,Saint-Laurent,Cote-de-Liesse,Environnement,91
 2009,7,Saint-Laurent,Cote-de-Liesse,Parc,42
 2009,7,Saint-Laurent,Cote-de-Liesse,Permis,15
-2009,7,Saint-Laurent,Cote-de-Liesse,Securite,10
+2009,7,Saint-Laurent,Cote-de-Liesse,Securite,9
 2009,7,Saint-Laurent,Cote-de-Liesse,Signalisation,14
 2009,7,Saint-Laurent,Cote-de-Liesse,Stationnement,5
 2009,7,Saint-Laurent,Cote-de-Liesse,Taxes,71
@@ -18907,7 +18913,7 @@ year,month,borough,district,category,calls
 2009,8,Rosemont-La Petite-Patrie,Vieux-Rosemont,Taxes,4
 2009,8,Rosemont-La Petite-Patrie,Vieux-Rosemont,Voirie,55
 2009,8,Saint-Laurent,Cote-de-Liesse,Anomaly - Stationnement,1
-2009,8,Saint-Laurent,Cote-de-Liesse,Anomaly - Surveillance,535
+2009,8,Saint-Laurent,Cote-de-Liesse,Anomaly - Surveillance,538
 2009,8,Saint-Laurent,Cote-de-Liesse,Arbre,56
 2009,8,Saint-Laurent,Cote-de-Liesse,Autre,340
 2009,8,Saint-Laurent,Cote-de-Liesse,Chien,28
@@ -18920,12 +18926,12 @@ year,month,borough,district,category,calls
 2009,8,Saint-Laurent,Cote-de-Liesse,Environnement,149
 2009,8,Saint-Laurent,Cote-de-Liesse,Parc,119
 2009,8,Saint-Laurent,Cote-de-Liesse,Permis,14
-2009,8,Saint-Laurent,Cote-de-Liesse,Securite,15
+2009,8,Saint-Laurent,Cote-de-Liesse,Securite,12
 2009,8,Saint-Laurent,Cote-de-Liesse,Signalisation,16
 2009,8,Saint-Laurent,Cote-de-Liesse,Stationnement,11
 2009,8,Saint-Laurent,Cote-de-Liesse,Taxes,33
 2009,8,Saint-Laurent,Cote-de-Liesse,Voirie,56
-2009,8,Saint-Laurent,Norman-McLaren,Anomaly - Surveillance,415
+2009,8,Saint-Laurent,Norman-McLaren,Anomaly - Surveillance,417
 2009,8,Saint-Laurent,Norman-McLaren,Arbre,60
 2009,8,Saint-Laurent,Norman-McLaren,Autre,401
 2009,8,Saint-Laurent,Norman-McLaren,Chien,11
@@ -18938,7 +18944,7 @@ year,month,borough,district,category,calls
 2009,8,Saint-Laurent,Norman-McLaren,Environnement,81
 2009,8,Saint-Laurent,Norman-McLaren,Parc,152
 2009,8,Saint-Laurent,Norman-McLaren,Permis,6
-2009,8,Saint-Laurent,Norman-McLaren,Securite,17
+2009,8,Saint-Laurent,Norman-McLaren,Securite,15
 2009,8,Saint-Laurent,Norman-McLaren,Signalisation,14
 2009,8,Saint-Laurent,Norman-McLaren,Stationnement,55
 2009,8,Saint-Laurent,Norman-McLaren,Taxes,21
@@ -19481,6 +19487,7 @@ year,month,borough,district,category,calls
 2009,9,Lachine,J.-Emery-Provost,Stationnement,3
 2009,9,Lachine,J.-Emery-Provost,Voirie,19
 2009,9,Lachine,du Canal,Anomaly - Stationnement,11
+2009,9,Lachine,du Canal,Anomaly - Surveillance,1
 2009,9,Lachine,du Canal,Arbre,19
 2009,9,Lachine,du Canal,Autre,23
 2009,9,Lachine,du Canal,Chien,27
@@ -19493,7 +19500,7 @@ year,month,borough,district,category,calls
 2009,9,Lachine,du Canal,Environnement,13
 2009,9,Lachine,du Canal,Parc,5
 2009,9,Lachine,du Canal,Permis,12
-2009,9,Lachine,du Canal,Securite,2
+2009,9,Lachine,du Canal,Securite,1
 2009,9,Lachine,du Canal,Signalisation,12
 2009,9,Lachine,du Canal,Stationnement,2
 2009,9,Lachine,du Canal,Taxes,1
@@ -19874,7 +19881,7 @@ year,month,borough,district,category,calls
 2009,9,Rosemont-La Petite-Patrie,Vieux-Rosemont,Taxes,4
 2009,9,Rosemont-La Petite-Patrie,Vieux-Rosemont,Voirie,35
 2009,9,Saint-Laurent,Cote-de-Liesse,Anomaly - Stationnement,2
-2009,9,Saint-Laurent,Cote-de-Liesse,Anomaly - Surveillance,697
+2009,9,Saint-Laurent,Cote-de-Liesse,Anomaly - Surveillance,701
 2009,9,Saint-Laurent,Cote-de-Liesse,Arbre,38
 2009,9,Saint-Laurent,Cote-de-Liesse,Autre,366
 2009,9,Saint-Laurent,Cote-de-Liesse,Chien,13
@@ -19887,13 +19894,13 @@ year,month,borough,district,category,calls
 2009,9,Saint-Laurent,Cote-de-Liesse,Environnement,130
 2009,9,Saint-Laurent,Cote-de-Liesse,Parc,169
 2009,9,Saint-Laurent,Cote-de-Liesse,Permis,15
-2009,9,Saint-Laurent,Cote-de-Liesse,Securite,15
+2009,9,Saint-Laurent,Cote-de-Liesse,Securite,11
 2009,9,Saint-Laurent,Cote-de-Liesse,Signalisation,16
 2009,9,Saint-Laurent,Cote-de-Liesse,Stationnement,5
 2009,9,Saint-Laurent,Cote-de-Liesse,Taxes,29
 2009,9,Saint-Laurent,Cote-de-Liesse,Voirie,51
 2009,9,Saint-Laurent,Norman-McLaren,Anomaly - Stationnement,2
-2009,9,Saint-Laurent,Norman-McLaren,Anomaly - Surveillance,422
+2009,9,Saint-Laurent,Norman-McLaren,Anomaly - Surveillance,426
 2009,9,Saint-Laurent,Norman-McLaren,Arbre,32
 2009,9,Saint-Laurent,Norman-McLaren,Autre,421
 2009,9,Saint-Laurent,Norman-McLaren,Chien,4
@@ -19907,7 +19914,7 @@ year,month,borough,district,category,calls
 2009,9,Saint-Laurent,Norman-McLaren,Neige,1
 2009,9,Saint-Laurent,Norman-McLaren,Parc,128
 2009,9,Saint-Laurent,Norman-McLaren,Permis,3
-2009,9,Saint-Laurent,Norman-McLaren,Securite,17
+2009,9,Saint-Laurent,Norman-McLaren,Securite,13
 2009,9,Saint-Laurent,Norman-McLaren,Signalisation,22
 2009,9,Saint-Laurent,Norman-McLaren,Stationnement,46
 2009,9,Saint-Laurent,Norman-McLaren,Taxes,19
@@ -20511,6 +20518,7 @@ year,month,borough,district,category,calls
 2009,10,Le Plateau-Mont-Royal,Mile-End,Taxes,3
 2009,10,Le Plateau-Mont-Royal,Mile-End,Voirie,46
 2009,10,Mercier-Hochelaga-Maisonneuve,Hochelaga,Anomaly - Stationnement,49
+2009,10,Mercier-Hochelaga-Maisonneuve,Hochelaga,Anomaly - Surveillance,1
 2009,10,Mercier-Hochelaga-Maisonneuve,Hochelaga,Arbre,29
 2009,10,Mercier-Hochelaga-Maisonneuve,Hochelaga,Autre,20
 2009,10,Mercier-Hochelaga-Maisonneuve,Hochelaga,Chien,42
@@ -20523,7 +20531,7 @@ year,month,borough,district,category,calls
 2009,10,Mercier-Hochelaga-Maisonneuve,Hochelaga,Environnement,8
 2009,10,Mercier-Hochelaga-Maisonneuve,Hochelaga,Parc,4
 2009,10,Mercier-Hochelaga-Maisonneuve,Hochelaga,Permis,24
-2009,10,Mercier-Hochelaga-Maisonneuve,Hochelaga,Securite,7
+2009,10,Mercier-Hochelaga-Maisonneuve,Hochelaga,Securite,6
 2009,10,Mercier-Hochelaga-Maisonneuve,Hochelaga,Signalisation,36
 2009,10,Mercier-Hochelaga-Maisonneuve,Hochelaga,Stationnement,18
 2009,10,Mercier-Hochelaga-Maisonneuve,Hochelaga,Taxes,5
@@ -20822,7 +20830,7 @@ year,month,borough,district,category,calls
 2009,10,Rosemont-La Petite-Patrie,Vieux-Rosemont,Taxes,4
 2009,10,Rosemont-La Petite-Patrie,Vieux-Rosemont,Voirie,44
 2009,10,Saint-Laurent,Cote-de-Liesse,Anomaly - Stationnement,1
-2009,10,Saint-Laurent,Cote-de-Liesse,Anomaly - Surveillance,470
+2009,10,Saint-Laurent,Cote-de-Liesse,Anomaly - Surveillance,471
 2009,10,Saint-Laurent,Cote-de-Liesse,Arbre,36
 2009,10,Saint-Laurent,Cote-de-Liesse,Autre,218
 2009,10,Saint-Laurent,Cote-de-Liesse,Chien,8
@@ -20835,12 +20843,12 @@ year,month,borough,district,category,calls
 2009,10,Saint-Laurent,Cote-de-Liesse,Environnement,51
 2009,10,Saint-Laurent,Cote-de-Liesse,Parc,33
 2009,10,Saint-Laurent,Cote-de-Liesse,Permis,6
-2009,10,Saint-Laurent,Cote-de-Liesse,Securite,15
+2009,10,Saint-Laurent,Cote-de-Liesse,Securite,14
 2009,10,Saint-Laurent,Cote-de-Liesse,Signalisation,14
 2009,10,Saint-Laurent,Cote-de-Liesse,Stationnement,15
 2009,10,Saint-Laurent,Cote-de-Liesse,Taxes,18
 2009,10,Saint-Laurent,Cote-de-Liesse,Voirie,58
-2009,10,Saint-Laurent,Norman-McLaren,Anomaly - Surveillance,356
+2009,10,Saint-Laurent,Norman-McLaren,Anomaly - Surveillance,357
 2009,10,Saint-Laurent,Norman-McLaren,Arbre,31
 2009,10,Saint-Laurent,Norman-McLaren,Autre,210
 2009,10,Saint-Laurent,Norman-McLaren,Chien,4
@@ -20853,7 +20861,7 @@ year,month,borough,district,category,calls
 2009,10,Saint-Laurent,Norman-McLaren,Neige,1
 2009,10,Saint-Laurent,Norman-McLaren,Parc,28
 2009,10,Saint-Laurent,Norman-McLaren,Permis,10
-2009,10,Saint-Laurent,Norman-McLaren,Securite,11
+2009,10,Saint-Laurent,Norman-McLaren,Securite,10
 2009,10,Saint-Laurent,Norman-McLaren,Signalisation,11
 2009,10,Saint-Laurent,Norman-McLaren,Stationnement,57
 2009,10,Saint-Laurent,Norman-McLaren,Taxes,11
@@ -20890,6 +20898,7 @@ year,month,borough,district,category,calls
 2009,10,Saint-Leonard,Saint-Leonard-Ouest,Taxes,20
 2009,10,Saint-Leonard,Saint-Leonard-Ouest,Voirie,35
 2009,10,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Anomaly - Stationnement,51
+2009,10,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Anomaly - Surveillance,1
 2009,10,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Arbre,23
 2009,10,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Autre,52
 2009,10,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Chien,59
@@ -20903,7 +20912,7 @@ year,month,borough,district,category,calls
 2009,10,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Neige,4
 2009,10,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Parc,6
 2009,10,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Permis,15
-2009,10,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Securite,12
+2009,10,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Securite,11
 2009,10,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Signalisation,34
 2009,10,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Stationnement,26
 2009,10,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Taxes,4
@@ -21101,6 +21110,7 @@ year,month,borough,district,category,calls
 2009,11,Ahuntsic-Cartierville,Ahuntsic,Taxes,2
 2009,11,Ahuntsic-Cartierville,Ahuntsic,Voirie,39
 2009,11,Ahuntsic-Cartierville,Bordeaux-Cartierville,Anomaly - Stationnement,7
+2009,11,Ahuntsic-Cartierville,Bordeaux-Cartierville,Anomaly - Surveillance,1
 2009,11,Ahuntsic-Cartierville,Bordeaux-Cartierville,Arbre,20
 2009,11,Ahuntsic-Cartierville,Bordeaux-Cartierville,Autre,7
 2009,11,Ahuntsic-Cartierville,Bordeaux-Cartierville,Chien,1
@@ -21113,7 +21123,6 @@ year,month,borough,district,category,calls
 2009,11,Ahuntsic-Cartierville,Bordeaux-Cartierville,Environnement,2
 2009,11,Ahuntsic-Cartierville,Bordeaux-Cartierville,Parc,3
 2009,11,Ahuntsic-Cartierville,Bordeaux-Cartierville,Permis,6
-2009,11,Ahuntsic-Cartierville,Bordeaux-Cartierville,Securite,1
 2009,11,Ahuntsic-Cartierville,Bordeaux-Cartierville,Signalisation,30
 2009,11,Ahuntsic-Cartierville,Bordeaux-Cartierville,Stationnement,2
 2009,11,Ahuntsic-Cartierville,Bordeaux-Cartierville,Taxes,1
@@ -21755,7 +21764,7 @@ year,month,borough,district,category,calls
 2009,11,Rosemont-La Petite-Patrie,Vieux-Rosemont,Stationnement,15
 2009,11,Rosemont-La Petite-Patrie,Vieux-Rosemont,Taxes,1
 2009,11,Rosemont-La Petite-Patrie,Vieux-Rosemont,Voirie,63
-2009,11,Saint-Laurent,Cote-de-Liesse,Anomaly - Surveillance,596
+2009,11,Saint-Laurent,Cote-de-Liesse,Anomaly - Surveillance,597
 2009,11,Saint-Laurent,Cote-de-Liesse,Arbre,20
 2009,11,Saint-Laurent,Cote-de-Liesse,Autre,217
 2009,11,Saint-Laurent,Cote-de-Liesse,Chien,8
@@ -21768,13 +21777,13 @@ year,month,borough,district,category,calls
 2009,11,Saint-Laurent,Cote-de-Liesse,Environnement,46
 2009,11,Saint-Laurent,Cote-de-Liesse,Parc,26
 2009,11,Saint-Laurent,Cote-de-Liesse,Permis,14
-2009,11,Saint-Laurent,Cote-de-Liesse,Securite,15
+2009,11,Saint-Laurent,Cote-de-Liesse,Securite,14
 2009,11,Saint-Laurent,Cote-de-Liesse,Signalisation,11
 2009,11,Saint-Laurent,Cote-de-Liesse,Stationnement,14
 2009,11,Saint-Laurent,Cote-de-Liesse,Taxes,21
 2009,11,Saint-Laurent,Cote-de-Liesse,Voirie,95
 2009,11,Saint-Laurent,Norman-McLaren,Anomaly - Stationnement,1
-2009,11,Saint-Laurent,Norman-McLaren,Anomaly - Surveillance,523
+2009,11,Saint-Laurent,Norman-McLaren,Anomaly - Surveillance,524
 2009,11,Saint-Laurent,Norman-McLaren,Arbre,12
 2009,11,Saint-Laurent,Norman-McLaren,Autre,231
 2009,11,Saint-Laurent,Norman-McLaren,Chien,5
@@ -21787,7 +21796,7 @@ year,month,borough,district,category,calls
 2009,11,Saint-Laurent,Norman-McLaren,Environnement,52
 2009,11,Saint-Laurent,Norman-McLaren,Parc,30
 2009,11,Saint-Laurent,Norman-McLaren,Permis,10
-2009,11,Saint-Laurent,Norman-McLaren,Securite,7
+2009,11,Saint-Laurent,Norman-McLaren,Securite,6
 2009,11,Saint-Laurent,Norman-McLaren,Signalisation,5
 2009,11,Saint-Laurent,Norman-McLaren,Stationnement,56
 2009,11,Saint-Laurent,Norman-McLaren,Taxes,15
@@ -22558,6 +22567,7 @@ year,month,borough,district,category,calls
 2009,12,Pierrefonds-Roxboro,Pierre-Foretier,Signalisation,3
 2009,12,Pierrefonds-Roxboro,Pierre-Foretier,Voirie,3
 2009,12,Riviere-des-Prairies-Pointe-aux-Trembles,La Pointe-aux-Prairies,Anomaly - Stationnement,1
+2009,12,Riviere-des-Prairies-Pointe-aux-Trembles,La Pointe-aux-Prairies,Anomaly - Surveillance,1
 2009,12,Riviere-des-Prairies-Pointe-aux-Trembles,La Pointe-aux-Prairies,Arbre,3
 2009,12,Riviere-des-Prairies-Pointe-aux-Trembles,La Pointe-aux-Prairies,Autre,29
 2009,12,Riviere-des-Prairies-Pointe-aux-Trembles,La Pointe-aux-Prairies,Chien,44
@@ -22570,7 +22580,6 @@ year,month,borough,district,category,calls
 2009,12,Riviere-des-Prairies-Pointe-aux-Trembles,La Pointe-aux-Prairies,Environnement,5
 2009,12,Riviere-des-Prairies-Pointe-aux-Trembles,La Pointe-aux-Prairies,Neige,61
 2009,12,Riviere-des-Prairies-Pointe-aux-Trembles,La Pointe-aux-Prairies,Permis,7
-2009,12,Riviere-des-Prairies-Pointe-aux-Trembles,La Pointe-aux-Prairies,Securite,1
 2009,12,Riviere-des-Prairies-Pointe-aux-Trembles,La Pointe-aux-Prairies,Signalisation,11
 2009,12,Riviere-des-Prairies-Pointe-aux-Trembles,La Pointe-aux-Prairies,Taxes,5
 2009,12,Riviere-des-Prairies-Pointe-aux-Trembles,La Pointe-aux-Prairies,Voirie,18
@@ -22677,7 +22686,7 @@ year,month,borough,district,category,calls
 2009,12,Rosemont-La Petite-Patrie,Vieux-Rosemont,Signalisation,37
 2009,12,Rosemont-La Petite-Patrie,Vieux-Rosemont,Stationnement,6
 2009,12,Rosemont-La Petite-Patrie,Vieux-Rosemont,Voirie,16
-2009,12,Saint-Laurent,Cote-de-Liesse,Anomaly - Surveillance,710
+2009,12,Saint-Laurent,Cote-de-Liesse,Anomaly - Surveillance,711
 2009,12,Saint-Laurent,Cote-de-Liesse,Arbre,4
 2009,12,Saint-Laurent,Cote-de-Liesse,Autre,201
 2009,12,Saint-Laurent,Cote-de-Liesse,Chien,4
@@ -22691,7 +22700,7 @@ year,month,borough,district,category,calls
 2009,12,Saint-Laurent,Cote-de-Liesse,Neige,257
 2009,12,Saint-Laurent,Cote-de-Liesse,Parc,35
 2009,12,Saint-Laurent,Cote-de-Liesse,Permis,16
-2009,12,Saint-Laurent,Cote-de-Liesse,Securite,8
+2009,12,Saint-Laurent,Cote-de-Liesse,Securite,7
 2009,12,Saint-Laurent,Cote-de-Liesse,Signalisation,10
 2009,12,Saint-Laurent,Cote-de-Liesse,Stationnement,9
 2009,12,Saint-Laurent,Cote-de-Liesse,Taxes,9
@@ -23644,7 +23653,7 @@ year,month,borough,district,category,calls
 2010,1,Saint-Laurent,Cote-de-Liesse,Taxes,14
 2010,1,Saint-Laurent,Cote-de-Liesse,Voirie,38
 2010,1,Saint-Laurent,Norman-McLaren,Anomaly - Stationnement,1
-2010,1,Saint-Laurent,Norman-McLaren,Anomaly - Surveillance,233
+2010,1,Saint-Laurent,Norman-McLaren,Anomaly - Surveillance,234
 2010,1,Saint-Laurent,Norman-McLaren,Arbre,3
 2010,1,Saint-Laurent,Norman-McLaren,Autre,213
 2010,1,Saint-Laurent,Norman-McLaren,Chien,280
@@ -23657,7 +23666,7 @@ year,month,borough,district,category,calls
 2010,1,Saint-Laurent,Norman-McLaren,Neige,31
 2010,1,Saint-Laurent,Norman-McLaren,Parc,22
 2010,1,Saint-Laurent,Norman-McLaren,Permis,8
-2010,1,Saint-Laurent,Norman-McLaren,Securite,5
+2010,1,Saint-Laurent,Norman-McLaren,Securite,4
 2010,1,Saint-Laurent,Norman-McLaren,Signalisation,10
 2010,1,Saint-Laurent,Norman-McLaren,Stationnement,53
 2010,1,Saint-Laurent,Norman-McLaren,Taxes,10
@@ -24593,7 +24602,7 @@ year,month,borough,district,category,calls
 2010,2,Saint-Laurent,Cote-de-Liesse,Stationnement,8
 2010,2,Saint-Laurent,Cote-de-Liesse,Taxes,35
 2010,2,Saint-Laurent,Cote-de-Liesse,Voirie,41
-2010,2,Saint-Laurent,Norman-McLaren,Anomaly - Surveillance,142
+2010,2,Saint-Laurent,Norman-McLaren,Anomaly - Surveillance,143
 2010,2,Saint-Laurent,Norman-McLaren,Arbre,8
 2010,2,Saint-Laurent,Norman-McLaren,Autre,238
 2010,2,Saint-Laurent,Norman-McLaren,Chien,83
@@ -24607,7 +24616,7 @@ year,month,borough,district,category,calls
 2010,2,Saint-Laurent,Norman-McLaren,Neige,42
 2010,2,Saint-Laurent,Norman-McLaren,Parc,10
 2010,2,Saint-Laurent,Norman-McLaren,Permis,6
-2010,2,Saint-Laurent,Norman-McLaren,Securite,4
+2010,2,Saint-Laurent,Norman-McLaren,Securite,3
 2010,2,Saint-Laurent,Norman-McLaren,Signalisation,12
 2010,2,Saint-Laurent,Norman-McLaren,Stationnement,30
 2010,2,Saint-Laurent,Norman-McLaren,Taxes,24
@@ -25551,7 +25560,7 @@ year,month,borough,district,category,calls
 2010,3,Rosemont-La Petite-Patrie,Vieux-Rosemont,Taxes,12
 2010,3,Rosemont-La Petite-Patrie,Vieux-Rosemont,Voirie,49
 2010,3,Saint-Laurent,Cote-de-Liesse,Anomaly - Stationnement,2
-2010,3,Saint-Laurent,Cote-de-Liesse,Anomaly - Surveillance,479
+2010,3,Saint-Laurent,Cote-de-Liesse,Anomaly - Surveillance,481
 2010,3,Saint-Laurent,Cote-de-Liesse,Arbre,21
 2010,3,Saint-Laurent,Cote-de-Liesse,Autre,301
 2010,3,Saint-Laurent,Cote-de-Liesse,Chien,171
@@ -25565,12 +25574,12 @@ year,month,borough,district,category,calls
 2010,3,Saint-Laurent,Cote-de-Liesse,Neige,1
 2010,3,Saint-Laurent,Cote-de-Liesse,Parc,39
 2010,3,Saint-Laurent,Cote-de-Liesse,Permis,12
-2010,3,Saint-Laurent,Cote-de-Liesse,Securite,10
+2010,3,Saint-Laurent,Cote-de-Liesse,Securite,8
 2010,3,Saint-Laurent,Cote-de-Liesse,Signalisation,29
 2010,3,Saint-Laurent,Cote-de-Liesse,Stationnement,13
 2010,3,Saint-Laurent,Cote-de-Liesse,Taxes,20
 2010,3,Saint-Laurent,Cote-de-Liesse,Voirie,91
-2010,3,Saint-Laurent,Norman-McLaren,Anomaly - Surveillance,369
+2010,3,Saint-Laurent,Norman-McLaren,Anomaly - Surveillance,372
 2010,3,Saint-Laurent,Norman-McLaren,Arbre,28
 2010,3,Saint-Laurent,Norman-McLaren,Autre,299
 2010,3,Saint-Laurent,Norman-McLaren,Chien,111
@@ -25584,7 +25593,7 @@ year,month,borough,district,category,calls
 2010,3,Saint-Laurent,Norman-McLaren,Neige,3
 2010,3,Saint-Laurent,Norman-McLaren,Parc,24
 2010,3,Saint-Laurent,Norman-McLaren,Permis,10
-2010,3,Saint-Laurent,Norman-McLaren,Securite,8
+2010,3,Saint-Laurent,Norman-McLaren,Securite,5
 2010,3,Saint-Laurent,Norman-McLaren,Signalisation,14
 2010,3,Saint-Laurent,Norman-McLaren,Stationnement,63
 2010,3,Saint-Laurent,Norman-McLaren,Taxes,7
@@ -25623,6 +25632,7 @@ year,month,borough,district,category,calls
 2010,3,Saint-Leonard,Saint-Leonard-Ouest,Taxes,25
 2010,3,Saint-Leonard,Saint-Leonard-Ouest,Voirie,47
 2010,3,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Anomaly - Stationnement,40
+2010,3,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Anomaly - Surveillance,1
 2010,3,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Arbre,16
 2010,3,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Autre,47
 2010,3,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Chien,36
@@ -25636,7 +25646,7 @@ year,month,borough,district,category,calls
 2010,3,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Neige,1
 2010,3,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Parc,32
 2010,3,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Permis,13
-2010,3,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Securite,9
+2010,3,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Securite,8
 2010,3,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Signalisation,60
 2010,3,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Stationnement,21
 2010,3,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Taxes,14
@@ -26535,7 +26545,7 @@ year,month,borough,district,category,calls
 2010,4,Saint-Laurent,Cote-de-Liesse,Taxes,71
 2010,4,Saint-Laurent,Cote-de-Liesse,Voirie,85
 2010,4,Saint-Laurent,Norman-McLaren,Anomaly - Stationnement,1
-2010,4,Saint-Laurent,Norman-McLaren,Anomaly - Surveillance,58
+2010,4,Saint-Laurent,Norman-McLaren,Anomaly - Surveillance,59
 2010,4,Saint-Laurent,Norman-McLaren,Arbre,43
 2010,4,Saint-Laurent,Norman-McLaren,Autre,184
 2010,4,Saint-Laurent,Norman-McLaren,Chien,154
@@ -26548,7 +26558,7 @@ year,month,borough,district,category,calls
 2010,4,Saint-Laurent,Norman-McLaren,Environnement,66
 2010,4,Saint-Laurent,Norman-McLaren,Parc,11
 2010,4,Saint-Laurent,Norman-McLaren,Permis,12
-2010,4,Saint-Laurent,Norman-McLaren,Securite,3
+2010,4,Saint-Laurent,Norman-McLaren,Securite,2
 2010,4,Saint-Laurent,Norman-McLaren,Signalisation,9
 2010,4,Saint-Laurent,Norman-McLaren,Stationnement,59
 2010,4,Saint-Laurent,Norman-McLaren,Taxes,46
@@ -27096,6 +27106,7 @@ year,month,borough,district,category,calls
 2010,5,Lachine,J.-Emery-Provost,Signalisation,2
 2010,5,Lachine,J.-Emery-Provost,Stationnement,4
 2010,5,Lachine,J.-Emery-Provost,Voirie,22
+2010,5,Lachine,du Canal,Anomaly - Maisons fleuries,1
 2010,5,Lachine,du Canal,Anomaly - Stationnement,5
 2010,5,Lachine,du Canal,Arbre,18
 2010,5,Lachine,du Canal,Autre,30
@@ -27106,7 +27117,7 @@ year,month,borough,district,category,calls
 2010,5,Lachine,du Canal,Eau,31
 2010,5,Lachine,du Canal,Eclairage,6
 2010,5,Lachine,du Canal,Egout,15
-2010,5,Lachine,du Canal,Environnement,16
+2010,5,Lachine,du Canal,Environnement,15
 2010,5,Lachine,du Canal,Neige,3
 2010,5,Lachine,du Canal,Parc,7
 2010,5,Lachine,du Canal,Permis,23
@@ -27169,6 +27180,7 @@ year,month,borough,district,category,calls
 2010,5,Le Plateau-Mont-Royal,Mile-End,Stationnement,26
 2010,5,Le Plateau-Mont-Royal,Mile-End,Taxes,7
 2010,5,Le Plateau-Mont-Royal,Mile-End,Voirie,86
+2010,5,Mercier-Hochelaga-Maisonneuve,Hochelaga,Anomaly - Maisons fleuries,9
 2010,5,Mercier-Hochelaga-Maisonneuve,Hochelaga,Anomaly - Stationnement,56
 2010,5,Mercier-Hochelaga-Maisonneuve,Hochelaga,Arbre,35
 2010,5,Mercier-Hochelaga-Maisonneuve,Hochelaga,Autre,29
@@ -27179,7 +27191,7 @@ year,month,borough,district,category,calls
 2010,5,Mercier-Hochelaga-Maisonneuve,Hochelaga,Eau,31
 2010,5,Mercier-Hochelaga-Maisonneuve,Hochelaga,Eclairage,20
 2010,5,Mercier-Hochelaga-Maisonneuve,Hochelaga,Egout,16
-2010,5,Mercier-Hochelaga-Maisonneuve,Hochelaga,Environnement,41
+2010,5,Mercier-Hochelaga-Maisonneuve,Hochelaga,Environnement,32
 2010,5,Mercier-Hochelaga-Maisonneuve,Hochelaga,Neige,1
 2010,5,Mercier-Hochelaga-Maisonneuve,Hochelaga,Parc,18
 2010,5,Mercier-Hochelaga-Maisonneuve,Hochelaga,Permis,40
@@ -27501,7 +27513,7 @@ year,month,borough,district,category,calls
 2010,5,Saint-Laurent,Cote-de-Liesse,Stationnement,10
 2010,5,Saint-Laurent,Cote-de-Liesse,Taxes,44
 2010,5,Saint-Laurent,Cote-de-Liesse,Voirie,100
-2010,5,Saint-Laurent,Norman-McLaren,Anomaly - Maisons fleuries,439
+2010,5,Saint-Laurent,Norman-McLaren,Anomaly - Maisons fleuries,440
 2010,5,Saint-Laurent,Norman-McLaren,Anomaly - Surveillance,2
 2010,5,Saint-Laurent,Norman-McLaren,Arbre,66
 2010,5,Saint-Laurent,Norman-McLaren,Autre,155
@@ -27512,7 +27524,7 @@ year,month,borough,district,category,calls
 2010,5,Saint-Laurent,Norman-McLaren,Eau,15
 2010,5,Saint-Laurent,Norman-McLaren,Eclairage,19
 2010,5,Saint-Laurent,Norman-McLaren,Egout,11
-2010,5,Saint-Laurent,Norman-McLaren,Environnement,74
+2010,5,Saint-Laurent,Norman-McLaren,Environnement,73
 2010,5,Saint-Laurent,Norman-McLaren,Parc,8
 2010,5,Saint-Laurent,Norman-McLaren,Permis,21
 2010,5,Saint-Laurent,Norman-McLaren,Signalisation,16
@@ -27548,6 +27560,7 @@ year,month,borough,district,category,calls
 2010,5,Saint-Leonard,Saint-Leonard-Ouest,Signalisation,3
 2010,5,Saint-Leonard,Saint-Leonard-Ouest,Taxes,118
 2010,5,Saint-Leonard,Saint-Leonard-Ouest,Voirie,46
+2010,5,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Anomaly - Maisons fleuries,6
 2010,5,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Anomaly - Stationnement,36
 2010,5,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Arbre,43
 2010,5,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Autre,69
@@ -27558,7 +27571,7 @@ year,month,borough,district,category,calls
 2010,5,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Eau,38
 2010,5,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Eclairage,38
 2010,5,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Egout,17
-2010,5,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Environnement,89
+2010,5,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Environnement,83
 2010,5,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Parc,51
 2010,5,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Permis,23
 2010,5,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Securite,10
@@ -38334,6 +38347,7 @@ year,month,borough,district,category,calls
 2011,5,Le Plateau-Mont-Royal,Mile-End,Stationnement,9
 2011,5,Le Plateau-Mont-Royal,Mile-End,Taxes,8
 2011,5,Le Plateau-Mont-Royal,Mile-End,Voirie,139
+2011,5,Mercier-Hochelaga-Maisonneuve,Hochelaga,Anomaly - Maisons fleuries,7
 2011,5,Mercier-Hochelaga-Maisonneuve,Hochelaga,Arbre,38
 2011,5,Mercier-Hochelaga-Maisonneuve,Hochelaga,Autre,32
 2011,5,Mercier-Hochelaga-Maisonneuve,Hochelaga,Chien,20
@@ -38343,7 +38357,7 @@ year,month,borough,district,category,calls
 2011,5,Mercier-Hochelaga-Maisonneuve,Hochelaga,Eau,52
 2011,5,Mercier-Hochelaga-Maisonneuve,Hochelaga,Eclairage,16
 2011,5,Mercier-Hochelaga-Maisonneuve,Hochelaga,Egout,20
-2011,5,Mercier-Hochelaga-Maisonneuve,Hochelaga,Environnement,32
+2011,5,Mercier-Hochelaga-Maisonneuve,Hochelaga,Environnement,25
 2011,5,Mercier-Hochelaga-Maisonneuve,Hochelaga,Parc,25
 2011,5,Mercier-Hochelaga-Maisonneuve,Hochelaga,Permis,35
 2011,5,Mercier-Hochelaga-Maisonneuve,Hochelaga,Securite,10
@@ -38632,7 +38646,7 @@ year,month,borough,district,category,calls
 2011,5,Rosemont-La Petite-Patrie,Vieux-Rosemont,Stationnement,1
 2011,5,Rosemont-La Petite-Patrie,Vieux-Rosemont,Taxes,8
 2011,5,Rosemont-La Petite-Patrie,Vieux-Rosemont,Voirie,94
-2011,5,Saint-Laurent,Cote-de-Liesse,Anomaly - Maisons fleuries,466
+2011,5,Saint-Laurent,Cote-de-Liesse,Anomaly - Maisons fleuries,468
 2011,5,Saint-Laurent,Cote-de-Liesse,Anomaly - Surveillance,2
 2011,5,Saint-Laurent,Cote-de-Liesse,Arbre,67
 2011,5,Saint-Laurent,Cote-de-Liesse,Autre,224
@@ -38643,7 +38657,7 @@ year,month,borough,district,category,calls
 2011,5,Saint-Laurent,Cote-de-Liesse,Eau,75
 2011,5,Saint-Laurent,Cote-de-Liesse,Eclairage,19
 2011,5,Saint-Laurent,Cote-de-Liesse,Egout,16
-2011,5,Saint-Laurent,Cote-de-Liesse,Environnement,312
+2011,5,Saint-Laurent,Cote-de-Liesse,Environnement,310
 2011,5,Saint-Laurent,Cote-de-Liesse,Parc,21
 2011,5,Saint-Laurent,Cote-de-Liesse,Permis,25
 2011,5,Saint-Laurent,Cote-de-Liesse,Securite,4
@@ -38702,6 +38716,7 @@ year,month,borough,district,category,calls
 2011,5,Saint-Leonard,Saint-Leonard-Ouest,Signalisation,8
 2011,5,Saint-Leonard,Saint-Leonard-Ouest,Taxes,131
 2011,5,Saint-Leonard,Saint-Leonard-Ouest,Voirie,48
+2011,5,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Anomaly - Maisons fleuries,5
 2011,5,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Anomaly - Stationnement,3
 2011,5,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Arbre,28
 2011,5,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Autre,79
@@ -38712,7 +38727,7 @@ year,month,borough,district,category,calls
 2011,5,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Eau,53
 2011,5,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Eclairage,24
 2011,5,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Egout,27
-2011,5,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Environnement,62
+2011,5,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Environnement,57
 2011,5,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Parc,31
 2011,5,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Permis,35
 2011,5,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Securite,5
@@ -43913,6 +43928,7 @@ year,month,borough,district,category,calls
 2011,11,Le Plateau-Mont-Royal,Mile-End,Taxes,2
 2011,11,Le Plateau-Mont-Royal,Mile-End,Voirie,58
 2011,11,Mercier-Hochelaga-Maisonneuve,Hochelaga,Anomaly - Stationnement,1
+2011,11,Mercier-Hochelaga-Maisonneuve,Hochelaga,Anomaly - Surveillance,1
 2011,11,Mercier-Hochelaga-Maisonneuve,Hochelaga,Arbre,16
 2011,11,Mercier-Hochelaga-Maisonneuve,Hochelaga,Autre,18
 2011,11,Mercier-Hochelaga-Maisonneuve,Hochelaga,Chien,60
@@ -43926,7 +43942,7 @@ year,month,borough,district,category,calls
 2011,11,Mercier-Hochelaga-Maisonneuve,Hochelaga,Neige,2
 2011,11,Mercier-Hochelaga-Maisonneuve,Hochelaga,Parc,7
 2011,11,Mercier-Hochelaga-Maisonneuve,Hochelaga,Permis,16
-2011,11,Mercier-Hochelaga-Maisonneuve,Hochelaga,Securite,6
+2011,11,Mercier-Hochelaga-Maisonneuve,Hochelaga,Securite,5
 2011,11,Mercier-Hochelaga-Maisonneuve,Hochelaga,Signalisation,44
 2011,11,Mercier-Hochelaga-Maisonneuve,Hochelaga,Stationnement,5
 2011,11,Mercier-Hochelaga-Maisonneuve,Hochelaga,Taxes,3
@@ -47021,7 +47037,7 @@ year,month,borough,district,category,calls
 2012,2,Rosemont-La Petite-Patrie,Vieux-Rosemont,Stationnement,1
 2012,2,Rosemont-La Petite-Patrie,Vieux-Rosemont,Taxes,23
 2012,2,Rosemont-La Petite-Patrie,Vieux-Rosemont,Voirie,24
-2012,2,Saint-Laurent,Cote-de-Liesse,Anomaly - Surveillance,2
+2012,2,Saint-Laurent,Cote-de-Liesse,Anomaly - Surveillance,3
 2012,2,Saint-Laurent,Cote-de-Liesse,Arbre,10
 2012,2,Saint-Laurent,Cote-de-Liesse,Autre,125
 2012,2,Saint-Laurent,Cote-de-Liesse,Chien,108
@@ -47034,7 +47050,6 @@ year,month,borough,district,category,calls
 2012,2,Saint-Laurent,Cote-de-Liesse,Neige,48
 2012,2,Saint-Laurent,Cote-de-Liesse,Parc,6
 2012,2,Saint-Laurent,Cote-de-Liesse,Permis,16
-2012,2,Saint-Laurent,Cote-de-Liesse,Securite,1
 2012,2,Saint-Laurent,Cote-de-Liesse,Signalisation,43
 2012,2,Saint-Laurent,Cote-de-Liesse,Stationnement,25
 2012,2,Saint-Laurent,Cote-de-Liesse,Taxes,25
@@ -49619,6 +49634,7 @@ year,month,borough,district,category,calls
 2012,5,Le Plateau-Mont-Royal,Mile-End,Taxes,9
 2012,5,Le Plateau-Mont-Royal,Mile-End,Voirie,119
 2012,5,Mercier-Hochelaga-Maisonneuve,Hochelaga,Anomaly - Branches,39
+2012,5,Mercier-Hochelaga-Maisonneuve,Hochelaga,Anomaly - Maisons fleuries,3
 2012,5,Mercier-Hochelaga-Maisonneuve,Hochelaga,Arbre,38
 2012,5,Mercier-Hochelaga-Maisonneuve,Hochelaga,Autre,20
 2012,5,Mercier-Hochelaga-Maisonneuve,Hochelaga,Chien,44
@@ -49628,7 +49644,7 @@ year,month,borough,district,category,calls
 2012,5,Mercier-Hochelaga-Maisonneuve,Hochelaga,Eau,53
 2012,5,Mercier-Hochelaga-Maisonneuve,Hochelaga,Eclairage,3
 2012,5,Mercier-Hochelaga-Maisonneuve,Hochelaga,Egout,61
-2012,5,Mercier-Hochelaga-Maisonneuve,Hochelaga,Environnement,42
+2012,5,Mercier-Hochelaga-Maisonneuve,Hochelaga,Environnement,39
 2012,5,Mercier-Hochelaga-Maisonneuve,Hochelaga,Parc,34
 2012,5,Mercier-Hochelaga-Maisonneuve,Hochelaga,Permis,29
 2012,5,Mercier-Hochelaga-Maisonneuve,Hochelaga,Securite,9
@@ -49961,7 +49977,7 @@ year,month,borough,district,category,calls
 2012,5,Saint-Laurent,Cote-de-Liesse,Taxes,24
 2012,5,Saint-Laurent,Cote-de-Liesse,Voirie,85
 2012,5,Saint-Laurent,Norman-McLaren,Anomaly - Branches,71
-2012,5,Saint-Laurent,Norman-McLaren,Anomaly - Maisons fleuries,260
+2012,5,Saint-Laurent,Norman-McLaren,Anomaly - Maisons fleuries,262
 2012,5,Saint-Laurent,Norman-McLaren,Anomaly - Stationnement,1
 2012,5,Saint-Laurent,Norman-McLaren,Anomaly - Surveillance,7
 2012,5,Saint-Laurent,Norman-McLaren,Arbre,59
@@ -49973,7 +49989,7 @@ year,month,borough,district,category,calls
 2012,5,Saint-Laurent,Norman-McLaren,Eau,15
 2012,5,Saint-Laurent,Norman-McLaren,Eclairage,30
 2012,5,Saint-Laurent,Norman-McLaren,Egout,17
-2012,5,Saint-Laurent,Norman-McLaren,Environnement,77
+2012,5,Saint-Laurent,Norman-McLaren,Environnement,75
 2012,5,Saint-Laurent,Norman-McLaren,Parc,12
 2012,5,Saint-Laurent,Norman-McLaren,Permis,24
 2012,5,Saint-Laurent,Norman-McLaren,Securite,1
@@ -50015,6 +50031,7 @@ year,month,borough,district,category,calls
 2012,5,Saint-Leonard,Saint-Leonard-Ouest,Taxes,138
 2012,5,Saint-Leonard,Saint-Leonard-Ouest,Voirie,35
 2012,5,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Anomaly - Branches,43
+2012,5,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Anomaly - Maisons fleuries,2
 2012,5,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Anomaly - Stationnement,1
 2012,5,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Arbre,45
 2012,5,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Autre,68
@@ -50025,7 +50042,7 @@ year,month,borough,district,category,calls
 2012,5,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Eau,57
 2012,5,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Eclairage,26
 2012,5,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Egout,60
-2012,5,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Environnement,264
+2012,5,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Environnement,262
 2012,5,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Neige,1
 2012,5,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Parc,44
 2012,5,Sud-Ouest,Saint-HenriPetite-BourgognePointe-Saint-Charles,Permis,52
@@ -50053,6 +50070,7 @@ year,month,borough,district,category,calls
 2012,5,Sud-Ouest,Saint-PaulEmard,Taxes,12
 2012,5,Sud-Ouest,Saint-PaulEmard,Voirie,91
 2012,5,Verdun,ChamplainL'Ile-des-Soeurs,Anomaly - Branches,50
+2012,5,Verdun,ChamplainL'Ile-des-Soeurs,Anomaly - Maisons fleuries,1
 2012,5,Verdun,ChamplainL'Ile-des-Soeurs,Arbre,30
 2012,5,Verdun,ChamplainL'Ile-des-Soeurs,Autre,13
 2012,5,Verdun,ChamplainL'Ile-des-Soeurs,Chien,50
@@ -50062,7 +50080,7 @@ year,month,borough,district,category,calls
 2012,5,Verdun,ChamplainL'Ile-des-Soeurs,Eau,21
 2012,5,Verdun,ChamplainL'Ile-des-Soeurs,Eclairage,12
 2012,5,Verdun,ChamplainL'Ile-des-Soeurs,Egout,44
-2012,5,Verdun,ChamplainL'Ile-des-Soeurs,Environnement,28
+2012,5,Verdun,ChamplainL'Ile-des-Soeurs,Environnement,27
 2012,5,Verdun,ChamplainL'Ile-des-Soeurs,Parc,5
 2012,5,Verdun,ChamplainL'Ile-des-Soeurs,Permis,28
 2012,5,Verdun,ChamplainL'Ile-des-Soeurs,Securite,10

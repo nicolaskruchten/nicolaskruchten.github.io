@@ -25,7 +25,7 @@ Key points about this visualization:
     * Ontario and Quebec have the most MPs, and were dominated by the Conservatives and New Democrats, respectively, but the Conservatives formed the Government due to their strength in the Prairies
     * the Liberals suffered a serious defeat but still managed to get MPs elected in almost every province
     * the Bloc Québecois is a Quebec-only party and the Greens did get an MP elected in BC (their party leader Elizabeth May)
-    * the "[Orange Crush]" of New Democrats elected in Quebec comprises a large number of women in their twenties, and this visualization shows that in fact this makes the NDP the only party with MPs in their twenties and the major party that is the closest to gender parity
+    * the "[Orange Crush][oc]" of New Democrats elected in Quebec comprises a large number of women in their twenties, and this visualization shows that in fact this makes the NDP the only party with MPs in their twenties and the major party that is the closest to gender parity
 
 * the dataset used is one that I put together myself in October 2012 using [OpenRefine][or] and data from the Parliament website (MP names, parties and provinces) and Wikipedia (MP birthdates and genders) in order to create demos for my [PivotTable.js][pv] visualization software
     * although there are 308 MPs in the House, the visualization contains only 305 as I was unable to obtain birthdates for 3 MPs

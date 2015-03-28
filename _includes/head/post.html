@@ -2,9 +2,9 @@
 {% capture head_post_html %}
 	<head>
 		{% if page.title %}
-			<title>{{ site.name }} - {{ page.title }}</title>
+			<title>{{ page.title }}</title>
 		{% else %}
-			<title>{{ site.name }} - {{ site.description }}</title>
+			<title>{{ site.name }}</title>
 		{% endif %}
 		{% include head/common/common.html %}
 	</head>

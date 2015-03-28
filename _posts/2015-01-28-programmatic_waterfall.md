@@ -1,6 +1,6 @@
 ---
 layout: redirect
-title: The Programmatic Waterfall Mystery: Solved
+title: "The Programmatic Waterfall Mystery: Solved"
 dest: http://datacratic.com/site/blog/programmatic-waterfall-mystery-solved
 tags:
     - Datacratic

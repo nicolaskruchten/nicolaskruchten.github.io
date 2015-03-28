@@ -26,8 +26,8 @@
 name : Nicolas.Kruchten.com
 brand : Nicolas.Kruchten.com
 description : false
-#url : http://nicolas.kruchten.com
-url : http://127.0.0.1:4000
+url : http://nicolas.kruchten.com
+#url : http://127.0.0.1:4000
 markdown: kramdown
 email : nicolas@kruchten.com
 author: Nicolas Kruchten

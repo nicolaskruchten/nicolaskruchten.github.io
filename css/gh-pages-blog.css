@@ -70,3 +70,6 @@
     width: 1.25em;
     text-align: center;
     }
+
+     li ul { margin-bottom: 25px; } 
+     .ghpb-post li ul li {margin-bottom: 0; margin-right: 50px; } 

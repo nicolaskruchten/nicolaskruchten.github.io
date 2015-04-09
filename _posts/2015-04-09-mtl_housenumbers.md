@@ -13,15 +13,17 @@ I've always been curious to see what kinds of patterns would be visible if one t
 
 <!-- more -->
 
-This map sort of shows a mixture of historical and political patterns, as different municipal authorities came into being at different times. The patterns I see are as follows:
+This map sort of shows a mixture of geographical, historical and political patterns, as house numbering is a municipal concern and different municipal authorities came into being at different times with different allegiances and ideas. The patterns I see are as follows:
 
 * The Saint Lawrence River and Rue Saint-Laurent both act as zero-points: a dominant pattern is that house numbers increase as you move "north" away from the river and "east/west" as you move away from the the Main.
-* The above pattern is broken repeatedly for places that used to be and/or still are independent cities which show up in yellow/green
-* In the West-Island, some of the suburbs like Pierrefonds-Roxboro stick to the dominant pattern and others like Dollards-Des-Ormaux don't, even though they tend to stick to the twisty-passages-all-alike aesthetic of suburban street layout
+* The above pattern is broken repeatedly for places that were and/or still are independent cities which show up in yellow/green because they have their own zero-points
+* In the West-Island, curiously, some of the suburbs like Pierrefonds-Roxboro stick to the dominant pattern and others like Dollards-Des-Ormaux don't, even though they tend to stick to the twisty-passages-all-alike aesthetic of suburban street layout. D
 
 ## Technical details
 
-For the technically-minded, this map was put together using the [ggplot2][gg] package and [RMarkdown][rmdsys] with data from the [OpenStreetMap project][osm]. The Jekyll engine which powers this website accepts Markdown directly, so the remainder of this post is based on the [housenumbers.md][md] file that was generated from the [housenumbers.rmd][rmd] source file.
+The OpenStreetMap database contains "way" record for every side of every block of every street, delimited by "node" records which contain latitude and longitude data. Each of these nodes has  `addr:housenumber` tag containing the limiting house number for its end of the block. This map is essentially just a scatterplot of the positions of these nodes, colour-coded by the house number.
+
+This map was put together using the [ggplot2][gg] package and [RMarkdown][rmdsys] with data from the [OpenStreetMap project][osm]. The Jekyll engine which powers this website accepts Markdown directly, so the remainder of this post is based on the [housenumbers.md][md] file that was auto-generated from the [housenumbers.rmd][rmd] source file.
 
 [gg]: http://ggplot2.org/
 [osm]: http://www.openstreetmap.org

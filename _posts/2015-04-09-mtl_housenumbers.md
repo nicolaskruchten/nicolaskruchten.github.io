@@ -17,7 +17,7 @@ This map sort of shows a mixture of geographical, historical and political patte
 
 * The Saint Lawrence River and Rue Saint-Laurent both act as zero-points: a dominant pattern is that house numbers increase as you move "north" away from the river and "east/west" as you move away from the the Main.
 * The above pattern is broken repeatedly for places that were and/or still are independent cities which show up in yellow/green because they have their own zero-points
-* In the West-Island, curiously, some of the suburbs like Pierrefonds-Roxboro stick to the dominant pattern and others like Dollards-Des-Ormaux don't, even though they tend to stick to the twisty-passages-all-alike aesthetic of suburban street layout. D
+* In the West-Island, curiously, some of the suburbs like Pierrefonds-Roxboro stick to the dominant pattern and others like Dollards-Des-Ormaux don't, even though they tend to stick to the twisty-passages-all-alike aesthetic of suburban street layout.
 
 ## Technical details
 

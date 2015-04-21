@@ -117,3 +117,11 @@ We will dress it up a bit before publication, though, to shake that "defaults" l
 And here's the final output again:
 
 ![House Numbers](http://nicolas.kruchten.com/images/housenumbers.png)
+
+### A note on the colour scale
+
+My choice of a log-transformed rainbow colour scale was the most-often critiqued element of this visualization. In the technical development above one can see a simple linear gradient, which I thought was fairly uninteresting and unreadable. I chose a rainbow scale so that the crosssing north-south and east-west gradients would be more visibles, and I chose the log scale to make it clearer where the number systems 'reset' to zero.
+
+Here's a version with a linear (but still rainbow) color scale:
+
+![House Numbers](http://nicolas.kruchten.com/images/housenumbers-linear.png)

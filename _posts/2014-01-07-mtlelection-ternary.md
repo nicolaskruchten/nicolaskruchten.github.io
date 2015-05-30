@@ -13,7 +13,7 @@ In the Montreal mayoral election last November, nearly 85% of the vote went to o
 
 <!-- more -->
 
-A ternary plot for a three-way vote split is basically just a triangle with a candidate in each corner. Every point within that triangle represents a split of votes: each point represents one possible three-way pie-chart, and all possible three-way pie-charts map to a point in the triangle. The corners represent 100% of the votes going to that corner's candidate, and the further away the point is from a corner, the smaller the proportion of votes that corner's candidate got. 
+A ternary plot for a three-way vote split is basically just a triangle with a candidate in each corner. Every point within that triangle represents a split of votes: you can think of each point representing one possible three-way pie-chart, and all possible three-way pie-charts mapping to a point in the triangle. The corners represent 100% of the votes going to that corner's candidate, and the further away the point is from a corner, the smaller the proportion of votes that corner's candidate got. 
 
 As it happens, the way computer monitors display color is by independently varying the amount of red, green and blue light that gets shown, so if you assign those colours to the points of the triangle, then each point in the triangle gets its own shade (even though many of those shades are ugly!), and this is how the points and triangles I'm showing below were coloured.
 
@@ -29,9 +29,13 @@ Applying this rule repeatedly and applying basic logic, we can actually split th
 
 ![Ranks](http://nicolas.kruchten.com/images/ternary/ranks.png)
 
-Finally, if we draw lines between the face midpoints, we create three new triangles. Points in the outer triangles represent vote splits with clear, 50%-plus majorities, whereas the inner triangle represents points where the winner didn't get a clear majority:
+Additionally, if we draw lines between the face midpoints, we create three new triangles. Points in the outer triangles represent vote splits with clear, 50%-plus majorities, whereas the inner triangle represents points where the winner didn't get a clear majority:
 
 ![Majorities](http://nicolas.kruchten.com/images/ternary/majorities.png)
+
+Putting it all together, we can divide the triangle into twelve zones, as below. The labels can be interpreted as follows: "Abc" means that A came in first, with a majority, followed by B then C; "abc" means that A came in first without a majority, followed by B then C.
+
+![Majorities](http://nicolas.kruchten.com/images/ternary/full.png)
 
 So how does this visualization technique help us understand what happened in the recent Montreal mayoral election? The following visualization shows us each of the 52 electoral districts as points in a ternary plot, and I drew an actual map of Montreal next to it. The [interactive version][iv] lets you mouse over the points to light up which region it represents. The points in the ternary plot are sized by the number of votes in the district. 
 

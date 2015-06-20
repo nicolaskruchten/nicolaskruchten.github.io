@@ -54,19 +54,22 @@
 }
 
 
-    body { 
-      font-family: 'Open Sans'; 
-      -webkit-font-smoothing: antialiased;
-      text-rendering: optimizeLegibility
-    }
-    h1, h2, h3, h4, h5, h6, .brand {font-family: 'Museo Slab 700';}
-    h2 a {color: #333;}
-    h2 {font-size: 31px;}
-    h3 {font-size: 24px;}
-    p { line-height: 1.5; }
-    
-    li [class^="icon-"], .nav li [class^="icon-"], li [class*=" icon-"], .nav li [class*=" icon-"] {
-    display: inline-block;
-    width: 1.25em;
-    text-align: center;
-    }
+body { 
+  font-family: 'Open Sans'; 
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility
+}
+h1, h2, h3, h4, h5, h6, .brand {font-family: 'Museo Slab 700';}
+h2 a {color: #333;}
+h2 {font-size: 31px;}
+h3 {font-size: 24px;}
+p { line-height: 1.5; }
+
+li [class^="icon-"], .nav li [class^="icon-"], li [class*=" icon-"], .nav li [class*=" icon-"] {
+display: inline-block;
+width: 1.25em;
+text-align: center;
+}
+code {color: #333333;}
+ul { margin-bottom: 25px; } 
+.ghpb-post li ul li {margin-bottom: 0; margin-right: 50px; } 

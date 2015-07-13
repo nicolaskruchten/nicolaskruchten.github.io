@@ -360,11 +360,14 @@ github_projects :
   header : Notable Projects
   projects :
   - project :
-    name : PivotTable.js
+    name : PivotTable.js - in-browser Pivot Table
     url : https://github.com/nicolaskruchten/pivottable
   - project :
-    name : RTBkit
+    name : RTBkit - Open Source Real-Time Bidding
     url : https://github.com/rtbkit/rtbkit
+  - project :
+    name : MLDB - the Machine Learning Database
+    url : http://mldb.ai
 
 
 # These are links to other websites outside of the blog that are not part of

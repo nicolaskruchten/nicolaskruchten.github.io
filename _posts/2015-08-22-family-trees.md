@@ -25,7 +25,7 @@ I built this using the [ggplot][gg] library and the [final output is available h
 
 ![](http://nicolas.kruchten.com/images/lepage_bandet.jpg)
 
-My mother-in-law's parents lived in Saskatchewan and had 15 children, so when we went to visit some of them, it was easy to get confused! I wanted to build a compact graphic that would show all of their descendants. This kind of chart is traditionally laid out linearly and fans out extremely widely so I tried a radial approach instead. I represented the time dimension as well by laying out nodes according to their year of birth. I later found a [paper describing a similar approach][paper], although my layout was computed differently.
+My mother-in-law's parents lived in Saskatchewan and had 15 children, so when we went to visit some of them, it was easy to get confused! Luckily my aunt-in-law Jeanne d'Arc had a nicely-organized Word doc I could use to build a compact graphic that would show all of their descendants. This kind of chart is traditionally laid out linearly and fans out extremely widely so I tried a radial approach instead. I represented the time dimension as well by laying out nodes according to their year of birth. I later found a [paper describing a similar approach][paper], although my layout was computed differently.
 
 I built this using the [d3][d3] library and the [final output is available here][lb] with the [source on Github][gh]. I coloured the nodes according to their generation, to add some visual diversity and to help the eye track across the circle, and I limited the labels to first names, in order to keep things compact. I also limited the individuals to just the descendants: no spouses.
 

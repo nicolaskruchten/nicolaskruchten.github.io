@@ -32,7 +32,7 @@ I built this using the [d3][d3] library and the [final output is available here]
 
 ## Thoughts
 
-Visualizing families is a pretty old and common thing to want to do, and there many [techniques][vis] for it and pre-existing [software][soft] and even [businesses][print] which specialize in printing huge charts for family reunions. All the same, I had fun making these graphics and thinking through the visualization choices myself.
+The impulse to visualize family trees is an old and common one, and there many [techniques][vis] and pre-existing [software][soft] for doing it. There are even [businesses][print] which specialize in printing huge charts for family reunions. All the same, I had fun making these graphics and thinking through the visualization choices myself.
 
 I also learned that just like map-making, genealogy and the subsequent production of graphics can be kind of political. Who should be included in the graphic? How should the names be written? These can be fluid (people marry and split up, or have kids without marrying) and capturing a static image can be tricky and subjective. I sidestepped most of these issues by deferring to the judgement of those who collected the data, but it was interesting to think about nonetheless.
 

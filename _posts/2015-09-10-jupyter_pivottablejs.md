@@ -28,8 +28,9 @@ Then, if you have a Pandas DataFrame (or any other object with a `to_csv` method
 
 What happens behind the scenes is that a local file called `pivottablejs.html` is written (overrideable behaviour with the `outfile_path` keyword arg), which contains your data and some HTML/Javascript to load up the UI, which Jupyter then loads up in an `iframe`. You can "pop out" of that frame into a full page, which is then savable for later.
 
-The module is up on [Github][gh] and I'd love feedback, pull requests etc.
+The `pivottablejs` Python module is [available from PyPi][pypi] under the same free MIT license as PivotTable.js. The source is up on [Github][gh] and I'd love feedback, pull requests etc.
 
+[pypi]: https://pypi.python.org/pypi/pivottablejs
 [gh]: https://nicolas.kruchten.com/jupyter_pivottablejs
 [pv]: https://nicolas.kruchten.com/pivottable
 [ipy]: http://jupyter.org

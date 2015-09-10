@@ -30,6 +30,7 @@ What happens behind the scenes is that a local file called `pivottablejs.html` i
 
 The `pivottablejs` Python module is [available from PyPi][pypi] under the same free MIT license as PivotTable.js. The source is up on [Github][gh] and I'd love feedback, pull requests etc.
 
+[pd]: http://pandas.pydata.org/
 [pypi]: https://pypi.python.org/pypi/pivottablejs
 [gh]: https://nicolas.kruchten.com/jupyter_pivottablejs
 [pv]: https://nicolas.kruchten.com/pivottable

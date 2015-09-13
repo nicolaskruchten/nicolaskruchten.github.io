@@ -21,12 +21,14 @@ The fantastic [Pandas][pd] library for Python already has a `pivot_table` method
 
 To use PivotTable.js from Jupyter, first install it with `pip install pivottablejs`.
 
-Then, if you have a Pandas DataFrame (or any other object with a `to_csv` method) called `df` just do:
+Then, if you have a Pandas DataFrame (from Pandas v0.14+, or any other object with a `to_csv` method which returns a string) called `df` just execute
 
     from pivottablejs import pivot_ui
     pivot_ui(df)
 
-What happens behind the scenes is that a local file called `pivottablejs.html` is written (overrideable behaviour with the `outfile_path` keyword arg), which contains your data and some HTML/Javascript to load up the UI, which Jupyter then loads up in an `iframe`. You can "pop out" of that frame into a full page, which is then savable for later.
+and you will get an interactive UI in your notebook.
+
+What happens behind the scenes is that a local file called `pivottablejs.html` is written (overrideable behaviour with the `outfile_path` keyword arg), which contains your data in CSV form and some HTML/Javascript to load up the UI, which Jupyter then loads up in an `iframe`. You can also "pop out" of that frame into a full page, which is then saveable for later.
 
 The `pivottablejs` Python module is [available from PyPi][pypi] under the same free MIT license as PivotTable.js. The source is up on [Github][gh] and I'd love feedback, pull requests etc.
 

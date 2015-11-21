@@ -306,6 +306,11 @@ social_links :
       url : https://github.com/nicolaskruchten
     - link :
       enabled : true
+      name : YouTube
+      font_awesome_icon : icon-youtube
+      url : https://www.youtube.com/playlist?list=PLG720DHcaUuK0CNvJcoEJIV6lWpNJnU18
+    - link :
+      enabled : true
       name : Goodreads
       font_awesome_icon : icon-book
       url : https://goodreads.com/nicolaskruchten

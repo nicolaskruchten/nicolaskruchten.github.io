@@ -1,6 +1,6 @@
 ---
 layout : post
-title : Canadian MPs 2012 Visualization
+title : "VisMtl: Canadian MPs 2012 Visualization"
 image: http://nicolas.kruchten.com/images/vismtl5/kruchten.png
 relatedtag: Visualization
 github: nicolaskruchten/vismtl5

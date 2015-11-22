@@ -307,7 +307,7 @@ social_links :
     - link :
       enabled : true
       name : YouTube
-      font_awesome_icon : icon-youtube
+      font_awesome_icon : icon-youtube-play
       url : https://www.youtube.com/playlist?list=PLG720DHcaUuK0CNvJcoEJIV6lWpNJnU18
     - link :
       enabled : true

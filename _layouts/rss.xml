@@ -34,7 +34,7 @@
 			{% for p in site.posts %}
 				<item>
 					{% if p.title %}
-						<title>{{ p.title }}</title>
+						<title><![CDATA[ {{ p.title }} ]]></title>
 					{% else %}
 						<title>{{ site.description }}</title>
 					{% endif %}
@@ -51,8 +51,7 @@
 						<category><![CDATA[ {{ c }} ]]></category>
 					{% endfor %}
 
-					<description><![CDATA[ {{ p.description }} ]]></description>
-					<content><![CDATA[ {{ p.content }} ]]></content>
+					<description><![CDATA[ {{ p.content }} ]]></description>
 				</item>
 			{% endfor %}
 

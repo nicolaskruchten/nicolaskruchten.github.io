@@ -28,6 +28,10 @@
 							<img src="{{ page.image }}" alt="{{page.title}}" />
 						{% endif %}
 
+						{% if page.youtube %}
+							<p align="center"><iframe width="500" height="315" src="https://www.youtube.com/embed/{{page.youtube}}" frameborder="0" allowfullscreen></iframe></p>
+						{% endif %}
+
 						{{ content }}
 
 						<p style="text-align: center; font-size: 24px;">⁂</p>

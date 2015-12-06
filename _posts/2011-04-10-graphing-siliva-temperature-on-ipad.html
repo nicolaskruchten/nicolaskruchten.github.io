@@ -2,6 +2,7 @@
 layout : post
 title : Graphing Silvia Temperature on iPad
 github: nicolaskruchten/coffeegraph
+youtube: fGdFb0l-x4M
 relatedtag: Arduino
 tags:
     - Arduino
@@ -9,16 +10,7 @@ tags:
     - Visualization
 --- 
 
-<div class="text-center">
-    <object type="application/x-shockwave-flash" wmode="opaque" style="max-width: 100%" width="400" height="265" data="http%3A%2F%2Fwww.flickr.com%2Fapps%2Fvideo%2Fstewart.swf%3Fv%3D137818%26photo_id%3D5608043281%26photo_secret%3D59e7f44451" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000">
-        <param name="movie" value="http%3A%2F%2Fwww.flickr.com%2Fapps%2Fvideo%2Fstewart.swf%3Fv%3D137818%26photo_id%3D5608043281%26photo_secret%3D59e7f44451"></param>
-        <param name="bgcolor" value="#000000"></param>
-        <param name="allowFullScreen" value="true"></param>
-        <param name="wmode" value="opaque" />
-        <embed type="application/x-shockwave-flash" src="http://www.flickr.com/apps/video/stewart.swf?v=137818&photo_id=5608043281&photo_secret=59e7f44451" bgcolor="#000000" allowfullscreen="true" flashvars="intl_lang=en-us&amp;photo_secret=59e7f44451&amp;photo_id=5608043281" style="max-width: 100%" height="265" width="400" wmode="opaque"></embed>
-    </object>
-</div>
-<br />                    
+          
 <p>So I finally got around to working on my <a href="http://nicolas.kruchten.com/content/2010/12/silvia-mod-plan">Silvia Mod Plan</a>, getting all the way to Step 5! The video above is a demo of the setup I have to show a real-time graph on my iPad of the boiler temperature in the Silvia.</p>
 <p>Having installed the thermocouple in the Silvia and played with my <a href="http://code.google.com/p/tc4-shield/">TC4 shield</a>, my initial plan was to use the Arduino to transmit data to my iMac using <a href="http://www.digi.com/products/wireless-wired-embedded-solutions/zigbee-rf-modules/zigbee-mesh-module/xbee-zb-module.jsp#overview">XBee</a> as a wireless serial link, where I would run a <a href="http://nodejs.org/">NodeJS</a> process which would read data from the USB port and which would communicate with the iPad via a WebSocket over Wifi (phew, mouthful!). Ideally the Arduino would speak Wifi but in the meantime I figured I&#8217;d play with this setup. I chose NodeJS because it seemed really easy to set up <a href="http://socket.io/">WebSockets using socket.io</a>, and that seemed like a good way to feed data to <a href="http://smoothiecharts.org/">Smoothie Charts</a> for real-time graphing. I rewrote the code in <a href="http://jashkenas.github.com/coffee-script/">CoffeeScript</a>, because it&#8217;s the best way to write NodeJS code IMO (a discovery I made after writing the first version of this code 4 months ago) and because it&#8217;s so fitting for this project!</p>
 <!-- more -->

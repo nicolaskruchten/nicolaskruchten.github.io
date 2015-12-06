@@ -30,19 +30,9 @@ exclude: false
 				</div>
 				{% endif %}
 
-				{% if p.alert or p.notice %}
-					<br>
-					{% if p.alert %}
-					<div class="alert alert-block">
-						{{ p.alert }}
-					</div>
-					{% endif %}
 
-					{% if p.notice %}
-					<div class="alert alert-block alert-success">
-						{{ p.notice }}
-					</div>
-					{% endif %}
+				{% if p.youtube %}
+					<p align="center"><iframe width="500" height="315" src="https://www.youtube.com/embed/{{p.youtube}}" frameborder="0" allowfullscreen></iframe></p>
 				{% endif %}
 
 				<br>

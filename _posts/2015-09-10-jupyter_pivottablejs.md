@@ -2,12 +2,11 @@
 layout : post
 title : Drag'n'Drop Pivot Tables and Charts, in Jupyter/IPython Notebook
 relatedtag: Tools
+youtube: ZbrRrXiWBKc
 tags:
     - Tools
 github: nicolaskruchten/jupyter_pivottablejs
 --- 
-
-<p align="center"><iframe width="500" height="315" src="https://www.youtube.com/embed/ZbrRrXiWBKc" frameborder="0" allowfullscreen></iframe></p>
 
 [PivotTable.js][pv] is a Javascript Pivot Table and Pivot Chart library with drag'n'drop interactivity, and it can now be used with [Jupyter/IPython Notebook][ipy] via the [`pivottablejs` module][pypi]. This has been possible for [RStudio][rs] users for a while now via [rPivotTable][rp], but why should they have all the fun?
 

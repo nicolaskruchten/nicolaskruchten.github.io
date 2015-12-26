@@ -8,7 +8,7 @@ tags:
 github: nicolaskruchten/mtlelectionpies
 --- 
 
-For the latest in my series of maps of the results of the 2013 Montreal municipal election, I've produced a pair of graduated symbol maps, representing the results as a pie charts overlaid on a base map. It's interesting to compare this type of visualizationt to my previous efforts: the [dot map][dm], the [choropleth][ch], and the [ternary plot][tp].
+For the latest in my series of maps of the results of the 2013 Montreal municipal election, I've produced a pair of graduated symbol maps, representing the results as a pie charts overlaid on a base map. It's interesting to compare this type of visualization to my previous efforts: the [dot map][dm], the [choropleth][ch], and the [ternary plot][tp].
 
 <!-- more -->
 

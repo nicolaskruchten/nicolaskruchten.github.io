@@ -14,8 +14,8 @@ For the latest in my series of maps of the results of the 2013 Montreal municipa
 
 ## Results by District
 
-[![](http://nicolas.kruchten.com/images/electionpie_districts.png)
-<br/>(click to see the interactive version of this map)][bydistrict]
+[![](http://nicolas.kruchten.com/images/electionpie_districts.png)][bydistrict]
+<br/>[(click to see the interactive version of this map)][bydistrict]
 
 Montreal has 19 boroughs, divided up into 58 districts. The map above has one pie chart per district, except for the boroughs with tiny districts (Outremont, Anjou, Lachine, L’Île-Bizard–Sainte-Geneviève), which were recombined into borough-level pie charts. The pie charts are scaled such that their area is proportional to the number of votes each one represents.
 
@@ -26,8 +26,8 @@ This chart was generated with [DimpleJS][dimple], using data extracted with a [J
 
 ## Results by Ballot Box
 
-[![](http://nicolas.kruchten.com/images/electionpie_sections.png)
-<br/>(click to see the full-sized interactive version of this map)][bysection]
+[![](http://nicolas.kruchten.com/images/electionpie_sections.png)][bysection]
+<br/>[(click to see the full-sized interactive version of this map)][bysection]
 
 The election data is actually available at the ballot-box level, with each ballot-box holding roughly 120 votes. The map above has more than 3,500 pie charts, one per ballot-box. The pie charts are scaled such that their area is proportional to the number of votes each one represents.
 

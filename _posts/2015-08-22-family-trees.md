@@ -15,8 +15,8 @@ I had the pleasure of visiting with many members of my wife's family this summer
 
 ## Fisher-Crawford Descendancy
 
-[![](http://nicolas.kruchten.com/images/fisher_crawford.jpg)
-<br />(click for PDF version)][fc] 
+[![](http://nicolas.kruchten.com/images/fisher_crawford.jpg)][fc] 
+<br />[(click for PDF version)][fc] 
 
 My father-in-law's brother, Kenneth Fisher, organized a reunion for the descendants of his grandparents, and I wanted to make a nice graphic showing the relationships between attendees that could fit on a single printed page. I was inspired by a paper on a technique called [TimeNets][tn], which shows a timeline of the lives of various family members, laid out such that marriages and parent-child relationships are easy to visualize. With a small data set such as the one I had to work with, I was able to do the layout by hand, and I opted to replace the curved lines indicating marriages with some grey bars, due to the limitations of the tools I was using. The end result is also somewhat reminiscent of one of my very first visualizations: [Context][cntxt].
 
@@ -24,8 +24,8 @@ I built this using the [ggplot][gg] library and the [final output is available h
 
 ## Lepage-Bandet Descendancy
 
-[![](http://nicolas.kruchten.com/images/lepage_bandet.jpg)
-<br />(click for full-resolution version)][lb]
+[![](http://nicolas.kruchten.com/images/lepage_bandet.jpg)][lb]
+<br />[(click for full-resolution version)][lb]
 
 My mother-in-law's parents lived in Saskatchewan and had 15 children, so when we went to visit some of them, it was easy to get confused about who was who! Luckily my mother-in-law's sister, Jeanne d'Arc Gaudet, had a nicely-organized Word doc I could use to build a compact graphic that would show all of their descendants. This kind of chart is traditionally laid out linearly and fans out extremely widely so I tried a radial approach instead. I represented the time dimension as well by laying out nodes according to their year of birth. I later found a [paper describing a similar approach][paper], although my layout was computed differently.
 

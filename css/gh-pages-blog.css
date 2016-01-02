@@ -37,13 +37,7 @@
 .bio p {
   margin: 10px auto;
 }
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Open Sans'), local('OpenSans'), url(../font/OpenSans.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-}
+
   @font-face {
   font-family: 'Museo Slab 700';
   src: url('../font/Museo_Slab_700-webfont.eot');
@@ -58,11 +52,11 @@
 
 
 body { 
-  font-family: 'Open Sans'; 
+  font-family: 'Open Sans', sans-serif; 
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility
 }
-h1, h2, h3, h4, h5, h6, .brand {font-family: 'Museo Slab 700';}
+h1, h2, h3, h4, h5, h6, .brand {font-family: 'Museo Slab 700', sans-serif;}
 h2 a {color: #333;}
 h2 {font-size: 31px;}
 h3 {font-size: 24px;}

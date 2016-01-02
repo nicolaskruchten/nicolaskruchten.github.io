@@ -1,0 +1,10 @@
+---
+layout: merge
+to_merge:
+    - bootstrap.css
+    - gh-pages-blog.css
+    - bootstrap-responsive.min.css
+    - font-awesome.min.css
+    - syntax.css
+    - featherlight.min.css
+---

@@ -1,0 +1,4 @@
+{% for x in page.to_merge %}
+{% include_relative {{x}} %}
+{% endfor %}
+

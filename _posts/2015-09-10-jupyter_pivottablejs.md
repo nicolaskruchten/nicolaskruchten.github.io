@@ -34,7 +34,7 @@ The `pivottablejs` Python module is [available from PyPi][pypi] under the same f
 [pd]: http://pandas.pydata.org/
 [pypi]: https://pypi.python.org/pypi/pivottablejs
 [gh]: https://github.com/nicolaskruchten/jupyter_pivottablejs
-[pv]: https://nicolas.kruchten.com/pivottable
+[pv]: http://nicolas.kruchten.com/pivottable
 [ipy]: http://jupyter.org
 [rs]: http://rstudio.com/
 [rp]: https://github.com/smartinsightsfromdata/rpivotTable

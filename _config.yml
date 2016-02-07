@@ -30,8 +30,8 @@ url : ""
 markdown: kramdown
 email : nicolas@kruchten.com
 author: Nicolas Kruchten
-
-permalink: /content/:year/:month/:title
+gems: ["jekyll-paginate"]
+permalink: /content/:year/:month/:title/
 excerpt_separator: <!-- more -->
 
 # The following is a list of files to exclude from inclusion in the

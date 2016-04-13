@@ -2,7 +2,7 @@
 layout: redirect
 image: http://nicolas.kruchten.com/images/indifference3.png
 title: Machine Learning Meets Economics
-dest: http://mldb.ai/blog/posts/2016/01/ml-meets-economics/
+dest: http://blog.mldb.ai/blog/posts/2016/01/ml-meets-economics/
 tags:
     - Datacratic
 ---

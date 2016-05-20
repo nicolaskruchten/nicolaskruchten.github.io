@@ -33,7 +33,7 @@ Additionally, if we draw lines between the face midpoints, we create three new t
 
 ![Majorities](http://nicolas.kruchten.com/images/ternary/majorities.png)
 
-Putting it all together, we can divide the triangle into twelve zones, as below. The labels can be interpreted as follows: "Abc" means that A came in first, with a majority votes, followed by B then C; "abc" means that A came in first with a plurality of the votes, followed by B then C.
+Putting it all together, we can divide the triangle into twelve zones, as below. The labels can be interpreted as follows: "Abc" means that A came in first, with a majority of votes, followed by B then C; "abc" means that A came in first with a plurality of the votes, followed by B then C.
 
 ![Majorities](http://nicolas.kruchten.com/images/ternary/full.png)
 

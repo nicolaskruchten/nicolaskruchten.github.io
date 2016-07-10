@@ -3,7 +3,6 @@ layout : post
 title : Volunteer Database for Santropol Roulant
 image: http://nicolas.kruchten.com/images/Volunteers.png
 github: nicolaskruchten/volunteerdb
-relatedtag: Tools
 tags:
     - Tools
 ---

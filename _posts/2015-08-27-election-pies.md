@@ -2,7 +2,6 @@
 layout : post
 title : Election Pies
 image: http://nicolas.kruchten.com/images/electionpie.png
-relatedtag: Open Data
 tags:
     - Open Data
 github: nicolaskruchten/mtlelectionpies

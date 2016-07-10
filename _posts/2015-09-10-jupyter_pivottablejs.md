@@ -1,7 +1,6 @@
 ---
 layout : post
 title : Drag'n'Drop Pivot Tables and Charts, in Jupyter/IPython Notebook
-relatedtag: Tools
 youtube: ZbrRrXiWBKc
 tags:
     - Tools

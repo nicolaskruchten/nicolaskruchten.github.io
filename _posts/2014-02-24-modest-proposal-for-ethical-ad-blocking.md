@@ -2,7 +2,6 @@
 layout : post
 title : A Modest Proposal for Ethical Ad Blocking
 image: http://nicolas.kruchten.com/images/modest/youradhere.png
-relatedtag: Real-Time Bidding
 tags:
     - Real-Time Bidding
 ---

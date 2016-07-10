@@ -3,7 +3,6 @@ layout : post
 title : Early Voting in the 2013 Montreal Election
 image: http://nicolas.kruchten.com/images/early/mosaic.png
 github: nicolaskruchten/mtlelection2013bydistrict
-relatedtag: Open Data
 tags:
     - Open Data
     - Visualization

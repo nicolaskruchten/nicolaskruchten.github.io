@@ -58,9 +58,12 @@
 					{% endfor %}
 				</ul>
 						</div>
+						
+					{% if page.tags[0] %}
+						{% assign related_tag = page.tags[0] %}
+					{% endif %}
 
-
-					{% if page.relatedtag or page.github %}
+					{% if related_tag or page.github %}
 						<div class="span5">
 							{% if page.github %}
 								<h3><i class="icon-github"></i> Code on Github</h3>
@@ -68,10 +71,10 @@
 								Code from this post is up on Github at <a href="https://github.com/{{page.github}}" target="_blank">{{page.github}}</a>
 								</p>
 							{% endif %}
-							{% if page.relatedtag %}
-								<h3>More {{page.relatedtag}} posts</h3>
+							{% if related_tag %}
+								<h3>More {{related_tag}} posts</h3>
 								<ul class="nav nav-list ghpb-nav-list">
-								{% for related_post in site.tags[page.relatedtag] %}
+								{% for related_post in site.tags[related_tag] %}
 									{% if page.title != related_post.title%}
 										<li><a href="{{ site.url }}{{ related_post.url }}">{{related_post.title}}</a></li>
 									{% endif %}

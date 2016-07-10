@@ -2,7 +2,6 @@
 layout : post
 title : Visualizing Family Trees
 image: http://nicolas.kruchten.com/images/two_trees.png
-relatedtag: Visualization
 tags:
     - Visualization
 github: nicolaskruchten/genealogy

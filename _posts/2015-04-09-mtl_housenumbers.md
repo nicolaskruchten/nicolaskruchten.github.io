@@ -2,11 +2,10 @@
 layout : post
 title : House Numbers on the Island of Montreal
 image: http://nicolas.kruchten.com/images/housenumbers.png
-relatedtag: Open Data
 github: nicolaskruchten/housenumbers
 tags:
-    - Visualization
     - Open Data
+    - Visualization
 ---
 
 I've always been curious to see what kinds of patterns would be visible if one tried to visualize the distribution of house numbers (the number in a street address) across a city like Montreal. This week I took some time to learn enough about the OpenStreetMap system to gather and plot the data.

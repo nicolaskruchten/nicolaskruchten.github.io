@@ -3,7 +3,6 @@ layout : post
 title : Ternary Plots for Election Results
 image: http://nicolas.kruchten.com/images/ternary/ternary_map.png
 github: nicolaskruchten/mtlelection2013bydistrict
-relatedtag: Open Data
 tags:
     - Open Data
     - Visualization

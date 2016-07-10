@@ -3,7 +3,6 @@ layout : post
 title : Zoomable Map for Montreal Election Results
 image: http://nicolas.kruchten.com/images/sectionmap.png
 github: nicolaskruchten/mtlelection2013bysection
-relatedtag: Open Data
 tags:
     - Open Data
     - Visualization

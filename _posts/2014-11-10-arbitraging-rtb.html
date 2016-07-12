@@ -1,0 +1,27 @@
+---
+layout: redirect
+title: Arbitraging an RTB Exchange
+dest: http://datacratic.com/site/blog/arbitraging-rtb-exchange
+tags:
+    - Datacratic
+    - Real-Time Bidding
+---
+
+<p>Last week, Bloomberg came out with an <a href="http://www.bloomberg.com/news/2014-11-07/high-speed-ad-traders-profit-by-arbitraging-your-eyeballs.html" target="_blank">article on RTB arbitrage</a>, which included a couple of sentences that made it sound a lot like it was possible to front-run an RTB auction: “Some buy from an exchange and sell it right back to that very same exchange” and “Some agencies are poorly connected to exchanges and can’t respond to a first auction in time, allowing middlemen to buy and flip within the same market”. This seemed surprising to me at first, given that all auction participants (as far as I know) get the same opportunity to bid on an impression, so how could you make money buying and selling the same impression on the same exchange? Upon further thought, however, here’s a theory about how it might work.</p>
+
+<!-- more -->
+
+<p><em>A disclaimer up front, though:</em> Datacratic is a software company and doesn’t engage in this practice nor has anyone ever asked us how to use our <a href="http://datacratic.com/site/products/rtb-optimizer">RTB Optimizer</a> product to do this. What follows is just a bit of thinking out loud about the economics of the situation.</p>
+<p>Say you could reliably identify some inventory on an exchange that, for no discernable reason, appeared to randomly clear at $1 one third of the time and $2 two thirds of the time. If you bid $1.50 and when you won, were able to somehow re-sell the same impression on the same exchange, what would happen? Here’s the breakdown if you did this 1000 times:</p>
+<ul>
+<li>667 times: auction clears at $2 and you lose</li>
+<li>333 times: auction clears at $1 and you win, then re-sell with this breakdown:
+<li>222 times: auction clears at $2, you’re up $1</li>
+<li>111 times: auction clears at $1, you’re even</li>
+</ul>
+
+<p>So by doing this 1000 times, you’re up $222 (or a bit less because of exchange fees). This is a synthetic example, of course: most RTB price distributions are much smoother than this, but not necessarily tighter. Either way, the bigger the variance in the price distribution, the more money can be made this way.</p>
+<p><strong>But why would such a clearing price distribution arise in an RTB exchange?</strong> Is it because, as the article says, “agencies are poorly connected and can’t respond in time”? This explanation seems fishy to me: if agencies can’t respond in time to the one auction, why would they better able to respond to another? My interpretation is rather that it’s because from buyers’ and exchanges’ points of view, it’s not always economical for all buyers to bid on every auction. There’s more supply than demand and the cost of bandwidth and operation for high-throughput, low-latency bidders and exchanges is fairly high, so it’s cheaper for any given advertiser to bid on a fraction of the auctions than to try to participate in all of them. This is the type of situation which I believe might make it profitable to sit in between transactions like this.</p>
+<p><strong>Is this practice good or bad and for whom? </strong>This is a <a href="http://www.amazon.com/Flash-Boys-Michael-Lewis/dp/0393244660">big, thorny question in the finance world</a>, and likely no easier to answer in the ad-tech world. Here’s my take, though: today, publishers likely lose out from this practice, as arbitrageurs use their own inventory to compete with them, buying low, selling high and capturing the surplus. Advertisers likely end up paying more today, perversely, in trying to save money by not participating in every auction. After all, all they need to do to get the impressions cheaply is to compete with the arbitrageurs directly by bidding more often. The same logic actually applies to publishers: if they wanted to recapture some of the surplus that’s going to arbitrageurs, they could do this themselves: run sequential auctions on their own inventory until they get a price they like, rather like the waterfall approach, but on the same exchange over and over.</p>
+<p><strong>What can we expect if this practice exists and grows?</strong> A lucrative trade always attracts copycats and responses, so we can expect clearing price distributions to tighten as arbitrageurs will bid higher to compete for a dwindling slice of pie and buyers will bid lower and more often to avoid overpaying. This would be the vaunted efficient market mechanism at work: benefitting both publishers and advertisers. It’s also what has happened in financial markets with the rise of automation: bid-ask spreads have shrunk due to algorithmic trading. Another possible response would be an acceleration of the trend whereby deals move out of public exchanges to private ones, similar to the move towards <a href="http://www.amazon.com/Dark-Pools-Machine-Traders-Rigging/dp/0307887189">dark pools in financial markets</a>.</p>
+<p>This is all mostly speculation on my part, and I’d love to hear others’ opinions and interpretations of this article!</p>

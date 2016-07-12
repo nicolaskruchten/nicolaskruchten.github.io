@@ -1,0 +1,20 @@
+---
+layout: redirect
+title: "The Programmatic Waterfall Mystery: Solved"
+dest: http://datacratic.com/site/blog/programmatic-waterfall-mystery-solved
+tags:
+    - Datacratic
+    - Real-Time Bidding
+---
+
+<p>A <a href="http://adexchanger.com/the-sell-sider/the-programmatic-waterfall-mystery/">recent article on AdExchanger</a> asks “In the supposedly super-efficient world of RTB, why would publishers continue to waterfall their demand sources?”. The article goes on to say that the publisher’s justification is “Because it works” but that “Any economist could tell you that this is a bad idea”. I’m not an economist but I can still pull together enough auction theory to show that this practice isn’t necessarily a bad one today.</p>
+
+<!-- more -->
+
+<p>Instead of looking at idealized aggregate demand curves, let’s look at the hypothetical demand for a single RTB impression. Bidder A comes in at $2.00 CPM and bidder B at $1.00 CPM. In this case, the super-efficient RTB mechanism comes nowhere near maximizing the yield: RTB auctions are second-price auctions, so bidder A wins and the clearing price is $1.00 CPM. This certainly a very good deal for bidder A: they’ve just gotten something at half the price they were willing to pay! In the <a href="http://en.wikipedia.org/wiki/Economic_surplus">economic jargon</a>, they have a “consumer surplus” of $1.00 CPM. The publisher, on the other hand, has a “producer surplus” of zero and is left wondering if they couldn't have sold it at the higher price, given that there was a willing buyer. </p>
+
+<p>One way to do this would in fact be to offer the impression multiple times, with a decreasing floor price. The first time, say, the floor price is $2.10 CPM and the auction doesn’t clear. The second time, the floor price is $1.90 CPM and so bidder A wins and the clearing price is $1.90 CPM. Bidder A gets an impression at a price they were willing to pay, and the publisher gets a fuller glass. In effect, the publisher can choose to use a sequence of <a href="http://en.wikipedia.org/wiki/Vickrey_auction">second-price (aka Vickrey) auctions</a> to emulate a <a href="http://en.wikipedia.org/wiki/Dutch_auction">descending-price (aka Dutch) auction</a> and thereby recapture a large share of the consumer surplus. This will work well even if the impression is not submitted to the same exchange each time, if the mix of bidders is similar across exchanges.</p>
+
+<p>So which auction type is better and for whom? Any economist familiar with the <a href="http://en.wikipedia.org/wiki/Revenue_equivalence">Revenue Equivalence Theorem</a> will tell you that in the long run with well-informed and rational bidders, the publisher would see the same revenue no matter the type of auction being used, Vickrey or Dutch: the optimal bidding strategy in a Dutch auction is to bid lower than in a Vickrey auction. "Revenue equivalence" is a far cry from "bad idea" though, so if publishers have empirically determined that this practice boosts their revenue in this context in the short run, I’m not as quick as Mr Paparo to criticize it on purely theoretical grounds. On more practical grounds, however, it’s clear that running multiple auctions for the same impression is inefficient, and has non-zero costs which could well outweigh any benefits.</p>
+
+<p>EDIT: the author of the original article posted <a href="http://adexchanger.com/the-sell-sider/waterfalling-a-new-hope/">his own (very fun to read) response</a>, and even gave this post a little shout-out.</p>

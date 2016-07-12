@@ -19,7 +19,7 @@
 					<div class="ghpb-post">
 
 						<h2>
-							<small>{{ page.date | date: "%B %-d, %Y" }}</small>
+							<small>{{ page.date | date: "%B %-d, %Y" }} &ndash; {{ page.tags | join: ", " }}</small>
 							<br />
 							{{ page.title }}
 						</h2>
@@ -59,11 +59,6 @@
 				</ul>
 						</div>
 						
-					{% if page.tags[0] %}
-						{% assign related_tag = page.tags[0] %}
-					{% endif %}
-
-					{% if related_tag or page.github %}
 						<div class="span5">
 							{% if page.github %}
 								<h3><i class="icon-github"></i> Code on Github</h3>
@@ -71,22 +66,18 @@
 								Code from this post is up on Github at <a href="https://github.com/{{page.github}}" target="_blank">{{page.github}}</a>
 								</p>
 							{% endif %}
-							{% if related_tag %}
-								<h3>More {{related_tag}} posts</h3>
-								<ul class="nav nav-list ghpb-nav-list">
-								{% for related_post in site.tags[related_tag] %}
-									{% if page.title != related_post.title%}
-										<li><a href="{{ site.url }}{{ related_post.url }}">{{related_post.title}}</a></li>
-									{% endif %}
-								{% endfor%}
-								</ul>
-							{% endif %}
+
+							{% assign related_tag = page.tags[0] %}
+							<h3>More {{related_tag}} posts</h3>
+							<ul class="nav nav-list ghpb-nav-list">
+							{% for related_post in site.tags[related_tag] %}
+								{% if page.title != related_post.title%}
+									<li><a href="{{ site.url }}{{ related_post.url }}">{{related_post.title}}</a></li>
+								{% endif %}
+							{% endfor%}
+							</ul>
 							
 						</div>
-					{% endif %}
-
-
-
 					</div>
 
 				</div>

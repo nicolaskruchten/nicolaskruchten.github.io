@@ -12,7 +12,7 @@ exclude: false
 		<div class="ghpb-post">
 				{% if p.title %}
 					<h2>
-						<small>{{ p.date | date: "%B %-d, %Y" }}</small>
+						<small>{{ p.date | date: "%B %-d, %Y" }} &ndash; {{ p.tags | join: ", " }}</small>
 						<br />
 						<a href="{{ site.url }}{{ p.url }}">{{ p.title }}</a></h2>
 				{% else %}

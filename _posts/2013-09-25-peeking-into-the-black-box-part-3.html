@@ -1,0 +1,82 @@
+---
+layout: redirect
+title: Peeking Into the Black Box, Part 3 - Beyond Surplus
+dest: http://datacratic.com/site/blog/peeking-black-box-part-3-beyond-surplus
+tags:
+    - Real-Time Bidding
+    - Datacratic
+---
+
+ <p><em>In <a href="http://datacratic.com/site/blog/peeking-black-box-part-1-datacratic%E2%80%99s-rtb-algorithms">Part 1</a> of this <a href="http://datacratic.com/site/blog/tags/peeking">Peeking Into the Black Box series</a>, I described how you could compute the expected economic surplus of truthfully bidding on an impression in an RTB context. I then explained that you could use this computation to decide which bidding opportunities were “better” than others and therefore decide when to bid and and when not to bid, based on the output of a closed-loop pace control system such as the one described in <a href="http://datacratic.com/site/blog/rtb-pacing-everyone-doing-it-wrong">Part 0</a>.</em></p>
+<p>In this post, I show that in order to maximize the economic surplus over a whole campaign, the quantity you should use on an auction-by-auction basis to decide when to bid is actually the expected return on investment (ROI) rather than the expected surplus. At Datacratic, we actually switched to an ROI-based strategy in late 2012.</p>
+
+<!-- more -->
+
+<h3>Too Little of a Good Thing</h3>
+<p>The total economic surplus of a campaign can be expressed as follows:</p>
+<p><img src="http://nicolas.kruchten.com/images/peeking/3-1.png" /></p>
+
+<p>Looking at this, it makes sense that maximizing the expected surplus for each individual bid maximize the total, right? Not necessarily, because there is a constraint here: the total cost of all the bids must be equal to the budget. If by maximizing each expected per-bid surplus you end up paying more per bid, you won’t be able to bid as often, which might actually lower your total surplus. That doesn’t mean you should try to bid when the expected surplus is low, but it does mean you want to try to balance the surplus with the cost.</p>
+<p>This problem was solved long ago by finance types, using a quantity called variously <a href="http://en.wikipedia.org/wiki/Return_on_investment">return on investment (ROI)</a> or <a href="http://en.wikipedia.org/wiki/Rate_of_return">rate of return or yield</a>, in order to compare the efficiency of investments against each other:</p>
+<p><img src="http://nicolas.kruchten.com/images/peeking/3-2.png" /></p>
+
+<p>If you consider each bid to be an investment, and your closed-loop pace control system is telling you that you’re over- or under-spending, you should therefore raise or lower the minimum expected ROI threshold that you’re willing to see before bidding, rather than the minimum expected surplus threshold. In finance, this threshold is called the <a href="http://en.wikipedia.org/wiki/Minimum_acceptable_rate_of_return">minimum acceptable rate of return (MARR) or hurdle rate</a>.</p>
+<h3>A Thought Experiment</h3>
+<p>Here is a thought experiment in which an ROI-based pacing strategy outperforms a surplus-based one.</p>
+<p>Assume a campaign with a budget of $1000 and a target cost per action (CPA) of $1 where an ‘action’ is a post-impression event like a click or conversion or video-view. Scenarios A and B both have an infinite supply of identical bid requests, differing only in their “response rate” (the percentage of the time that the impression results in the desired action) and price. Furthermore, assume that we have very accurate probability-of-action and cost predictors. Let’s say that the clearing price is less than the expected value (and thus the bid) in both scenarios, the probability of winning is 1.</p>
+<table align="center" border="1" cellpadding="1" cellspacing="1" style="width: 500px;"><thead><tr><th scope="row"> </th>
+<th scope="col">Response Rate</th>
+<th scope="col">Value</th>
+<th scope="col">Cost</th>
+<th scope="col">Surplus</th>
+<th scope="col">ROI</th>
+<th scope="col">Spend</th>
+<th scope="col">Imps</th>
+<th scope="col">Actions</th>
+<th scope="col">CPA</th>
+</tr></thead><tbody><tr><th scope="row">A</th>
+<td>0.1%</td>
+<td>u$1000</td>
+<td>u$750</td>
+<td>u$250</td>
+<td>33%</td>
+<td>$1000</td>
+<td>1.333M</td>
+<td>1333</td>
+<td>$0.75</td>
+</tr><tr><th scope="row">B</th>
+<td>0.05%</td>
+<td>u$500</td>
+<td>u$250</td>
+<td>u$250</td>
+<td>100%</td>
+<td>$1000</td>
+<td>4M</td>
+<td>2000</td>
+<td>$0.50</td>
+</tr></tbody></table><p><br />The surplus is equal in both cases but scenario B, with the higher ROI, results in a lower CPA.</p>
+<p>Now the thought experiment: how do the two strategies cope when they face an infinite alternating mix of the requests from scenarios A and B, plus some other kind of impression X with a much lower CTR and higher cost?</p>
+<table align="center" border="1" cellpadding="1" cellspacing="1" style="width: 500px;"><thead><tr><th scope="col">Pacing Strategy</th>
+<th scope="col">A Imps</th>
+<th scope="col">B Imps</th>
+<th scope="col">X imps</th>
+<th scope="col">Actions</th>
+<th scope="col">CPA</th>
+</tr></thead><tbody><tr><td>surplus-based</td>
+<td>1M</td>
+<td>1M</td>
+<td>0</td>
+<td>1500</td>
+<td>$0.66</td>
+</tr><tr><td>ROI-based</td>
+<td>0</td>
+<td>4M</td>
+<td>0</td>
+<td>2000</td>
+<td>$0.50</td>
+</tr></tbody></table><div> </div>
+<p>Both strategies successfully purchase no X-type impressions, as neither the surplus nor the ROI is optimal for those. The surplus-based pacing strategy, however, cannot distinguish between A-type and B-type impressions (they have the same surplus) and so buys them as they come, getting 1M of each before spending its budget. The ROI-based pacing strategy ignores the A-type impressions like the X-type, as the B-type have a higher ROI than either.</p>
+<p>The ROI-based pacing strategy ends up with a much better CPA than the surplus-based one.</p>
+<h3>Conclusion</h3>
+<p>Advertisers, like fund managers, use ROI (or CPA as a proxy for ROI) to decide which channels or strategies they should invest in. If you are bidding truthfully and pacing by withholding your bids when some economic quantity is below some threshold, then that quantity should also be expected ROI, instead of expected surplus. This in effect treats every bid as an investment, and allocates your budget to the most efficient bids, minimizing campaign CPA and maximizing both campaign ROI and surplus.</p>
+<p>In <a href="http://datacratic.com/site/blog/peeking-black-box-part-4-shady-bidding">Part 4</a> of this <a href="http://datacratic.com/site/blog/tags/peeking">Peeking into the Black Box series</a>, I will describe a bidding strategy that gets the same results, without needing a clearing-price model.</p>

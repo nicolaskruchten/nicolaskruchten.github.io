@@ -4,7 +4,7 @@ title : Interactive Subreddit Map with t-SNE
 image: http://nicolas.kruchten.com/images/mtlpy50.png
 github: datacratic/mtlpy50
 tags:
-    - Visualization
+    - Data Visualization
     - Datacratic
 ---
 

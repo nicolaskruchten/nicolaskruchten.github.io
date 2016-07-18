@@ -38,7 +38,7 @@
 						{% if navbar_prev_tag != navbar_tag %}
 							{% assign navbar_prev_tag = navbar_tag %}
 							<li class="dropdown-submenu">
-								<a tabindex="-1" href="#">
+								<a tabindex="-1" href="{{ site.url }}/tags/{{ navbar_tag | replace: '___', '' }}">
 									{% if site.font_awesome.enabled %}
 										<i class="icon-tag"></i> 
 									{% endif %}

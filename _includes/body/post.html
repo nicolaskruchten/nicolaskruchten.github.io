@@ -1,25 +1,16 @@
 {% assign body_post_html = null %}
 {% capture body_post_html %}
-	{% assign enable_disqus = false %}
-
-	{% if site.disqus.enabled and page.disqus == null %}
-		{% assign enable_disqus = true %}
-	{% elsif site.disqus.enabled and page.disqus.enabled == null %}
-		{% assign enable_disqus = true %}
-	{% elsif site.disqus.enabled and page.disqus.enabled %}
-		{% assign enable_disqus = true %}
-	{% endif %}
-
 	<body>
 		{% include body/sections/navbar.html %}
-		{% include body/sections/alerts_and_notices/site.html %}
 		<div class="container">
 			<div class="row">
 				<div class="span8 offset2">
 					<div class="ghpb-post">
-
+						{% assign prefix = '' %}
 						<h2>
-							<small>{{ page.date | date: "%B %-d, %Y" }} &ndash; {{ page.tags | join: ", " }}</small>
+							<small>{{ page.date | date: "%B %-d, %Y" }} &ndash; 
+								{% for t in page.tags %}{{ prefix }}<a href="{{ site.url }}/tags/{{ t | replace: " " "" }}">{{ t }}</a>{% assign prefix = ', ' %}{% endfor %}
+							</small>
 							<br />
 							{{ page.title }}
 						</h2>
@@ -85,7 +76,6 @@
 			{% include body/sections/footer.html %}
 		</div>
 		{% include body/sections/javascript.html %}
-		{% include body/sections/javascript/post/disqus.html %}
 	</body>
 {% endcapture %}
 {{ body_post_html | remove:'	' }}

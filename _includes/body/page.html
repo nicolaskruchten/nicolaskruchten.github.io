@@ -2,7 +2,6 @@
 {% capture body_page_html %}
 	<body>
 		{% include body/sections/navbar.html %}
-		{% include body/sections/alerts_and_notices/site.html %}
 		<div class="container">
 			<div class="row">
 				<div class="span3 bio">
@@ -10,8 +9,6 @@
 					{% include body/sections/navlists.html %}
 				</div>
 				<div class="span7">
-					{% include body/sections/header/page.html %}
-					{% include body/sections/alerts_and_notices/page.html %}
 					{{ content }}
 				</div>
 			</div>

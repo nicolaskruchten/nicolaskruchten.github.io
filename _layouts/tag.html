@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+{% assign layout_tag_html = null %}
+{% capture layout_tag_html %}
+    <html lang="en">
+        {% include head.html %}
+        {% include body/tag.html %}
+    </html>
+{% endcapture %}
+{{ layout_tag_html | remove:'  '| replace:'http://nicolas.kruchten.com',site.url }}

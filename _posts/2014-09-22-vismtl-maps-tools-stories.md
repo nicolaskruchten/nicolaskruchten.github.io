@@ -4,7 +4,7 @@ title : "VisMtl: Maps, Tools, Stories"
 youtube: YtuFR7xN25A
 github: nicolaskruchten/vismtl
 tags:
-    - Visualization
+    - Data Visualization
     - Talks
 ---
 

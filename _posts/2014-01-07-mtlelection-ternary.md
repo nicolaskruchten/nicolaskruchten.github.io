@@ -4,8 +4,8 @@ title : Ternary Plots for Election Results
 image: http://nicolas.kruchten.com/images/ternary/ternary_map.png
 github: nicolaskruchten/mtlelection2013bydistrict
 tags:
-    - Open Data
-    - Visualization
+    - Montreal
+    - Data Visualization
 ---
 
 In the Montreal mayoral election last November, nearly 85% of the vote went to one of the top three candidates. A pie chart is a simple way to show the breakdown of votes between candidates for the whole election, say, but what if you wanted to look at the vote breakdown for each of the 52 electoral districts? 52 pie charts is kind of hard to look at and discern any sort of pattern. It turns out that if you only want to look at the top three candidates, you can use a [ternary plot][tp] to good effect, like I did in the image above. There's an [interactive version][iv] as well which helps make the link between the ternary plot and the map via mouse-overs.

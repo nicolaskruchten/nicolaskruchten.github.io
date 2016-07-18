@@ -4,8 +4,8 @@ title : Zoomable Map for Montreal Election Results
 image: http://nicolas.kruchten.com/images/sectionmap.png
 github: nicolaskruchten/mtlelection2013bysection
 tags:
-    - Open Data
-    - Visualization
+    - Montreal
+    - Data Visualization
 ---
 
 The Montreal municipal elections were just over two months ago but I played with the election results dataset over the holidays anyways as an excuse to play with a type of data I don't normally have much to do with: geographical data. Without further ado, [here is the map I made][map], and this post explains a bit about the process.

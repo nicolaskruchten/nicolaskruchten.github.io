@@ -4,7 +4,7 @@ title : "VisMtl: Canadian MPs 2012 Visualization"
 image: http://nicolas.kruchten.com/images/vismtl5/kruchten.png
 github: nicolaskruchten/vismtl5
 tags:
-    - Visualization
+    - Data Visualization
     - Talks
 ---
 

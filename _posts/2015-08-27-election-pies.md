@@ -3,7 +3,8 @@ layout : post
 title : Election Pies
 image: http://nicolas.kruchten.com/images/electionpie.png
 tags:
-    - Open Data
+    - Montreal
+    - Data Visualization
 github: nicolaskruchten/mtlelectionpies
 --- 
 

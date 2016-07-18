@@ -8,34 +8,32 @@ exclude: false
 
 	{% for p in paginator.posts %}
 		<div class="ghpb-post">
+			
+			<div class="postmeta">{{ p.date | date: "%B %-d, %Y" }} &ndash; 
+				{% assign prefix = '' %}
+				{% for t in p.tags %}{{ prefix }}<a href="{{ site.url }}/tags/{{ t | replace: " " "" }}">{{ t }}</a>{% assign prefix = ', ' %}{% endfor %}
+			</div>
 
-				<h2>
-					<small>{{ p.date | date: "%B %-d, %Y" }} &ndash; 
-						{% assign prefix = '' %}
-						{% for t in p.tags %}{{ prefix }}<a href="{{ site.url }}/tags/{{ t | replace: " " "" }}">{{ t }}</a>{% assign prefix = ', ' %}{% endfor %}
-					</small>
-					<br />
-					<a href="{{ site.url }}{{ p.url }}">{{ p.title }}</a></h2>
+			<h2><a href="{{ site.url }}{{ p.url }}">{{ p.title }}</a></h2>
 
-
-				{% if p.image %}
-				<div class="row">
-					<div class="span5 offset1">
-						<a href="{{ site.url }}{{ p.url }}"><img src="{{ p.image }}" alt="{{ p.title }}" /></a>
-					</div>
+			{% if p.image %}
+			<div class="row">
+				<div class="span5 offset1">
+					<a href="{{ site.url }}{{ p.url }}"><img src="{{ p.image }}" alt="{{ p.title }}" /></a>
 				</div>
-				{% endif %}
+			</div>
+			{% endif %}
 
+			{% if p.youtube %}
+				<div class='embed-container'><iframe src="https://www.youtube.com/embed/{{p.youtube}}" frameborder="0" allowfullscreen></iframe></div>
+			{% endif %}
 
-				{% if p.youtube %}
-					<div class='embed-container'><iframe src="https://www.youtube.com/embed/{{p.youtube}}" frameborder="0" allowfullscreen></iframe></div>
-				{% endif %}
+			<br>
 
-				<br>
-				{{ p.excerpt }}
-				
-				<p class="pull-right" style="margin-top: -25px"><small><a href="{{ site.url }}{{ p.url }}">Full post &raquo;</a>
-				</small></p>
+			{{ p.excerpt }}
+			
+			<p class="pull-right" style="margin-top: -25px"><small><a href="{{ site.url }}{{ p.url }}">Full post &raquo;</a>
+			</small></p>
 
 		</div>
 		<br>

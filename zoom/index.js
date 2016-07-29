@@ -67,7 +67,6 @@
                 delete options.crossOrigin;
                 loadImage(options, onImageLoaded, onError);
             });
-            document.title = "OpenSeadragon " + url;
         }
     };
 

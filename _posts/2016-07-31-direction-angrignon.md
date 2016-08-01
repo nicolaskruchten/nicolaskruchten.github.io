@@ -56,15 +56,15 @@ My initial plan had been to measure the position of the benches, ads etc and mak
 
 **Shouldn't you indicate where the stairs are, where they go, which buses are available etc?** That's certainly something I could do for a future version but right now I like the minimalism of the current setup.
 
-**What are the blue hazy areas in the images?** These are the blue-lit [Assistance phones][safety] which you can and should use to communicate with STM staff and signal an emergency such as someone being on the tracks, or having a health problem.
+**What are the blue hazy areas in the images?** These are the blue-lit [Assistance phones][safety] which you can and should use to communicate with STM staff to signal any emergency such as someone being on the tracks, or having a health problem.
 
-**Which direction does the train move in?** The train moves from right to left, and the scans are looking back at the platform the train stopped at i.e. not across the tracks.
+**Which direction does the train move in?** The train moves from right to left, and the scans are looking back at the platform the train stopped at, i.e. not across the tracks.
 
 **What about De L'Église station, where the doors open on the other side?** If you look closely, the image is flipped with respect to reality, so the stairs show up on the left, near the front of the train, even though if you were standing on the platform looking at the wall, they would be on the right.
 
-**What about Angrignon station, where the train turns around and leaves in the other direction?** Angrignon's platforms are symmetrical, so I used a flipped version of the other side of the platform.
+**What about Angrignon station, where the train turns around and leaves in the other direction?** Angrignon's platforms are symmetrical, so I used a flipped version of the outbound platform on the other side.
 
-**Why is the right side of the image cut off?** I took the scans from the rearmost seat in the train, which is around 4m from the back wall of the platform.
+**Why is the right side of the image cut off?** I took the scans from the rear-most seat in the train, which is around 4m from the back wall of the platform.
 
 **Are you allowed to do this?** I followed the [STM's guidelines][guidelines] for amateur photography, so yes, I believe so. I'm not sure what the security concerns the STM had about giving me access to architectural drawings but I can't see the harm in this project, and in any case Astral publicly hosts the plans for the highest-traffic stations already.
 

@@ -66,7 +66,7 @@ My initial plan had been to measure the position of the benches, ads etc and mak
 
 **Why is the right side of the image cut off?** I took the scans from the rearmost seat in the train, which is around 4m from the back wall of the platform.
 
-**Are you allowed to do this?** I followed the [STM's guidlines][guidelines] for amateur photography, so yes, I believe so. I'm not sure what the security concerns the STM had about giving me access to architectural drawings but I can't see the harm in this project, and in any case Astral publicly hosts the plans for the highest-traffic stations already.
+**Are you allowed to do this?** I followed the [STM's guidelines][guidelines] for amateur photography, so yes, I believe so. I'm not sure what the security concerns the STM had about giving me access to architectural drawings but I can't see the harm in this project, and in any case Astral publicly hosts the plans for the highest-traffic stations already.
 
 [email]: mailto:nicolas@kruchten.com
 [green]: http://www.stm.info/en/info/networks/metro/green

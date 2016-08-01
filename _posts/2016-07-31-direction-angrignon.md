@@ -13,7 +13,7 @@ The photo above ([click here for a zoomable version][zoom]) is a collage of pano
 
 
 ![Pie-IX to Peel][pieix_to_peel]
-To get out closest to the West-most escalators at Peel, <br /> stand near the West-most Assistance phone at Pie-IX <br /> ([click here to compare any two stations][compare])
+To get out closest to the West-most escalators at Peel, <br /> stand near the West-most Assistance phone at Pie-IX <br /> ([click here to compare any two platforms along the green line headed towards Angringon][compare])
 
 ### Backstory & Inspiration
 

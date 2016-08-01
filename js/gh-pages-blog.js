@@ -19,7 +19,7 @@
             .each(function(){
                 $(this).featherlight($(this).attr("src"));
                 $(this)
-                    .css({"padding-bottom": "20px", "cursor": "pointer"})
+                    .css({"padding-bottom": "5px", "cursor": "pointer"})
                     .parent()
                     .wrap('<div class="row postimg">')
                     .wrap('<div class="span6 offset1 text-center">')

@@ -17,7 +17,7 @@ To get out closest to the West-most escalators at Peel, <br /> stand near the We
 
 ### Backstory & Inspiration
 
-While travelling by train in Germany, I noticed that the train platforms there have these really neat information displays labelled [Wagenstandanzeiger][wagen] which Google helpfully translates as "carriage position indicator". It shows where each car of each scheduled train will stop so you can position yourself accordingly on the platform. Take note of the blue letter-squares and orange "you are here" sticker in the header. Each platform has big hanging signs corresponding to these letters so you can position yourself accordingly.
+While travelling by train in Germany, I noticed that the train platforms there have these really neat information displays labelled [Wagenstandanzeiger][wagen], which Google helpfully translates as "carriage position indicator". It shows where each car of each scheduled train will stop so you can position yourself accordingly on the platform. Take note of the blue letter-squares and orange "you are here" sticker in the header. Each platform has big hanging signs corresponding to these letters so you can position yourself accordingly.
 
 ![carriage position indicator][wagenstandanzeiger]
 German "carriage position indicator" ([photo credit][photo_credit])

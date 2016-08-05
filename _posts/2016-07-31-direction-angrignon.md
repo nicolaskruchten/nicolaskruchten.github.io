@@ -71,6 +71,14 @@ My initial plan had been to measure the position of the benches, ads etc and mak
 
 **Are you allowed to do this?** I followed the [STM's guidelines][guidelines] for amateur photography, so yes, I believe so. I'm not sure what the security concerns the STM had about giving me access to architectural drawings but I can't see the harm in this project, and in any case Astral publicly hosts the plans for the highest-traffic stations already.
 
+
+### Reactions & Media
+
+* [CTV News](http://montreal.ctvnews.ca/software-engineer-wants-to-take-guesswork-out-of-daily-metro-commute-1.3015662) & [Breakfast Television](http://www.btmontreal.ca/videos/5068145214001/)
+* [CBC](http://www.cbc.ca/news/canada/montreal/montreal-metro-exit-map-1.3705280), [Radio-Canada](http://ici.radio-canada.ca/breve/63942/carte-direction-angrignon-sorties-metro-montreal) & [Huffington Post Quebec](http://quebec.huffingtonpost.ca/2016/08/04/direction-angrignon-une-carte-pour-trouver-la-voiture-de-metro-qui-vous-deposera-pile-devant-une-sortie_n_11329366.html)
+* [Journal Metro](http://journalmetro.com/nouvelles-insolites/1002127/une-carte-originale-de-la-ligne-verte-du-metro-de-montreal/)
+* [TransitMap.net](http://transitmap.net/post/148351733570/direction-angrignon-kruchten)
+
 [email]: mailto:nicolas@kruchten.com
 [green]: http://www.stm.info/en/info/networks/metro/green
 [safety]: http://www.stm.info/en/info/rules/travelling-safely/safety-metro#titre-h2-What_to_do_in_case_of_emergency_in_the_métro_station--3

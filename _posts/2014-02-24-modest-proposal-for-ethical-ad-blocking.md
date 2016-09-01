@@ -24,6 +24,8 @@ If this sounds a bit complicated, well, I'll grant you that it actually is. This
 
 Seen through this lens, let's recap what happens under my proposal: you go to a website to read an article or watch a video, you pay the website less than a cent (which is exactly what an advertiser would have paid to show you an ad) and you don’t have to see any ads. The website in question, which could be a blog or your local newspaper, or YouTube or Facebook, doesn't have to do any kind of additional work to enable this, because this all happens via systems they already have in place today. Sounds like an ideal micropayment system to me.
 
+Edit: [Google Contributor](https://www.google.com/contributor/welcome/) essentially implemented exactly this idea some time after I posted this, although I'm sure they independently came up with it.
+
 [owt]: http://www.slate.com/articles/business/moneybox/2013/07/how_one_weird_trick_conquered_the_internet_what_happens_when_you_click_on.single.html
 [abd]: https://www.google.ca/search?q=ethical+ad+blocking
 [mp]: http://www.shirky.com/weblog/2009/02/why-small-payments-wont-save-publishers/

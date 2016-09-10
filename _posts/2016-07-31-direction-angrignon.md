@@ -71,7 +71,7 @@ My initial plan had been to measure the position of the benches, ads etc and mak
 
 **Are you allowed to do this?** I followed the [STM's guidelines][guidelines] for amateur photography, so yes, I believe so. I'm not sure what the security concerns the STM had about giving me access to architectural drawings but I can't see the harm in this project, and in any case Astral publicly hosts the plans for the highest-traffic stations already.
 
-**What have been the reactions to this?** This project has been talked about on [Breakfast Television](http://www.btmontreal.ca/videos/5068145214001/), in [Journal Métro](http://journalmetro.com/nouvelles-insolites/1002127/une-carte-originale-de-la-ligne-verte-du-metro-de-montreal/), on [CBC Radio](http://www.cbc.ca/news/canada/montreal/montreal-metro-exit-map-1.3705280), on [CTV News](http://montreal.ctvnews.ca/software-engineer-wants-to-take-guesswork-out-of-daily-metro-commute-1.3015662), on [TransitMap.net](http://transitmap.net/post/148351733570/direction-angrignon-kruchten) and on [CityLab](http://www.citylab.com/commute/2016/08/montreal-green-line-platform-map-nicolas-kruchten/494702/). Also, the great [Edward Tufte gave it an A+ on Twitter](https://twitter.com/EdwardTufte/status/760302785820758016)!
+**What have been the reactions to this?** This project has been talked about on [Breakfast Television](http://www.btmontreal.ca/videos/5068145214001/), in [Journal Métro](http://journalmetro.com/nouvelles-insolites/1002127/une-carte-originale-de-la-ligne-verte-du-metro-de-montreal/), on [CBC Radio's Homerun][homerun], on [CBC.ca](http://www.cbc.ca/news/canada/montreal/montreal-metro-exit-map-1.3705280), on [CTV News](http://montreal.ctvnews.ca/software-engineer-wants-to-take-guesswork-out-of-daily-metro-commute-1.3015662), on [TransitMap.net](http://transitmap.net/post/148351733570/direction-angrignon-kruchten) and on [CityLab](http://www.citylab.com/commute/2016/08/montreal-green-line-platform-map-nicolas-kruchten/494702/). Also, the great [Edward Tufte gave it an A+ on Twitter](https://twitter.com/EdwardTufte/status/760302785820758016)!
 
 
 [trainscan]: https://medium.com/matter/einsteins-camera-88aa8a185898#.9ts16nm9p
@@ -97,6 +97,7 @@ My initial plan had been to measure the position of the benches, ads etc and mak
 [zoom]: /direction_angrignon/zoom/
 [compare]: /direction_angrignon/
 
+[homerun]: /images/direction_angrignon/homerun.mp3
 [pieix_to_peel]: /images/direction_angrignon/pieix_to_peel.png
 [wagenstandanzeiger]: /images/direction_angrignon/Wagenstandanzeiger.jpg
 [apps]: /images/direction_angrignon/apps.jpg

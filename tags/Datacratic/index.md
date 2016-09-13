@@ -3,4 +3,4 @@ layout : tag
 tag_name : Datacratic
 --- 
 
-I work at [Datacratic](http://datacratic.com), Montreal-based software company specializing in [Machine Learning](/tags/MachineLearning). I've written a number of articles and given a number of talks throughout my time there, which are collected here.
+I worked for 6 years at [Datacratic](http://datacratic.com), a software company specializing in [Machine Learning](/tags/MachineLearning). I wrote a number of articles and given a number of talks throughout my time there, which are collected here.

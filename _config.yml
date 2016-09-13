@@ -294,11 +294,11 @@ social_links :
       name : Résumé
       font_awesome_icon : icon-file-text-alt
       url : http://nicolas.kruchten.com/cv.html
-    - link :
-      enabled : true
-      name : Datacratic Blog
-      font_awesome_icon : icon-flag
-      url : http://datacratic.com/site/blogs/nicolas-kruchten
+#    - link :
+#      enabled : true
+#      name : Datacratic Blog
+#      font_awesome_icon : icon-flag
+#      url : http://datacratic.com/site/blogs/nicolas-kruchten
     - link :
       enabled : true
       name : GitHub

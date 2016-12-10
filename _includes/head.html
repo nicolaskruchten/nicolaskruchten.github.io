@@ -3,11 +3,13 @@
     <head>
         {% if page.title %}
             <title>{{ page.title }}</title>
+        {% elsif page.tag_name %}
+            <title>{{ site.name }} - {{ page.tag_name }}</title>
         {% else %}
             <title>{{ site.name }}</title>
         {% endif %}
 
-        <meta charset="utf-8"> 
+        <meta charset="utf-8">
         <meta name="author" content='{{ site.author | site.email }}'>
         {% if page.author and page.author_email %}
             <meta name="author" content='{{ page.author }} | {{ page.author_email }}'>
@@ -37,7 +39,7 @@
           ga('create', 'UA-46914903-1', 'kruchten.com');
           ga('send', 'pageview');
 
-        </script>    
+        </script>
     </head>
 {% endcapture %}
 {{ head_post_html | strip_newlines | remove:'   ' }}

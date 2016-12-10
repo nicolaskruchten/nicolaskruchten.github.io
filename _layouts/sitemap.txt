@@ -1,4 +1,4 @@
-{% for p in site.pages %}{% unless p.exclude %}http://nicolas.kruchten.com/{{ p.url }}
-{% endunless %}{% endfor %}{% for p in site.posts %}http://nicolas.kruchten.com/{{ p.url }}
-{% endfor %}{% for p in page.otherurls %}http://nicolas.kruchten.com/{{ p }}
+{% for p in site.pages %}{% unless p.exclude %}http://nicolas.kruchten.com{{ p.url }}
+{% endunless %}{% endfor %}{% for p in site.posts %}http://nicolas.kruchten.com{{ p.url }}
+{% endfor %}{% for p in page.otherurls %}http://nicolas.kruchten.com{{ p }}
 {% endfor %}

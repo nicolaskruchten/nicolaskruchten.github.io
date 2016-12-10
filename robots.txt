@@ -1,11 +1,4 @@
 User-agent: *
-Disallow: /page2/
-Disallow: /page3/
-Disallow: /page4/
-Disallow: /page5/
-Disallow: /page6/
-Disallow: /page7/
-Disallow: /page8/
-Disallow: /page9/
+Disallow:
 
 Sitemap: http://nicolas.kruchten.com/sitemap.txt

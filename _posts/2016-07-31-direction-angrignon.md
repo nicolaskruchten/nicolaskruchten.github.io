@@ -5,16 +5,16 @@ image: /images/direction_angrignon/direction_angrignon_small.jpg
 tags:
     - Montreal
 github: nicolaskruchten/direction_angrignon
---- 
+---
 
-The photo above ([click here for a zoomable version][zoom]) is a collage of panoramic scans of the Angrignon-bound platforms of the Montreal metro's [green line][green]. I used my phone to record videos from the rear-most window of the train and wrote [a bit of software][github] to stitch the frames together. My goal was to create a way to figure out where to stand while waiting for the metro so as to get out closest to where you want to go at your destination, and I used these scans to build a little [interactive comparison page][compare] for just this purpose. 
+The photo above ([click here for a zoomable version][zoom]) is a collage of panoramic scans of the Angrignon-bound platforms of the Montreal metro's [green line][green]. I used my phone to record videos from the rear-most window of the train and wrote [a bit of software][github] to stitch the frames together. My goal was to create a way to figure out where to stand while waiting for the metro so as to get out closest to where you want to go at your destination, and I used these scans to build a little [interactive comparison page][compare] for just this purpose.
 
 <!-- more -->
 
 
 ![Pie-IX to Peel][pieix_to_peel]
-<br />To get out closest to the West-most escalators at Peel, 
-<br />stand near the West-most Assistance phone at Pie-IX 
+<br />To get out closest to the West-most escalators at Peel,
+<br />stand near the West-most Assistance phone at Pie-IX
 <br />([compare any two platforms along the green line headed towards Angringon][compare])
 
 ### Backstory & Inspiration
@@ -49,7 +49,7 @@ My initial plan had been to measure the position of the benches, ads etc and mak
 
 ### Frequently-Asked Questions
 
-**Hasn't this been done before?** Not as far as I know, but I'd love to hear about it if you want to [email me][email]. (Edit: I received a number of emails about [different cities' approaches to platform wayfinding][wayfinding] but nothing about station panorama maps like this. I did find out about [Adam Magyar's work][trainscan], though!)
+**Hasn't this been done before?** Not as far as I know, but I'd love to hear about it if you want to [email me][email]. I received a number of emails about [different cities' approaches to platform wayfinding][wayfinding] but nothing about station panorama maps like this. I also found out about [Adam Magyar's train scanning work][trainscan] and [Carlos Scheidegger's Window Seat project][windowseat].
 
 **Wouldn't it be awesome if there were official posters like this on every platform station with a "you are here" sticker?** Yes, yes it would.
 
@@ -73,7 +73,7 @@ My initial plan had been to measure the position of the benches, ads etc and mak
 
 **What have been the reactions to this?** This project has been talked about on [Breakfast Television](http://www.btmontreal.ca/videos/5068145214001/), in [Journal Métro](http://journalmetro.com/nouvelles-insolites/1002127/une-carte-originale-de-la-ligne-verte-du-metro-de-montreal/), on [CBC Radio's Homerun][homerun], on [CBC.ca](http://www.cbc.ca/news/canada/montreal/montreal-metro-exit-map-1.3705280), on [CTV News](http://montreal.ctvnews.ca/software-engineer-wants-to-take-guesswork-out-of-daily-metro-commute-1.3015662), on [TransitMap.net](http://transitmap.net/post/148351733570/direction-angrignon-kruchten) and on [CityLab](http://www.citylab.com/commute/2016/08/montreal-green-line-platform-map-nicolas-kruchten/494702/). Also, the great [Edward Tufte gave it an A+ on Twitter](https://twitter.com/EdwardTufte/status/760302785820758016)!
 
-
+[windowseat]: https://cscheid.net/static/windowseat/
 [trainscan]: https://medium.com/matter/einsteins-camera-88aa8a185898#.9ts16nm9p
 [wayfinding]: /content/2016/08/platform-wayfinding/
 

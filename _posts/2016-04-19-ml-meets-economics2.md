@@ -4,11 +4,10 @@ image: http://nicolas.kruchten.com/images/mlecon2/surface.png
 title : Machine Learning Meets Economics, Part 2
 dest: http://blog.mldb.ai/blog/posts/2016/04/ml-meets-economics2/
 tags:
-    - Datacratic
     - Machine Learning
 ---
 
-By using machine learning algorithms, we are increasingly able to use computers to perform intellectual tasks at a level approaching that of humans. Given that computers cost less than employees, many people are afraid that humans will therefore necessarily lose their jobs to computers. Contrary to this belief, in this article I show that even when a computer can perform a task more economically than a human, careful analysis suggests that humans and computers working together can sometimes yield even better business outcomes than simply replacing one with the other. 
+By using machine learning algorithms, we are increasingly able to use computers to perform intellectual tasks at a level approaching that of humans. Given that computers cost less than employees, many people are afraid that humans will therefore necessarily lose their jobs to computers. Contrary to this belief, in this article I show that even when a computer can perform a task more economically than a human, careful analysis suggests that humans and computers working together can sometimes yield even better business outcomes than simply replacing one with the other.
 
 Specifically, I show how a classifier with a reject option can increase worker productivity for certain types of tasks, and I show how to construct and tune such a classifier from a simple scoring function by using two thresholds. I begin with a parable featuring the same characters as the one from [Part 1 of this Machine Learning Meets Economics series](http://blog.mldb.ai/blog/posts/2016/01/ml-meets-economics/). I recommend reading Part 1 first, as it sets up much of the terminology I use here.
 
@@ -18,7 +17,7 @@ Specifically, I show how a classifier with a reject option can increase worker p
 
 "What seems to be the problem?" Emily the Economist asked as she walked into Danielle the Data Scientist's office, where she was introduced to Quinn the Quality Inspector.
 
-"Thanks for coming, Emily," replied Danielle. "I'm really hoping you can assist me with my latest problem. It's similar to the one you helped me out with last time we spoke." (Author's note: see The Case of the Useless Model from [Part 1](http://blog.mldb.ai/blog/posts/2016/01/ml-meets-economics/)). 
+"Thanks for coming, Emily," replied Danielle. "I'm really hoping you can assist me with my latest problem. It's similar to the one you helped me out with last time we spoke." (Author's note: see The Case of the Useless Model from [Part 1](http://blog.mldb.ai/blog/posts/2016/01/ml-meets-economics/)).
 
 "I'd be happy to give it a shot," said Emily, "Why don't you walk me through what you've done so far?"
 
@@ -38,7 +37,7 @@ Danielle said, "I used machine learning algorithms to build a quality scanner th
 
 Danielle, a little flushed, concluded, "So that's our problem right now, Emily. As an economist, I was hoping you could help me convince Quinn that using this model is the best thing for our business."
 
-"I think I can be of assistance, yes, but maybe not in the way you expect!" replied Emily. "When you analysed the model you built, you assumed that if a gadget's score was below the threshold, it was defective and should be recycled and otherwise it should be sold, right?" Danielle nodded, so Emily continued, "Okay, but if instead of trying to replace Quinn's team, we try to work with them, there are at least two other ways we could use this model. On top of what we'll call your Sell/Recycle classifier, we could recycle gadgets below the threshold and have Quinn check the rest (call that the Check/Recycle classifier), or we could sell the gadgets above the threshold and have Quinn check the rest (the Sell/Check classifier). Let's see what the utility curves look like for those situations." Emily started tweaking equations on Danielle's laptop. 
+"I think I can be of assistance, yes, but maybe not in the way you expect!" replied Emily. "When you analysed the model you built, you assumed that if a gadget's score was below the threshold, it was defective and should be recycled and otherwise it should be sold, right?" Danielle nodded, so Emily continued, "Okay, but if instead of trying to replace Quinn's team, we try to work with them, there are at least two other ways we could use this model. On top of what we'll call your Sell/Recycle classifier, we could recycle gadgets below the threshold and have Quinn check the rest (call that the Check/Recycle classifier), or we could sell the gadgets above the threshold and have Quinn check the rest (the Sell/Check classifier). Let's see what the utility curves look like for those situations." Emily started tweaking equations on Danielle's laptop.
 
 ![](http://nicolas.kruchten.com/images/mlecon2/curves.png)
 
@@ -46,7 +45,7 @@ Danielle, a little flushed, concluded, "So that's our problem right now, Emily. 
 
 "Just wait, I think we can do even better!" said Emily. "All three of these curves assume we just have one threshold. What if we used two thresholds, such that any gadget below the lower threshold is recycled, any gadget above the upper threshold is sold, and anything in between is checked by Quinn's team?"
 
-"With one threshold, we had a utility curve, but with two thresholds we have a utility surface. If we make a plot with the lower threshold on the X axis and the upper threshold on the Y axis, then the three curves we already have trace straight lines: the Sell/Recycle curve lies along the main X=Y diagonal where the lower and upper thresholds are equal. The Sell/Check curve lies along the left-hand axis where the lower threshold is 0 and the Check/Recycle curve lies along the top axis where the upper threshold is 100. Every other setting where the lower threshold is less than the upper threshold lies somewhere in the triangle. Like this." Emily's furious typing resulted in the following graphs. "The left-hand graph is a 3-d representation of the utility surface, and the right-hand graph is like a topographical map of that surface. Here the contours indicate utility, so they are actually indifference curves!" 
+"With one threshold, we had a utility curve, but with two thresholds we have a utility surface. If we make a plot with the lower threshold on the X axis and the upper threshold on the Y axis, then the three curves we already have trace straight lines: the Sell/Recycle curve lies along the main X=Y diagonal where the lower and upper thresholds are equal. The Sell/Check curve lies along the left-hand axis where the lower threshold is 0 and the Check/Recycle curve lies along the top axis where the upper threshold is 100. Every other setting where the lower threshold is less than the upper threshold lies somewhere in the triangle. Like this." Emily's furious typing resulted in the following graphs. "The left-hand graph is a 3-d representation of the utility surface, and the right-hand graph is like a topographical map of that surface. Here the contours indicate utility, so they are actually indifference curves!"
 
 
 ![](http://nicolas.kruchten.com/images/mlecon2/surface.png)
@@ -82,7 +81,7 @@ The assumptions are actually fairly reasonable for at least some real-world busi
 
 The utility surface defined by the equation above has some useful applications. Most obviously, and as shown in the story above, the coordinates of the global maximum for this surface indicate the threshold values which will maximize the utility of the resulting classifier.
 
-We can also use this surface to find the optimal threshold settings under some constraints. To visualize an example of this, we can overlay a second set of contours onto the utility surface plot, which represent the utilization of the reject option as percentage of all inputs for various settings of the two thresholds. If the reject option has a capacity constraint (i.e. Quinn's team can only check 10% of all gadgets), a contour can be traced such that every point along the curve uses the reject option at its capacity, and the maximum utility point along this curve indicates the thresholds to be used to meet the constraint. 
+We can also use this surface to find the optimal threshold settings under some constraints. To visualize an example of this, we can overlay a second set of contours onto the utility surface plot, which represent the utilization of the reject option as percentage of all inputs for various settings of the two thresholds. If the reject option has a capacity constraint (i.e. Quinn's team can only check 10% of all gadgets), a contour can be traced such that every point along the curve uses the reject option at its capacity, and the maximum utility point along this curve indicates the thresholds to be used to meet the constraint.
 
 ![](http://nicolas.kruchten.com/images/mlecon2/contours.png)
 

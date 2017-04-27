@@ -5,7 +5,6 @@ image: http://nicolas.kruchten.com/images/mtlpy50.png
 github: datacratic/mtlpy50
 tags:
     - Data Visualization
-    - Datacratic
 ---
 
 For part of [my presentation at Montreal Python][pres], I made an interactive map of the various sub-sections of the website Reddit (called subreddits). You can take a look at the [interactive version][iv] or see a static annotated one above. The interactive one includes basic info on how I made it and full details are in the presentation. I got some nice comments in the [/r/DataIsBeautiful subreddit post][re]

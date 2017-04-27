@@ -4,11 +4,10 @@ image: http://nicolas.kruchten.com/images/mlecon/indifference3.png
 title: Machine Learning Meets Economics
 dest: http://blog.mldb.ai/blog/posts/2016/01/ml-meets-economics/
 tags:
-    - Datacratic
     - Machine Learning
 ---
 
-The business world is full of streams of items that need to be filtered or evaluated: parts on an assembly line, resumés in an application pile, emails in a delivery queue, transactions awaiting processing. Machine learning techniques are increasingly being used to make such processes more efficient: image processing to flag bad parts, text analysis to surface good candidates, spam filtering to sort email, fraud detection to lower transaction costs etc. 
+The business world is full of streams of items that need to be filtered or evaluated: parts on an assembly line, resumés in an application pile, emails in a delivery queue, transactions awaiting processing. Machine learning techniques are increasingly being used to make such processes more efficient: image processing to flag bad parts, text analysis to surface good candidates, spam filtering to sort email, fraud detection to lower transaction costs etc.
 
 In this article, I show how you can take business factors into account when using machine learning to solve these kinds of problems with binary classifiers. Specifically, I show how the concept of expected utility from the field of economics maps onto the [Receiver Operating Characteristic (ROC) space](https://en.wikipedia.org/wiki/Receiver_operating_characteristic) often used by machine learning practitioners to compare and evaluate models for binary classification. I begin with a parable illustrating the dangers of not taking such factors into account. This concrete story is followed by a more formal mathematical look at the use of [indifference curves](https://en.wikipedia.org/wiki/Indifference_curve) in ROC space to avoid this kind of problem and guide model development. I wrap up with some recommendations for successfully using binary classifiers to solve business problems.
 
@@ -17,26 +16,26 @@ In this article, I show how you can take business factors into account when usin
 
 ### The Case of the Useless Model
 
-Fiona the Factory Manager had a quality problem. Her widget factory was throwing away too many widgets that were overheating due to bad gearboxes. She hadn’t been able to work with her gearbox supplier to increase their quality control, and she didn’t have a non-destructive way to check if a given gearbox will cause problems, so she asked Danielle the Data Scientist to build her a device which could evaluate the quality of a gearbox, to avoid using bad ones to build overheating widgets. Danielle was happy to help, as she would be able to use some fancy machine learning algorithms to solve this problem, and within a month she proudly presented her results. 
+Fiona the Factory Manager had a quality problem. Her widget factory was throwing away too many widgets that were overheating due to bad gearboxes. She hadn’t been able to work with her gearbox supplier to increase their quality control, and she didn’t have a non-destructive way to check if a given gearbox will cause problems, so she asked Danielle the Data Scientist to build her a device which could evaluate the quality of a gearbox, to avoid using bad ones to build overheating widgets. Danielle was happy to help, as she would be able to use some fancy machine learning algorithms to solve this problem, and within a month she proudly presented her results.
 
 “This is a quality scanner. Just point the camera at the gearbox and the readout will tell you if it is safe to use the gearbox in a widget,” she told Fiona. “This little knob on the side can be used to tune it if you get too many false positives (bad gearboxes being marked as good) or false negatives (good gearboxes being marked as bad) although I’ve preset it to what should be the most accurate setting.”
 
 A few weeks later, Danielle dropped by to check up on the scanner. “Oh, we stopped using it,” responded Fiona, “it gave us too many false negatives, so we were throwing away too many good gearboxes to make it worthwhile. I lose money when we throw away widgets, but gearboxes aren’t cheap, and I can’t afford to throw away working ones! We tried playing with the little tuning knob but in the end we had to turn it all the way down to stop losing money and it never tells us the gearbox is bad, which is the same as not using the scanner.” Danielle was taken aback, as she had tested her scanner very carefully and it had achieved quite good results in the lab. Danielle started thinking that she herself had a quality problem on her hands.
 
-While she was digging into the problem with Fiona, Emily the Economist poked her head in the door. “I couldn’t help but overhear and I feel like my skills might be applicable to your problem,” she told them, “Mind if I try to help?” Danielle, stumped so far, accepted. “So, how does your scanner work, and what does the knob do?” asked Emily. 
+While she was digging into the problem with Fiona, Emily the Economist poked her head in the door. “I couldn’t help but overhear and I feel like my skills might be applicable to your problem,” she told them, “Mind if I try to help?” Danielle, stumped so far, accepted. “So, how does your scanner work, and what does the knob do?” asked Emily.
 
 “It’s pretty simple, actually,” explained Danielle, “I used a machine learning algorithm to train a model, which is a function that takes an image of a gearbox and assigns it a quality score: the higher the likelihood of the gearbox being good (i.e. a positive result), the higher the score. When you combine a model with a threshold value above which you say the gearbox is good, you get a classifier, so the model defines a family of possible classifiers. The knob on the scanner allows you to choose which classifier you want to use. Like this!” she walked up to the whiteboard and wrote out a simple equation.
 
 $$ class(input) = \begin{cases} positive & \text{if $score(input) > threshold$} \\ negative & \text{otherwise} \end{cases}$$
 
-“I took all the photos of good and bad gearboxes and split them into two piles, one which I used to train models, and one which I used to test them. I built and tested a whole series of models and used the one with the highest AUC for the scanner.” 
+“I took all the photos of good and bad gearboxes and split them into two piles, one which I used to train models, and one which I used to test them. I built and tested a whole series of models and used the one with the highest AUC for the scanner.”
 
 Emily, who had been nodding until this point, jumped in, “Wait, what does AUC mean?”
 
 “Oh, right,” replied Danielle, “it’s a measure of how good the model is. Let me explain... Whenever I build a model, I run it on the testing data for each setting of the threshold, and I measure the true positive rate (the percentage of good gearboxes correctly identified as positive) and the false positive rate (the percentage of bad gearboxes incorrectly identified as positive). I’ll draw out a graph for you. Here you can see that when the threshold is low, the resulting classifier correctly identifies most of the good gearboxes, but tends to miss the bad ones, and vice versa when the threshold is high.” *[Author's note on the charts in this story: the model performance data was generated by sampling from realistic simulated class distributions, and the thresholds were scaled to lie between 0 and 100.]*
 
 
-![](http://nicolas.kruchten.com/images/mlecon/rates.png) 
+![](http://nicolas.kruchten.com/images/mlecon/rates.png)
 
 “We data scientists prefer to look at the same data a bit differently, though, so we can see the tradeoffs between the two measures more easily. What we do is we plot the true positive rate on the Y axis versus the false positive rate on the X axis. The resulting curve is called a Receiver Operating Characteristic, or ROC, curve, and this X-Y space is called ROC space. Each point on the ROC curve corresponds to the performance of the classifier at a given threshold. Here’s the curve for the model in the scanner right now.”
 
@@ -47,11 +46,11 @@ Emily, who had been nodding until this point, jumped in, “Wait, what does AUC 
 
 “So to get back to your question, we can boil down model goodness to one number with the AUC, which stands for the Area Under the Curve. The closer it is to 1, the better the model is, and anything below 0.5 is worse than random guessing. The model I used in the scanner had an AUC of 0.85, so I’m really puzzled that it didn’t help Fiona! I mean, turning the knob all the way down means that she’s setting the scanner all the way into the upper right corner of the space!”
 
-Fiona was pretty bored by this point in the conversation, so she was glad when Emily turned to her and asked, “What happens when you try to use the scanner with the threshold knob set just a little higher than the minimum?” 
+Fiona was pretty bored by this point in the conversation, so she was glad when Emily turned to her and asked, “What happens when you try to use the scanner with the threshold knob set just a little higher than the minimum?”
 
-“Hmm, at the lowest setting we tried before giving up, it tagged 15 gearboxes as bad, out of a batch of 5000, and when we tested them, only 1 of them actually was,” answered Fiona after glancing at some records. “One overheating widget costs me $300 in wasted parts and labour, but using the scanner I threw away a bunch of gearboxes at $50 each. Unfortunately, testing destroys the gearbox so I can’t use it after testing, which is why I had such high hopes for this scanner’s ability to solve this problem for me.” 
+“Hmm, at the lowest setting we tried before giving up, it tagged 15 gearboxes as bad, out of a batch of 5000, and when we tested them, only 1 of them actually was,” answered Fiona after glancing at some records. “One overheating widget costs me $300 in wasted parts and labour, but using the scanner I threw away a bunch of gearboxes at $50 each. Unfortunately, testing destroys the gearbox so I can’t use it after testing, which is why I had such high hopes for this scanner’s ability to solve this problem for me.”
 
-Emily thought about this for a minute and finally asked, “OK, a couple more questions: how much do you make per working widget, and on average how many widgets do you have to throw away per batch of gearboxes due to overheating problems right now?” 
+Emily thought about this for a minute and finally asked, “OK, a couple more questions: how much do you make per working widget, and on average how many widgets do you have to throw away per batch of gearboxes due to overheating problems right now?”
 
 “We sell widgets for $320, so net $20 of profit per working widget. As to how many bad gearboxes per batch, I’d say 250 is about right,” said Fiona.
 
@@ -79,13 +78,13 @@ table {border-collapse: collapse; margin-top: 30px;}
 <tr>
     <th rowspan="2">Scanner <br /> output at <br /> threshold = @t@</th>
     <th>Positive</th>
-    <td> 
+    <td>
 
 True Positive<br />
 @utility = +$20@<br />
 @rate(t) = TPR(t)  \cdot  95\%@
  </td>
-    <td> 
+    <td>
 
 False Positive<br />
 @utility = -$300@<br />
@@ -99,7 +98,7 @@ False Negative<br />
 @utility =-$50@<br />
 @rate(t) = (1-TPR(t)) \cdot 95\%@
 </td>
-    <td> 
+    <td>
 True Negative<br />
 @utility = -$50@<br />
 @rate(t) = (1-FPR(t)) \cdot 5\%@
@@ -128,7 +127,7 @@ Danielle, who had been furrowing her brow until that point, lit up. “I get it!
 
 ![](http://nicolas.kruchten.com/images/mlecon/roc3.png)
 
-“That’s great!” said Emily, adding a green line to her original utility curve graph. “Because your second model’s ROC curve rises above the indifference curve, its utility curve also rises above the utility of setting the knob to zero.” She punched numbers into her calculator, “With a model like that, you could set the knob to around 45 such that out of a batch of 5000 gearboxes, 171 would be flagged as being bad, of which 62 would be false negatives. That works out to more than twice the profits for Fiona.” 
+“That’s great!” said Emily, adding a green line to her original utility curve graph. “Because your second model’s ROC curve rises above the indifference curve, its utility curve also rises above the utility of setting the knob to zero.” She punched numbers into her calculator, “With a model like that, you could set the knob to around 45 such that out of a batch of 5000 gearboxes, 171 would be flagged as being bad, of which 62 would be false negatives. That works out to more than twice the profits for Fiona.”
 
 
 ![](http://nicolas.kruchten.com/images/mlecon/utility3.png)
@@ -143,7 +142,7 @@ A week later Fiona e-mailed Danielle and Emily with the news: the updated scanne
 
 ### Analysis: Indifference Curves in ROC Space
 
-As the story above shows, if the utility of true and false positives and negatives are constants, then the expected utility (or business value) of a binary classifier is a linear function of its true positive rate (@TPR@) and its false positive rate (@FPR@). These four utility values and the class distribution (the proportion of positive and negative classes) together comprise the operating context for a classifier. If the operating context is known, a family of straight lines along which all points have the same expected utility can be plotted in [ROC space](https://en.wikipedia.org/wiki/Receiver_operating_characteristic), which is a plot of @TPR@ vs @FPR@. Such lines are known as [indifference curves](https://en.wikipedia.org/wiki/Indifference_curve) because someone trying to maximize utility is indifferent to the choice between points on the same curve, because they all have equal utility. 
+As the story above shows, if the utility of true and false positives and negatives are constants, then the expected utility (or business value) of a binary classifier is a linear function of its true positive rate (@TPR@) and its false positive rate (@FPR@). These four utility values and the class distribution (the proportion of positive and negative classes) together comprise the operating context for a classifier. If the operating context is known, a family of straight lines along which all points have the same expected utility can be plotted in [ROC space](https://en.wikipedia.org/wiki/Receiver_operating_characteristic), which is a plot of @TPR@ vs @FPR@. Such lines are known as [indifference curves](https://en.wikipedia.org/wiki/Indifference_curve) because someone trying to maximize utility is indifferent to the choice between points on the same curve, because they all have equal utility.
 
 Expected utility is the average of the utilities of the four possible outcomes, weighted by the probability of that outcome occurring. In the equation below, @r_p@ and @r_n@ are the fractions of positive and negative cases, respectively, in the business context:
 
@@ -159,11 +158,11 @@ $$({TPR} - d) = ({FPR} - d) \cdot s \\ s = \frac{r_n(u_{tn}-u_{fp}) }{ r_p(u_{tp
 
 The equation for @s@ can be re-expressed to make it easier to reason about. The quantity @-(u_{tn}-u_{fp})@ can be called @c_n@, as it equals the cost of misclassifying a negative example compared to the utility of correctly classifying it. Similarly, @-(u_{tp}-u_{fn})@ can be called @c_p@. The slope @s@ then has the following compact form:
 
- 
+
 
 $$ s = \frac{r_n c_n}{r_p c_p} $$
 
-All lines with slope @s@ are indifference curves in ROC space, so all points along such a line have equal expected utility. This utility is computable by substituting @d@ for @TPR@ and @FPR@ in the utility equation. Every point in ROC spaces is intersected by one indifference curve, and because every classifier occupies a point in ROC space, every classifier is part of a set which all have the same utility. For all values of @d@ from 0 to 1, the indifference curve traces out the classifiers which have the same utility as a positive-with-probability-@d@ classifier. All classifiers along the @d=0@ and @d=1@ curves have the same utility as the “trivial” always-negative and always-positive classifiers, respectively. 
+All lines with slope @s@ are indifference curves in ROC space, so all points along such a line have equal expected utility. This utility is computable by substituting @d@ for @TPR@ and @FPR@ in the utility equation. Every point in ROC spaces is intersected by one indifference curve, and because every classifier occupies a point in ROC space, every classifier is part of a set which all have the same utility. For all values of @d@ from 0 to 1, the indifference curve traces out the classifiers which have the same utility as a positive-with-probability-@d@ classifier. All classifiers along the @d=0@ and @d=1@ curves have the same utility as the “trivial” always-negative and always-positive classifiers, respectively.
 
 
 ![](http://nicolas.kruchten.com/images/mlecon/indifference1.png)
@@ -183,7 +182,7 @@ For example, when there is 1 positive example for every 5 negative ones, then @s
 
 The good news is that class-proportion and misclassification-cost ratios should be reasonably easy to estimate for a given business context, giving at least some indication of how close @s@ is to 1. If @s@ is far from 1, a data science process of model development and selection which blindly maximizes the AUC (or many other general-purpose machine learning metrics) and then proceeds to threshold selection runs a real risk of producing a model with an optimal threshold that cannot beat a trivial classifier, and thus has no real business value. If @s@ can be estimated ahead of time, a data science project can increase its chances of business success by focusing on models whose ROC curves rise into the value-added zone of ROC space.
 
-Furthermore, estimating @s@ can be useful even before model selection, during problem selection. The further @s@ is from 1 for a given problem context, the smaller the value-added region in ROC space, and the harder it will be to develop a classifier able to beat a trivial baseline. This type of insight can help prioritize data science projects to focus resources on the projects most likely to succeed. 
+Furthermore, estimating @s@ can be useful even before model selection, during problem selection. The further @s@ is from 1 for a given problem context, the smaller the value-added region in ROC space, and the harder it will be to develop a classifier able to beat a trivial baseline. This type of insight can help prioritize data science projects to focus resources on the projects most likely to succeed.
 
 Of course, such a prioritization approach would necessarily involve an investigation into the existing business-as-usual case: is the incumbent policy in fact a trivial always-positive or always-negative one? Or does the process under consideration already use some form of classifier like a set of hand-maintained rules which outperform trivial classifiers on utility and therefore set the baseline indifference curve even higher? The benefits of using machine learning to solve a problem can be quantified using the expected-utility equation by comparing the utility of the incumbent policy with that of a reasonably-achievable classifier and that of a perfect classifier. Prioritization can then focus on the tradeoff between the magnitude of the payoff and the estimated likelihood of success.
 
@@ -205,7 +204,7 @@ If you are looking for assistance in evaluating or executing a data science proj
 
 I have written a follow-up to this post in a similar format, if you enjoyed this one: [Machine Learning Meets Economics, Part 2](http://blog.mldb.ai/blog/posts/2016/04/ml-meets-economics2/)
 
-Much has been written by others on evaluating machine learning models, using various metrics like overall accuracy (ACC), the Area Under the Curve (AUC), the [Matthews Correlation Coefficient (MCC)](https://en.wikipedia.org/wiki/Matthews_correlation_coefficient) and others. These are general-purpose metrics, and I have found very few articles written for practitioners which focus on the business value of such metrics, or on finding metrics designed to correlate with business value. 
+Much has been written by others on evaluating machine learning models, using various metrics like overall accuracy (ACC), the Area Under the Curve (AUC), the [Matthews Correlation Coefficient (MCC)](https://en.wikipedia.org/wiki/Matthews_correlation_coefficient) and others. These are general-purpose metrics, and I have found very few articles written for practitioners which focus on the business value of such metrics, or on finding metrics designed to correlate with business value.
 
 I found the following works relevant while researching this article, although none of them quite present the same arguments I do here with respect to problem- and model-selection:
 

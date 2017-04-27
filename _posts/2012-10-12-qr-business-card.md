@@ -3,7 +3,7 @@ layout: post
 title: My QR-Code Business Card
 image: http://nicolas.kruchten.com/images/card_back.png
 tags:
-    - Datacratic
+    - Data Visualization
 ---
 
 This is the machine-readable back of my new nerdy QR-code business card!

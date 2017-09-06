@@ -6,8 +6,8 @@
 			<div class="row">
 				<div class="span8 offset2">
 					<div class="ghpb-post">
-						
-						<div class="postmeta">{{ page.date | date: "%B %-d, %Y" }} &ndash; 
+
+						<div class="postmeta">{{ page.date | date: "%B %-d, %Y" }} &ndash;
 							{% assign prefix = '' %}
 							{% for t in page.tags %}{{ prefix }}<a href="{{ site.url }}/tags/{{ t | replace: " " "" }}">{{ t }}</a>{% assign prefix = ', ' %}{% endfor %}
 						</div>
@@ -21,10 +21,11 @@
 							<div class='embed-container'><iframe src="https://www.youtube.com/embed/{{page.youtube}}" frameborder="0" allowfullscreen></iframe></div>
 						{% endif %}
 
+
 						{{ content }}
 
 						<p style="text-align: center; font-size: 24px;">⁂</p>
-						
+
 					</div>
 					<div class="row">
 
@@ -38,7 +39,7 @@
 							<li>
 								<a href="{{ section_social_link.url }}" target="_blank">
 									{% if site.font_awesome.enabled and section_social_link.font_awesome_icon %}
-										<i class="{{ section_social_link.font_awesome_icon }}" style="color: black;"></i> 
+										<i class="{{ section_social_link.font_awesome_icon }}" style="color: black;"></i>
 									{% endif %}
 									{{ section_social_link.name }}
 								</a>
@@ -47,7 +48,7 @@
 					{% endfor %}
 				</ul>
 						</div>
-						
+
 						<div class="span5">
 							{% if page.github %}
 								<h3><i class="icon-github"></i> Code on Github</h3>
@@ -57,7 +58,7 @@
 							{% endif %}
 
 							{% assign related_tag = page.tags[0] %}
-							<h3>More {{related_tag}} posts</h3>
+							<h3>More in {{related_tag}}</h3>
 							<ul class="nav nav-list ghpb-nav-list">
 							{% for related_post in site.tags[related_tag] %}
 								{% if page.title != related_post.title%}
@@ -65,7 +66,7 @@
 								{% endif %}
 							{% endfor%}
 							</ul>
-							
+
 						</div>
 					</div>
 

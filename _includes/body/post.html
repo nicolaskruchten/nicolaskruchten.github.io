@@ -15,10 +15,11 @@
 
 						{% if page.image %}
 							<p><img src="{{ page.image }}" alt="{{page.title}}" /></p>
-						{% endif %}
-
-						{% if page.youtube %}
+						{% elsif page.youtube %}
 							<div class='embed-container'><iframe src="https://www.youtube.com/embed/{{page.youtube}}" frameborder="0" allowfullscreen></iframe></div>
+						{% else %}
+
+							<br>
 						{% endif %}
 
 

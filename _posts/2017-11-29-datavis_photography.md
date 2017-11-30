@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Data Visualization: It's a Lot Like Photography"
+title: "Data Visualization: it's a lot like Photography"
 image: http://nicolas.kruchten.com/images/datavis_photog.png
 tags:
     - Data Visualization

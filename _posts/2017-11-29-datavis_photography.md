@@ -4,6 +4,7 @@ title: "Data Visualization: it's a lot like Photography"
 image: http://nicolas.kruchten.com/images/datavis_photog.png
 tags:
     - Data Visualization
+    - Essays
 ---
 
 I have recently read some [though-provoking][a1] [articles][a2] that discussed data visualization by analogy to photography. I really like this analogy, both from a process perspective – photography and data visualization – and a people perspective – photographers and data visualizers. Anyone who takes a picture with a camera is a photographer in that moment, and anyone who makes a chart, diagram or map based on data is a data visualizer while they’re doing that. Both photographers and data visualizers produce images of information emanating from their subjects, to make a point, to record, to inform, to delight. Photographers choose the lighting of their subject and framing of their shots, then use cameras to capture their image. Data visualizers choose the data they use about their subject and the mapping of data attributes to visual attributes, then use algorithms to produce graphics. Both can post-process their images to exert even finer control over their products.

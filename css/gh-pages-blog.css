@@ -1,6 +1,6 @@
 
 .ghpb-well-outline {
-  background-color: transparent; 
+  background-color: transparent;
 }
 
 .ghpb-well-outline blockquote {
@@ -20,6 +20,11 @@
 
 .ghpb-nav-header {
   color: #999999;
+}
+
+.ghpb-post {
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 .ghpb-post p {
@@ -51,8 +56,8 @@
 }
 
 
-body { 
-  font-family: 'Open Sans', sans-serif; 
+body {
+  font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility
 }
@@ -76,26 +81,26 @@ width: 1.25em;
 text-align: center;
 }
 code {color: #333333;}
-ul { margin-bottom: 25px; } 
-.ghpb-post li ul li {margin-bottom: 0; margin-right: 50px; } 
+ul { margin-bottom: 25px; }
+.ghpb-post li ul li {margin-bottom: 0; margin-right: 50px; }
 
-.embed-container 
-{ 
-  position: relative; 
-  padding-bottom: 56.25%; 
-  height: 0; 
-  overflow: hidden; 
-  max-width: 100%; 
+.embed-container
+{
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
   margin: 25px;
-} 
+}
 
-.embed-container iframe, .embed-container object, .embed-container embed 
-{ 
-  position: absolute; 
-  top: 0; 
-  left: 0; 
-  width: 100%; 
-  height: 100%; 
+.embed-container iframe, .embed-container object, .embed-container embed
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .postimg p {

@@ -12,7 +12,7 @@
                     .wrap('<div class="span5 offset1 text-center">')
                     ;
             });
-        
+
         /* in post */
         $('.span8 > .ghpb-post > p > img')
             .css("max-height", "400px")
@@ -21,19 +21,17 @@
                 $(this)
                     .css({"padding-bottom": "5px", "cursor": "pointer"})
                     .parent()
-                    .wrap('<div class="row postimg">')
-                    .wrap('<div class="span6 offset1 text-center">')
+                    .wrap('<div class="postimg">')
                     ;
             });
-        
+
         /* in post, in link */
         $('.span8 > .ghpb-post > p > a > img')
             .css("max-height", "400px")
             .each(function(){
                 $(this)
                     .parent().parent()
-                    .wrap('<div class="row postimg">')
-                    .wrap('<div class="span6 offset1 text-center">')
+                    .wrap('<div class="postimg">')
                     ;
             });
     });

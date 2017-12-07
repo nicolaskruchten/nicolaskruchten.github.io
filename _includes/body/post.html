@@ -5,14 +5,13 @@
 		<div class="container">
 			<div class="row">
 				<div class="span8 offset2">
+					<div class="postmeta">{{ page.date | date: "%B %-d, %Y" }} &ndash;
+						{% assign prefix = '' %}
+						{% for t in page.tags %}{{ prefix }}<a href="{{ site.url }}/tags/{{ t | replace: " " "" }}">{{ t }}</a>{% assign prefix = ', ' %}{% endfor %}
+					</div>
+					<h2>{{ page.title }}</h2>
+
 					<div class="ghpb-post">
-
-						<div class="postmeta">{{ page.date | date: "%B %-d, %Y" }} &ndash;
-							{% assign prefix = '' %}
-							{% for t in page.tags %}{{ prefix }}<a href="{{ site.url }}/tags/{{ t | replace: " " "" }}">{{ t }}</a>{% assign prefix = ', ' %}{% endfor %}
-						</div>
-						<h2>{{ page.title }}</h2>
-
 						{% if page.image %}
 							<p><img src="{{ page.image }}" alt="{{page.title}}" /></p>
 						{% elsif page.youtube %}
@@ -59,7 +58,7 @@
 							{% endif %}
 
 							{% assign related_tag = page.tags[0] %}
-							<h3>More in {{related_tag}}</h3>
+							<h3>More {{related_tag}}</h3>
 							<ul class="nav nav-list ghpb-nav-list">
 							{% for related_post in site.tags[related_tag] %}
 								{% if page.title != related_post.title%}

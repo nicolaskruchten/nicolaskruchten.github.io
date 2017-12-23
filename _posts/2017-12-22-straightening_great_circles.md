@@ -11,7 +11,7 @@ Many a bored long-haul flight passenger has asked themselves why the flight path
 
 <!-- more -->
 
-The shortest path between two points on a sphere is called the [Great Circle track][gc]. This is because, paradoxical as it may sound, it lies along the biggest circle you can draw that includes those two points. Let’s take a look at a typical map with an [equirectangular projection][er] plotting the Great Circle track from Tokyo to Sao Paulo, with the midpoint highlighted (hint: it’s above the Great Lakes in North America).
+The shortest path between two points on a sphere is called the [Great Circle track][gc]. This is because, paradoxical as it may sound, it lies along the biggest circle you can draw that includes those two points. Let’s take a look at a typical map with an [equirectangular projection][er] plotting the Great Circle track from Tokyo to São Paulo, with the midpoint highlighted (hint: it’s above the Great Lakes in North America).
 
 ![](http://nicolas.kruchten.com/images/straight_circles/tokyo_sao_paulo.png)
 

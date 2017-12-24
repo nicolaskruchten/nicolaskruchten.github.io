@@ -51,7 +51,7 @@
 						<category><![CDATA[ {{ c }} ]]></category>
 					{% endfor %}
 
-					<description><![CDATA[ {{ p.content }} ]]></description>
+					<description><![CDATA[ {{ p.excerpt }} ]]></description>
 				</item>
 			{% endfor %}
 

@@ -12,7 +12,7 @@ One of the easiest ways to start visualizing data is to turn a table into a [hea
 <!-- more -->
 
 ![](http://nicolas.kruchten.com/seriation/shuffled_both.png)
-It seems like there might be a pattern here but it’s definitely not obvious what it is
+<br />It seems like there might be a pattern here but it’s definitely not obvious what it is
 
 I know for a fact that there’s a pattern here because I put it there myself before independently shuffling the rows and columns to obscure it. Critically, this means that any cells that were in the same row in the original dataset are still in the same row, and likewise for columns.
 
@@ -23,7 +23,7 @@ The techniques I demonstrate below are part of a branch of research called seria
 If you look at the heatmap above, it certainly seems like there is a pattern, in that some columns look similar to each other and the same for rows, leading to the plaid effect. A natural reaction to seeing this is to want to group together similar-looking rows and columns. This type of reordering is often done by [agglomerative clustering], which in the case of rows would start by placing each row in its own cluster, and then iteratively merging the most similar clusters together until only one remains. The result of such a clustering of items can be visualized as a [dendrogram]. Here is the result of agglomerative clustering on the heatmap above, with row and column dendrograms, as it is [frequently done in bioinformatics][bio]:
 
 ![](http://nicolas.kruchten.com/seriation/clustered.png)
-Agglomerative clustering
+<br />Agglomerative clustering
 
 We get what we asked for: certainly it looks like things have been grouped together and the image feels less chaotic than the original, but the clear pattern I promised isn’t exactly jumping out at us.
 
@@ -34,7 +34,7 @@ One of the problems with agglomerative clustering is that it doesn’t actually 
 Here we meet our first seriation algorithm: [Optimal Leaf Ordering][olo]. This algorithm starts with the output of an agglomerative clustering algorithm and produces a unique ordering, one that flips the various branches of the dendrogram around so as to minimize the sum of dissimilarities between adjacent leaves. Here is the result of applying Optimal Leaf Ordering to the same clustering result as the heatmap above:
 
 ![](http://nicolas.kruchten.com/seriation/clustered_olo.png)
-Agglomerative clustering with Optimal Leaf Ordering
+<br />Agglomerative clustering with Optimal Leaf Ordering
 
 The effect is quite dramatic: much of the jagginess of the original clustered heatmap is gone, and the perceptive reader is likely able to guess what the underlying pattern of the dataset is. That said, it’s not exactly crystal clear yet.
 
@@ -44,7 +44,7 @@ We started with clustering just because it seemed to make intuitive sense to gro
 
 
 ![](http://nicolas.kruchten.com/seriation/tsp.png)
-Seriation via a TSP solver
+<br />Seriation via a TSP solver
 
 The pattern is now quite clear: the dataset in question was composed of the pixel intensity values for a photograph of yours truly. When you compare it to the original heatmap above, it’s quite surprising that it’s literally the same table with rows and columns shuffled.
 

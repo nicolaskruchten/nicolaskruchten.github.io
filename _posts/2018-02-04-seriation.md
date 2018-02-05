@@ -16,7 +16,7 @@ One of the easiest ways to start visualizing data is to turn a table into a [hea
 
 I know for a fact that there’s a pattern here because I put it there myself before independently shuffling the rows and columns to obscure it. Critically, this means that any cells that were in the same row in the original dataset are still in the same row, and likewise for columns.
 
-The techniques I demonstrate below come out of a branch of research called seriation, which is the study of ways to place sets of items in an order that reveals structural information about that set, and which has a [rich history][history]. I was not involved in writing any of the software demonstrated below, which comes from an R package appropriately called [`seriation`][seriation_r], although parts of it could have just as easily been done in [Python] or [Javascript]. The tiny amount of [code I wrote for this article][gh] can be found on Github.
+The techniques I demonstrate below come out of a branch of research called seriation, which is the study of ways to place sets of items in an order that reveals structural information about that set, and which has a [rich history][history]. I was not involved in writing any of the software demonstrated below, which comes from an [R package appropriately called `seriation`][seriation_r], although parts of it could have just as easily been done in [Python] or [Javascript]. The tiny amount of [code I wrote for this article][gh] can be found on Github.
 
 ## Clustering
 

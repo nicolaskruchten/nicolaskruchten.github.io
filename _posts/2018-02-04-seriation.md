@@ -16,7 +16,7 @@ One of the easiest ways to start visualizing data is to turn a table into a [hea
 
 I know for a fact that there’s a pattern here because I put it there myself before independently shuffling the rows and columns to obscure it. Critically, this means that any cells that were in the same row in the original dataset are still in the same row, and likewise for columns.
 
-The techniques I demonstrate below are part of a branch of research called seriation, which is the study of ways to place sets of items in an order that reveals structural information about that set. I was not involved in writing any of the software demonstrated below, which comes from an R package appropriately called [`seriation`][seriation_r], although parts of it could have just as easily been done in [Python] or [Javascript]. The tiny amount of [code I wrote for this article][gh] can be found on Github.
+The techniques I demonstrate below come out of a branch of research called seriation, which is the study of ways to place sets of items in an order that reveals structural information about that set, and which has a [rich history][history]. I was not involved in writing any of the software demonstrated below, which comes from an R package appropriately called [`seriation`][seriation_r], although parts of it could have just as easily been done in [Python] or [Javascript]. The tiny amount of [code I wrote for this article][gh] can be found on Github.
 
 ## Clustering
 
@@ -31,12 +31,12 @@ We get what we asked for: certainly it looks like things have been grouped toget
 
 One of the problems with agglomerative clustering is that it doesn’t actually place the rows in a definite order, it merely constrains the space of possible orderings. Take three items A, B and C. If you ignore reflections, there are three possible orderings: ABC, ACB, BAC. If clustering them gives you ((A+B)+C) as a tree, you know that C can’t end up between A and B, but it doesn’t tell you which way to flip the A+B cluster. It doesn’t tell you if the ABC ordering will lead to a clearer-looking heatmap than the BAC ordering.
 
-Here we meet our first seriation algorithm: [Optimal Leaf Ordering][olo]. This algorithm starts with the output of an agglomerative clustering algorithm and produces a unique ordering, one that flips the various branches of the dendrogram around so as to minimize the sum of dissimilarities between adjacent leaves. Here is the result of applying Optimal Leaf Ordering to the same clustering result as the heatmap above:
+Here we meet our first seriation algorithm: [Optimal Leaf Ordering (OLO)][olo]. This algorithm starts with the output of an agglomerative clustering algorithm and produces a unique ordering, one that flips the various branches of the dendrogram around so as to minimize the sum of dissimilarities between adjacent leaves. Here is the result of applying Optimal Leaf Ordering to the same clustering result as the heatmap above:
 
 ![](http://nicolas.kruchten.com/seriation/clustered_olo.png)
 <br />Agglomerative clustering with Optimal Leaf Ordering
 
-The effect is quite dramatic: much of the jagginess of the original clustered heatmap is gone, and the perceptive reader is likely able to guess what the underlying pattern of the dataset is. That said, it’s not exactly crystal clear yet.
+The effect is quite dramatic: much of the jagginess of the original clustered heatmap is gone, and the perceptive reader is likely able to guess what the underlying pattern of the dataset is. It’s not exactly crystal clear yet, but clearly it's an improvement over arbitrarily ordering clustered rows and columns, just like the latter was an improvement over arbitrarily-ordered rows and columns.
 
 ## Travelling Salespeople
 
@@ -56,7 +56,7 @@ My intention in writing this article was to provide a dramatic and easy to see e
 
 ## Further Reading
 
-The [documentation for the R seriation package][seriation_r] is extensive and contains a number of small examples of seriation on real-world datasets, although none that are as convincing as the one I’ve put together, in my opinion. The original [Optimal Leaf Ordering paper][olo] is also an interesting read.
+The [documentation for the R seriation package][seriation_r] is extensive (it contains much more than just OLO and TSP) and contains a number of small examples of seriation on real-world datasets, although none that are as convincing as the one I’ve put together, in my opinion. The original [Optimal Leaf Ordering paper][olo] is also an interesting read.
 
 The late, great [Jacques Bertin][jb], author of the magisterial [Semiologie Graphique][sg], pioneered the use of reorderable matrices to physically seriate datasets by moving around rows and columns of datasets represented by tiles on rods. A number of striking examples are included in his lesser-known work [La Graphique][lg], which has recently been reprinted, albeit not in english as far as I know. Some fellow enthusiasts of Bertin’s work [recreated some of these physical devices][diy] and have also created a browser-based tool for interactive seriation called the [Bertifier].
 

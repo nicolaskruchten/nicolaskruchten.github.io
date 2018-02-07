@@ -36,7 +36,7 @@ Here we meet our first seriation algorithm: [Optimal Leaf Ordering (OLO)][olo]. 
 ![](http://nicolas.kruchten.com/seriation/clustered_olo.png)
 <br />Agglomerative clustering with Optimal Leaf Ordering
 
-The effect is quite dramatic: much of the jagginess of the original clustered heatmap is gone, and the perceptive reader is likely able to guess what the underlying pattern of the dataset is. It’s not exactly crystal clear yet, but clearly it's an improvement over arbitrarily ordering clustered rows and columns, just like the latter was an improvement over arbitrarily-ordered rows and columns.
+The effect is quite dramatic: much of the jagginess of the original clustered heatmap is gone, and the perceptive reader is likely able to guess what the underlying pattern of the dataset is. It’s not exactly crystal clear yet, but it's a big improvement over arbitrarily ordering clustered rows and columns, just like the latter was an improvement over arbitrarily-ordered rows and columns.
 
 ## Travelling Salespeople
 

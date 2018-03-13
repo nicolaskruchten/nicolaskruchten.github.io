@@ -1,6 +1,6 @@
 ---
 layout: redirect
-dest: https://medium.com/@plotlygraphs/introducing-react-pivottable-4bfdd511afed
+dest: https://medium.com/@plotlygraphs/data-visualization-for-artificial-intelligence-and-vice-versa-a38869065d88
 title: Data Visualization for Artificial Intelligence, and Vice Versa
 tags:
     - Data Visualization

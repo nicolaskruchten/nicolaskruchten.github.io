@@ -11,7 +11,7 @@ exclude: false
 
 			<div class="postmeta">{{ p.date | date: "%B %-d, %Y" }} &ndash;
 				{% assign prefix = '' %}
-				{% for t in p.tags %}{{ prefix }}<a href="{{ site.url }}/tags/{{ t | replace: " " "" }}">{{ t }}</a>{% assign prefix = ', ' %}{% endfor %}
+				{% for t in p.tags %}{{ prefix }}<a href="{{ site.url }}/tags/{{ t | replace: " ","" }}">{{ t }}</a>{% assign prefix = ', ' %}{% endfor %}
 			</div>
 
 			<h2><a href="{{ site.url }}{{ p.url }}">{{ p.title }}</a></h2>

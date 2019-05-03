@@ -7,7 +7,7 @@
 				<div class="span8 offset2">
 					<div class="postmeta">{{ page.date | date: "%B %-d, %Y" }} &ndash;
 						{% assign prefix = '' %}
-						{% for t in page.tags %}{{ prefix }}<a href="{{ site.url }}/tags/{{ t | replace: " " "" }}">{{ t }}</a>{% assign prefix = ', ' %}{% endfor %}
+						{% for t in page.tags %}{{ prefix }}<a href="{{ site.url }}/tags/{{ t | replace: " ","" }}">{{ t }}</a>{% assign prefix = ', ' %}{% endfor %}
 					</div>
 					<h2>{{ page.title }}</h2>
 

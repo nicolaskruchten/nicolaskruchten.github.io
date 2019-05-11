@@ -2,7 +2,7 @@
 layout : post
 title : Interactive Subreddit Map with t-SNE
 image: http://nicolas.kruchten.com/images/mtlpy50.png
-github: datacratic/mtlpy50
+github: nicolakruchten/mtlpy50
 tags:
     - Data Visualization
 ---
@@ -11,5 +11,5 @@ For part of [my presentation at Montreal Python][pres], I made an interactive ma
 
 
 [pres]: http://nicolas.kruchten.com/content/2014/12/mtlpy50
-[iv]: http://opensource.datacratic.com/mtlpy50/subreddit_map.html
+[iv]: http://nicolas.kruchten.com/mtlpy50/subreddit_map.html
 [re]: http://www.reddit.com/r/dataisbeautiful/comments/2o5qbu/interactive_subreddit_map_with_tsne_oc/

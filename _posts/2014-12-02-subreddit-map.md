@@ -2,7 +2,7 @@
 layout : post
 title : Interactive Subreddit Map with t-SNE
 image: http://nicolas.kruchten.com/images/mtlpy50.png
-github: nicolakruchten/mtlpy50
+github: nicolaskruchten/mtlpy50
 tags:
     - Data Visualization
 ---

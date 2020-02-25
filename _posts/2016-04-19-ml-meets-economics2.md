@@ -1,8 +1,7 @@
 ---
-layout: redirect
+layout: post
 image: http://nicolas.kruchten.com/images/mlecon2/surface.png
 title : Machine Learning Meets Economics, Part 2
-dest: http://blog.mldb.ai/blog/posts/2016/04/ml-meets-economics2/
 tags:
     - Machine Learning
 ---

@@ -2,6 +2,7 @@
 layout: post
 image: http://nicolas.kruchten.com/images/mlecon/indifference3.png
 title: Machine Learning Meets Economics
+mathjax: true
 tags:
     - Machine Learning
 ---
@@ -137,7 +138,7 @@ Danielle, who had been furrowing her brow until that point, lit up. “I get it!
 
 A week later Fiona e-mailed Danielle and Emily with the news: the updated scanner had indeed more than doubled her profits for the widget production line!
 
-(Update: Danielle and Emily come back in [Machine Learning Meets Economics, Part 2](http://blog.mldb.ai/blog/posts/2016/04/ml-meets-economics2/) with The Case of the Augmented Humans!)
+(Update: Danielle and Emily come back in [Machine Learning Meets Economics, Part 2](http://nicolas.kruchten.com/content/2016/04/ml-meets-economics2/) with The Case of the Augmented Humans!)
 
 ### Analysis: Indifference Curves in ROC Space
 
@@ -197,11 +198,10 @@ My recommendations, if you are considering the use of a binary classifier to sol
   * "How often does your process make a mistake right now, and do they tend to be false negatives or false positives?"
 * **When executing on a project,** if you are able to compute expected utility, consider maximizing that directly instead of AUC or another general-purpose metrics. If you are not confident about computing expected utility, at least estimate the slope of the indifference curve and focus on developing models whose ROC curve rises above the trivial indifference curves.
 
-If you are looking for assistance in evaluating or executing a data science project using the types of methods detailed above, **Datacratic can help**! We can guide you through the initial stage of your project and help you use [MLDB, the Machine Learning Database](http://mldb.ai), to build and deploy binary classifiers and many other kinds of machine-learning-powered solutions to business problems. Please [get in touch](mailto:mldb@datacratic.com) to get started.
 
 ### Related Reading
 
-I have written a follow-up to this post in a similar format, if you enjoyed this one: [Machine Learning Meets Economics, Part 2](http://blog.mldb.ai/blog/posts/2016/04/ml-meets-economics2/)
+I have written a follow-up to this post in a similar format, if you enjoyed this one: [Machine Learning Meets Economics, Part 2](http://nicolas.kruchten.com/content/2016/04/ml-meets-economics2/)
 
 Much has been written by others on evaluating machine learning models, using various metrics like overall accuracy (ACC), the Area Under the Curve (AUC), the [Matthews Correlation Coefficient (MCC)](https://en.wikipedia.org/wiki/Matthews_correlation_coefficient) and others. These are general-purpose metrics, and I have found very few articles written for practitioners which focus on the business value of such metrics, or on finding metrics designed to correlate with business value.
 

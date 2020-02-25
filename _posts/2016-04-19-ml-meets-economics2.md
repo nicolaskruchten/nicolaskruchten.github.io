@@ -2,13 +2,14 @@
 layout: post
 image: http://nicolas.kruchten.com/images/mlecon2/surface.png
 title : Machine Learning Meets Economics, Part 2
+mathjax: true
 tags:
     - Machine Learning
 ---
 
 By using machine learning algorithms, we are increasingly able to use computers to perform intellectual tasks at a level approaching that of humans. Given that computers cost less than employees, many people are afraid that humans will therefore necessarily lose their jobs to computers. Contrary to this belief, in this article I show that even when a computer can perform a task more economically than a human, careful analysis suggests that humans and computers working together can sometimes yield even better business outcomes than simply replacing one with the other.
 
-Specifically, I show how a classifier with a reject option can increase worker productivity for certain types of tasks, and I show how to construct and tune such a classifier from a simple scoring function by using two thresholds. I begin with a parable featuring the same characters as the one from [Part 1 of this Machine Learning Meets Economics series](http://blog.mldb.ai/blog/posts/2016/01/ml-meets-economics/). I recommend reading Part 1 first, as it sets up much of the terminology I use here.
+Specifically, I show how a classifier with a reject option can increase worker productivity for certain types of tasks, and I show how to construct and tune such a classifier from a simple scoring function by using two thresholds. I begin with a parable featuring the same characters as the one from [Part 1 of this Machine Learning Meets Economics series](http://nicolas.kruchten.com/content/2016/01/ml-meets-economics/). I recommend reading Part 1 first, as it sets up much of the terminology I use here.
 
 <!-- more -->
 
@@ -16,7 +17,7 @@ Specifically, I show how a classifier with a reject option can increase worker p
 
 "What seems to be the problem?" Emily the Economist asked as she walked into Danielle the Data Scientist's office, where she was introduced to Quinn the Quality Inspector.
 
-"Thanks for coming, Emily," replied Danielle. "I'm really hoping you can assist me with my latest problem. It's similar to the one you helped me out with last time we spoke." (Author's note: see The Case of the Useless Model from [Part 1](http://blog.mldb.ai/blog/posts/2016/01/ml-meets-economics/)).
+"Thanks for coming, Emily," replied Danielle. "I'm really hoping you can assist me with my latest problem. It's similar to the one you helped me out with last time we spoke." (Author's note: see The Case of the Useless Model from [Part 1](http://nicolas.kruchten.com/content/2016/01/ml-meets-economics/)).
 
 "I'd be happy to give it a shot," said Emily, "Why don't you walk me through what you've done so far?"
 
@@ -85,13 +86,12 @@ We can also use this surface to find the optimal threshold settings under some c
 ![](http://nicolas.kruchten.com/images/mlecon2/contours.png)
 
 
-Interestingly, because every point along such a curve will use the reject option in equal measure, the threshold values for maximum utility point are independent of the cost of the reject option, so this approach can be used even when that cost is difficult to quantify. The optimal threshold values depend only on the class distribution and the ratio between the cost of false positives and false negatives, much like the slope of the indifference curve in [Part 1](http://blog.mldb.ai/blog/posts/2016/01/ml-meets-economics/).
+Interestingly, because every point along such a curve will use the reject option in equal measure, the threshold values for maximum utility point are independent of the cost of the reject option, so this approach can be used even when that cost is difficult to quantify. The optimal threshold values depend only on the class distribution and the ratio between the cost of false positives and false negatives, much like the slope of the indifference curve in [Part 1](http://nicolas.kruchten.com/content/2016/01/ml-meets-economics/).
 
 ### Conclusions and Recommendations
 
 Machine learning can be used to train classifiers with the potential to substantially improve the outcomes and reduce the costs associated with various types of tasks which are currently being performed by humans. In many cases, however, it will be economically optimal for computers to boost the productivity of human workers rather than to completely replace them. In this article, I have shown through a worked example at least one reasonably plausible situation where this is the case. As in many domains, when modelling the application of machine learning to the optimization of existing business processes, approaching the problem with an either/or mindset as opposed to a with/and mindset can lead to a local optimum rather than the global one.
 
-If you are looking for assistance in evaluating or executing a data science project using the types of methods detailed above, **Datacratic can help**! We can guide you through the initial stage of your project and help you use [MLDB, the Machine Learning Database](http://mldb.ai), to build and deploy binary classifiers and many other kinds of machine-learning-powered solutions to business problems. Please [get in touch](mailto:mldb@datacratic.com) to get started.
 
 ### <a name="links"></a>Further Reading
 

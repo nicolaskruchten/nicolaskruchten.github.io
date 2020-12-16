@@ -3,6 +3,7 @@ layout: redirect
 image: http://nicolas.kruchten.com/images/px.gif
 title: Introducing Plotly Express
 dest: https://medium.com/@plotlygraphs/introducing-plotly-express-808df010143d
+github: plotly/plotly.py
 tags:
     - Data Visualization
 ---

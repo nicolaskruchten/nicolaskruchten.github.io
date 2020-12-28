@@ -33,6 +33,8 @@ Here are a couple more interesting maps with straightened-out great circles:
 
 *Hat tip to Carlos A. Furuti, maker of [an excellent site on map projections][progonos], and whose page on great circles inspired this post, and thanks to Movable Type Ltd for maintaining [a very useful page full of equations][mt] for this kind of manipulation.*
 
+*Update December 2020: while working on my [homage to Bertin's *Semiology of Graphics*](https://nicolas.kruchten.com/semiology_of_graphics/) this month, I realized that this amazing book basically makes this exact point and some extremely similar maps in an offhanded way. It's always neat, and humbling, to see one's ideas anticipated a half century ahead!*
+
 [er]: https://en.wikipedia.org/wiki/Equirectangular_projection
 [gc]: https://en.wikipedia.org/wiki/Great-circle_distance
 [gh]: https://github.com/nicolaskruchten/straight_circles

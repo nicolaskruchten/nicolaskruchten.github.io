@@ -291,24 +291,24 @@ social_links :
       url : mailto:nicolas@kruchten.com
     - link :
       enabled : true
-      name : Résumé
-      font_awesome_icon : icon-file-text-alt
-      url : http://nicolas.kruchten.com/cv.html
-#    - link :
-#      enabled : true
-#      name : Datacratic Blog
-#      font_awesome_icon : icon-flag
-#      url : http://datacratic.com/site/blogs/nicolas-kruchten
-    - link :
-      enabled : true
       name : GitHub
       font_awesome_icon : icon-github-alt
       url : https://github.com/nicolaskruchten
     - link :
       enabled : true
+      name : Twitter
+      font_awesome_icon : icon-twitter
+      url : http://www.twitter.com/nicolaskruchten
+    - link :
+      enabled : true
       name : YouTube
       font_awesome_icon : icon-youtube-play
       url : https://www.youtube.com/playlist?list=PLG720DHcaUuK0CNvJcoEJIV6lWpNJnU18
+    - link :
+      enabled : true
+      name : Linkedin
+      font_awesome_icon : icon-linkedin
+      url : http://ca.linkedin.com/in/nicolaskruchten
     - link :
       enabled : true
       name : Goodreads
@@ -321,19 +321,9 @@ social_links :
       url : http://stackoverflow.com/users/112871/nicolaskruchten
     - link :
       enabled : true
-      name : Linkedin
-      font_awesome_icon : icon-linkedin
-      url : http://ca.linkedin.com/in/nicolaskruchten
-    - link :
-      enabled : true
-      name : Twitter
-      font_awesome_icon : icon-twitter
-      url : http://www.twitter.com/nicolaskruchten
-    - link :
-      enabled : true
-      name: Google+
-      font_awesome_icon : icon-google-plus
-      url : https://plus.google.com/+NicolasKruchten?rel=author
+      name : Résumé
+      font_awesome_icon : icon-file-text-alt
+      url : http://nicolas.kruchten.com/cv.html
     - link :
       enabled : true
       name : RSS Feed

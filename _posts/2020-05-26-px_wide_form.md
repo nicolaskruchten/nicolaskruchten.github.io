@@ -1,6 +1,6 @@
 ---
 layout: redirect
-image: http://nicolas.kruchten.com/images/tidy.gif
+image: http://nicolas.kruchten.com/images/tidy.png
 title: "Beyond “tidy”: Plotly Express now accepts wide-form and mixed-form data"
 dest: https://medium.com/plotly/beyond-tidy-plotly-express-now-accepts-wide-form-and-mixed-form-data-bdc3e054f891
 github: plotly/plotly.py

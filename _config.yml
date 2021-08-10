@@ -309,11 +309,11 @@ social_links :
       name : Linkedin
       font_awesome_icon : icon-linkedin
       url : http://ca.linkedin.com/in/nicolaskruchten
-    - link :
-      enabled : true
-      name : Goodreads
-      font_awesome_icon : icon-book
-      url : https://goodreads.com/nicolaskruchten
+#    - link :
+#      enabled : true
+#      name : Goodreads
+#      font_awesome_icon : icon-book
+#      url : https://goodreads.com/nicolaskruchten
     - link :
       enabled : true
       name : StackOverflow

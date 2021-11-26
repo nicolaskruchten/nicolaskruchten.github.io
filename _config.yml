@@ -354,6 +354,9 @@ github_projects :
   header : Notable Projects
   projects :
   - project :
+    name : Plotly Express - a high-level interface to Plotly.py
+    url : https://plotly.express
+  - project :
     name : react-pivottable - modern in-browser Pivot Table
     url : https://github.com/plotly/react-pivottable
   - project :

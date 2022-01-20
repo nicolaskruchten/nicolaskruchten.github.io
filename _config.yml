@@ -364,7 +364,7 @@ github_projects :
     url : https://github.com/nicolaskruchten/pivottable
   - project :
     name : MLDB - the Machine Learning Database
-    url : http://mldb.ai
+    url : https://github.com/mldbai/mldb
   - project :
     name : RTBkit - Open Source Real-Time Bidding
     url : https://github.com/rtbkit/rtbkit

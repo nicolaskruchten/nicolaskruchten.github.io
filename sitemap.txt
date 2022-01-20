@@ -2,6 +2,6 @@
 layout: sitemap
 exclude: true
 otherurls:
-    - /cv.html
+    - /cv
     - /pivottable
 ---

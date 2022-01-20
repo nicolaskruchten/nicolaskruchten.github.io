@@ -323,7 +323,7 @@ social_links :
       enabled : true
       name : Résumé
       font_awesome_icon : icon-file-text-alt
-      url : http://nicolas.kruchten.com/cv.html
+      url : http://nicolas.kruchten.com/cv/
     - link :
       enabled : true
       name : RSS Feed
@@ -397,7 +397,7 @@ external_links :
   links :
     - link :
       name : Résumé
-      url: http://nicolas.kruchten.com/cv.html
+      url: http://nicolas.kruchten.com/cv/
 
 
 # These are the bootstrap settings. These bootstrap settings will control both

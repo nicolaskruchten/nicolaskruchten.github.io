@@ -1,7 +1,7 @@
 ---
 layout : post
 title : "Montreal Python: A Fresh Look at the Python Data Visualization Landscape"
-youtube: OuwYBKO6tQo
+youtube: OuwYBKO6tQo?start=476
 github: nicolaskruchten/pyviz_diagram
 tags:
     - Talks

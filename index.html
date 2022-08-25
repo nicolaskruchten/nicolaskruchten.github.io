@@ -22,9 +22,7 @@ exclude: false
 					<a href="{{ site.url }}{{ p.url }}"><img src="{{ p.image }}" alt="{{ p.title }}" /></a>
 				</div>
 			</div>
-			{% endif %}
-
-			{% if p.youtube %}
+			{% elsif p.youtube %}
 				<div class='embed-container'><iframe src="https://www.youtube.com/embed/{{p.youtube}}" frameborder="0" allowfullscreen></iframe></div>
 			{% endif %}
 

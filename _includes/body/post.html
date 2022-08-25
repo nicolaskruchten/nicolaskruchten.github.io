@@ -12,10 +12,10 @@
 					<h2>{{ page.title }}</h2>
 
 					<div class="ghpb-post">
-						{% if page.image %}
-							<p><img src="{{ page.image }}" alt="{{page.title}}" /></p>
-						{% elsif page.youtube %}
+						{% if page.youtube %}
 							<div class='embed-container'><iframe src="https://www.youtube.com/embed/{{page.youtube}}" frameborder="0" allowfullscreen></iframe></div>
+						{% elsif page.image %}
+							<p><img src="{{ page.image }}" alt="{{page.title}}" /></p>
 						{% else %}
 
 							<br>

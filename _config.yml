@@ -307,6 +307,11 @@ social_links :
       url : http://www.twitter.com/nicolaskruchten
     - link :
       enabled : true
+      name : Mastodon
+      font_awesome_icon : icon-comment
+      url : https://vis.social/@nicolaskruchten
+    - link :
+      enabled : true
       name : YouTube
       font_awesome_icon : icon-youtube-play
       url : https://www.youtube.com/playlist?list=PLG720DHcaUuK0CNvJcoEJIV6lWpNJnU18

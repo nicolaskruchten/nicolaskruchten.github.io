@@ -308,7 +308,7 @@ social_links :
     - link :
       enabled : true
       name : Mastodon
-      font_awesome_icon : icon-comment
+      font_awesome_icon : icon-comment-alt
       url : https://vis.social/@nicolaskruchten
     - link :
       enabled : true

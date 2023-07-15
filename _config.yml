@@ -302,14 +302,14 @@ social_links :
       url : https://github.com/nicolaskruchten
     - link :
       enabled : true
-      name : Twitter
-      font_awesome_icon : icon-twitter
-      url : http://www.twitter.com/nicolaskruchten
-    - link :
-      enabled : true
       name : Mastodon
       font_awesome_icon : icon-comment-alt
       url : https://vis.social/@nicolaskruchten
+    - link :
+      enabled : true
+      name : Twitter
+      font_awesome_icon : icon-twitter
+      url : http://www.twitter.com/nicolaskruchten
     - link :
       enabled : true
       name : YouTube

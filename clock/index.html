@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.30.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.26.0"></script>
+  </head>
+  <body align="center">
+    <br />
+    <br />
+    <br />
+    <br />
+    <div id="vis" />
+    <script>
+      const spec = {
+        $schema: "https://vega.github.io/schema/vega/v5.json",
+        width: 600,
+        height: 600,
+        signals: [
+          { name: "radius", value: 200 },
+          {
+            name: "nowDate",
+            init: "now()",
+            on: [
+              { events: { type: "timer", throttle: 60000 }, update: "now()" },
+            ],
+          },
+          {
+            name: "nowMinutes",
+            init: "hours(nowDate)*60 + minutes(nowDate)",
+            on: [
+              {
+                events: { type: "timer", throttle: 60000 },
+                update: "hours(nowDate)*60 + minutes(nowDate)",
+              },
+            ],
+          },
+        ],
+        data: [
+          {
+            name: "10min",
+            transform: [
+              { type: "sequence", start: 0, stop: 1440, step: 10 },
+              {
+                type: "formula",
+                expr: "scale('minutes', datum.data)",
+                as: "angle",
+              },
+              { type: "formula", expr: "datum.data", as: "value" },
+            ],
+          },
+          {
+            name: "30min",
+            transform: [
+              { type: "sequence", start: 0, stop: 1440, step: 30 },
+              {
+                type: "formula",
+                expr: "scale('minutes', datum.data)",
+                as: "angle",
+              },
+              { type: "formula", expr: "datum.data", as: "value" },
+            ],
+          },
+          {
+            name: "hours",
+            transform: [
+              { type: "sequence", start: 0, stop: 1440, step: 60 },
+              {
+                type: "formula",
+                expr: "scale('minutes', datum.data)",
+                as: "angle",
+              },
+              { type: "formula", expr: "datum.data", as: "value" },
+            ],
+          },
+          {
+            name: "6hours",
+            transform: [
+              { type: "sequence", start: 0, stop: 1440, step: 360 },
+              {
+                type: "formula",
+                expr: "scale('minutes', datum.data)",
+                as: "angle",
+              },
+              { type: "formula", expr: "datum.data", as: "value" },
+            ],
+          },
+        ],
+        scales: [
+          {
+            name: "minutes",
+            type: "linear",
+            domain: [0, 1440],
+            range: [0, { signal: "2*PI" }],
+          },
+        ],
+        marks: [
+          {
+            type: "arc",
+            encode: {
+              enter: {
+                x: { signal: "width / 2" },
+                y: { signal: "height / 2" },
+                startAngle: { signal: "PI/2" },
+                endAngle: { signal: "3*PI/2" },
+                outerRadius: { signal: "radius-15" },
+                innerRadius: { value: 0 },
+                fill: { value: "lightgrey" },
+                strokeWidth: { value: 1 },
+              },
+            },
+          },
+          {
+            type: "arc",
+            encode: {
+              enter: {
+                x: { signal: "width / 2" },
+                y: { signal: "height / 2" },
+                startAngle: { signal: "3*PI/2" },
+                endAngle: { signal: "5*PI/2" },
+                outerRadius: { signal: "radius-15" },
+                innerRadius: { value: 0 },
+                fill: { value: "#f9f9f7" },
+                strokeWidth: { value: 1 },
+              },
+            },
+          },
+          {
+            type: "arc",
+            encode: {
+              enter: {
+                x: { signal: "width / 2" },
+                y: { signal: "height / 2" },
+                startAngle: { signal: "0" },
+                endAngle: { signal: "2*PI" },
+                outerRadius: { signal: "radius-15" },
+                innerRadius: { signal: "radius-15.5" },
+                fill: { value: "#BE2B50" },
+                strokeWidth: { value: 1 },
+              },
+            },
+          },
+          {
+            type: "arc",
+            encode: {
+              enter: {
+                x: { signal: "width / 2" },
+                y: { signal: "height / 2" },
+                startAngle: { signal: "0" },
+                endAngle: { signal: "2*PI" },
+                outerRadius: { signal: "radius+3.5" },
+                innerRadius: { signal: "radius+3" },
+                fill: { value: "#666" },
+                strokeWidth: { value: 1 },
+              },
+            },
+          },
+          {
+            type: "arc",
+            from: { data: "10min" },
+            encode: {
+              enter: {
+                x: { signal: "width / 2" },
+                y: { signal: "height / 2" },
+                startAngle: { field: "angle" },
+                endAngle: { field: "angle" },
+                outerRadius: { signal: "radius+3" },
+                innerRadius: { signal: "radius - 5" },
+                stroke: { value: "black" },
+                strokeWidth: { value: 1 },
+              },
+            },
+          },
+          {
+            type: "arc",
+            from: { data: "30min" },
+            encode: {
+              enter: {
+                x: { signal: "width / 2" },
+                y: { signal: "height / 2" },
+                startAngle: { field: "angle" },
+                endAngle: { field: "angle" },
+                outerRadius: { signal: "radius+3" },
+                innerRadius: { signal: "radius - 10" },
+                stroke: { value: "black" },
+                strokeWidth: { value: 1.5 },
+              },
+            },
+          },
+          {
+            type: "arc",
+            from: { data: "hours" },
+            encode: {
+              enter: {
+                x: { signal: "width / 2" },
+                y: { signal: "height / 2" },
+                startAngle: { field: "angle" },
+                endAngle: { field: "angle" },
+                outerRadius: { signal: "radius+3" },
+                innerRadius: { signal: "radius - 15" },
+                stroke: { value: "black" },
+                strokeWidth: { value: 2 },
+              },
+            },
+          },
+          {
+            type: "arc",
+            from: { data: "6hours" },
+            encode: {
+              enter: {
+                x: { signal: "width / 2" },
+                y: { signal: "height / 2" },
+                startAngle: { field: "angle" },
+                endAngle: { field: "angle" },
+                outerRadius: { signal: "radius+6" },
+                innerRadius: { signal: "radius - 25" },
+                stroke: { value: "#BE2B50" },
+                strokeWidth: { value: 5 },
+              },
+            },
+          },
+          {
+            type: "text",
+            from: { data: "hours" },
+            encode: {
+              enter: {
+                x: { signal: "width / 2" },
+                y: { signal: "height / 2" },
+                radius: { signal: "radius - 35" },
+                theta: { field: "angle" },
+                text: { signal: "(datum.value/60 +12) % 24" },
+                align: { value: "center" },
+                baseline: { value: "middle" },
+                fontSize: { value: 15 },
+                fill: { value: "#BE2B50" },
+                font: { value: "Avenir Next Condensed" },
+                fontWeight: { value: "600" },
+                opacity: { signal: "(datum.value/60 % 6 == 0 ) ? 1 : 0" },
+                angle: { signal: "datum.angle * 180 / PI " },
+              },
+            },
+          },
+          {
+            type: "text",
+            from: { data: "hours" },
+            encode: {
+              enter: {
+                x: { signal: "width / 2" },
+                y: { signal: "height / 2" },
+                radius: { signal: "radius - 25" },
+                theta: { field: "angle" },
+                text: { signal: "(datum.value/60 +12) % 24" },
+                align: { value: "center" },
+                baseline: { value: "middle" },
+                fontSize: { value: 12 },
+                font: { value: "Avenir Next Condensed" },
+                opacity: { signal: "(datum.value/60 % 6 != 0 ) ? 1 : 0" },
+                angle: { signal: "datum.angle * 180 / PI " },
+              },
+            },
+          },
+          {
+            type: "symbol",
+            encode: {
+              enter: {
+                size: { signal: "5.5" },
+                shape: { value: "M 0 30 h-2 l 2 -200 l 2 200 h-2" },
+                x: { signal: "width / 2" },
+                y: { signal: "height / 2" },
+                fill: { value: "#666" },
+                stroke: { value: "#666" },
+                strokeSize: { value: 2 },
+                strokeCap: { value: "round" },
+              },
+              update: { angle: { signal: "nowMinutes*360/1440 - 180" } },
+            },
+          },
+          {
+            type: "arc",
+            encode: {
+              enter: {
+                x: { signal: "width / 2" },
+                y: { signal: "height / 2" },
+                startAngle: { value: 0 },
+                endAngle: { signal: "2*PI" },
+                outerRadius: { signal: "9" },
+                innerRadius: { signal: "0" },
+                fill: { value: "#666" },
+              },
+            },
+          },
+          {
+            type: "arc",
+            encode: {
+              enter: {
+                x: { signal: "width / 2" },
+                y: { signal: "height / 2" },
+                startAngle: { value: 0 },
+                endAngle: { signal: "2*PI" },
+                outerRadius: { signal: "6" },
+                innerRadius: { signal: "0" },
+                stroke: { value: "#BE2B50" },
+                strokeWidth: { value: 2 },
+              },
+            },
+          },
+        ],
+        config: {},
+      };
+      vegaEmbed("#vis", spec, {
+        mode: "vega", //hide menu
+        actions: false,
+        renderer: "svg",
+      })
+        .then(console.log)
+        .catch(console.warn);
+    </script>
+  </body>
+</html>

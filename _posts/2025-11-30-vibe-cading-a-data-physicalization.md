@@ -7,7 +7,7 @@ tags:
   - Data Visualization
 ---
 
-Ever since I bought a 3d printer, I've wanted to dip a toe into [data physicalization](https://dataphys.org/wiki/). I'm not very good at point-and-click 3d modelling tools, and this is kind of a casual hobby rather than serious work so I used [Claude Code](https://www.claude.com/product/claude-code), an AI programming assistant, to [vibe code](https://en.wikipedia.org/wiki/Vibe_coding) a parametric Python program to generate the printable files. It was a real rush to find out I can just start verbally describe the object I want to an AI agent and then be holding it in my hand less than three hours later! So here's the story of how I vibe CADed my very own 1960s-inspired [Bertin reorderable matrix](https://dataphys.org/list/bertins-reorderable-matrices/).
+Ever since I bought a 3d printer, I've wanted to dip a toe into [data physicalization](https://dataphys.org/wiki/). I'm not very good at point-and-click 3d modelling tools, and this is kind of a casual hobby rather than serious work so I used [Claude Code](https://www.claude.com/product/claude-code), an AI programming assistant, to [vibe code](https://en.wikipedia.org/wiki/Vibe_coding) a parametric Python program to generate the printable files. It was a real rush to find out I can just start verbally describing the object I want to an AI agent and then be holding it in my hand less than three hours later! So here's the story of how I vibe CADed my very own 1960s-inspired [Bertin reorderable matrix](https://dataphys.org/list/bertins-reorderable-matrices/).
 
 <!-- more -->
 

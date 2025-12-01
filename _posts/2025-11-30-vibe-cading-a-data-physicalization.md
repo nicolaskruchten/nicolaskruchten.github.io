@@ -21,7 +21,7 @@ Some context up front:
 - [Bertin reorderable matrices](https://dataphys.org/list/bertins-reorderable-matrices/) are physical representations of data tables developed by Bertin and documented in his lesser-known book [La Graphique](http://www.zones-sensibles.org/jacques-bertin-la-graphique-et-le-traitement-graphique-de-linformation/) that could be reordered by hand to perform analysis in a pre-digital age, similar to [my heatmap example](https://nicolas.kruchten.com/content/2018/02/seriation/). A few years ago [a French team recreated some of these matrices](https://www.aviz.fr/diyMatrix/) but it took them dozens of hours just to fabricate, never mind design these very large wood-and-metal contraptions.
 - I have a nice [Bambu Labs A1 3d printer with an AMS Lite add-on](https://ca.store.bambulab.com/products/a1) which lets me do multi-color prints. I can send jobs to this printer by opening up [3MF files](https://en.wikipedia.org/wiki/3D_Manufacturing_Format) containing descriptions of physical objects using the provided [Bambu Studio](https://bambulab.com/en/download/studio) software. Bambu Studio produces [G-code](https://en.wikipedia.org/wiki/G-code) via a process called "slicing" which it sends to the printer as instructions to move the print head in space and deposit melted plastic.
 
-When I sat down at my computer at 9pm on a Friday night with YouTube in the background after putting my kids to bed, I didn't really feel like reading a lot of new technical documentation, I just wanted to mess around with my 3d printer. So I fired up Claude Code and just typed the following, just to see if it would work at all:
+When I sat down at my computer at 9pm on a Friday night with YouTube in the background after putting my kids to bed, I didn't really feel like reading a lot of new technical documentation, I just wanted to mess around with my 3d printer. So I fired up Claude Code and just typed the following, just to see if it would work at all (I haven't edited the prompts I used, just to really show what this kind of interaction feels like at the command line, typos and all since Claude doesn't really care about formality):
 
 > I want you to write a Python program that produces a 3MF file that I can open up in Bambu Studio for multi-material printing (with AMS). I want you to define a 2cm cube out of material 1 and then on the top face of the cube I want a 1cm diameter disk that's 0.5mm thick made out of material 2.
 
@@ -33,7 +33,7 @@ It mostly did! I opened up the resulting file in Bambu Studio but it wasn't quit
 
 > ok so I opened it in Bambu and assigned the second material and saved it as @modified.3mf ... regen your file and compare the two to figure out what changed and then update the script to generate the same kind of thing as it saves
 
-That worked really well: Claude is good at diffing text files and coding. At this point, about 15 minutes in, I had a pretty good sense that things were going to work great, so I dove in and told it what I actually wanted. I knew I wasn't going to get the dimensions right the first time so I told it up front I wanted stuff to be parametric, bumping up the level of abstraction a bit from a single specific object to a design space of objects:
+That worked really well: Claude is good at diffing text files and coding to a spec. At this point, about 15 minutes in, I had a pretty good sense that things were going to work great, so I dove in and told it what I actually wanted. I knew I wasn't going to get the dimensions right the first time so I told it up front I wanted to be able to tweak parameters, thereby bumping up the level of abstraction a bit from a single specific object to a design space of objects. This is the part that I found the most exciting of this process, since I could just describe fairly naturally what I wanted and it mostly just got it:
 
 > ok great, let's work on parameterizing this thing.
 >
@@ -50,7 +50,7 @@ That worked really well: Claude is good at diffing text files and coding. At thi
 >
 > The current "cube" is going to be called a block made of material 1 and it will have a square base the size of the square. it will have an 'overlay' disk like we have now made of material 2 which is one layer thick and will have a radius. Our blocks will no longer be cubes but instead will be the height of 4 plates and 4 gaps because I want there to be two holes punched horizontally through the block such that I can fit a stick through with a gap all around. one hole will go front to back and one hole will go left to right.
 
-It did a great job on its first shot, but I had to nudge it once since the "sticks" were cylinders :
+It did a great job on its first shot, but I had to nudge it once since the "sticks" were cylinders and the holes were going to intersect (this is where you kind of hit some of Claude's limitations in terms of how real-world objects function mechanically, but it was very easy to work through by giving it a worked example):
 
 > ok so clarifications:
 >
@@ -58,7 +58,7 @@ It did a great job on its first shot, but I had to nudge it once since the "stic
 > - the holes also need to be rectangular. in this case the holes need to be 5mm wide and 3mm tall (because of the gaps)
 > - the holes themselves need to not intersect: there needs to be a plate thickness of block between them
 
-At this point I've got Claude running a Python script for me that spits out a file with one block and one stick. Time to go up another level of abstraction and complexity:
+At this point I've got Claude running a Python script for me that spits out a file with one block and one stick. Time to go up another level of abstraction and complexity since I want a full mechanism built out of these little blocks:
 
 > ok so what is the procedure for me to build a file? I have to write a short script that calls these utility functions? Can you suggest a way for me to define a file with a bunch of blocks and sticks?
 
@@ -66,14 +66,14 @@ At this point I've got Claude running a Python script for me that spits out a fi
 
 > ok so make me a file with 16 blocks (4 each of 2, 3, 4, 5mm overlays) and 8 sticks of size 4-blocks. i want the gap to be 0.3mm and the square size to be 15mm
 
-At this point I have a fairly complete and usable Python script that I haven't looked at even once that produces text files that I haven't looked at directly either. I don't even run the script myself, I ask Claude to run it for me and I just open up the resulting 3MF files in Bambu Studio and click around to see if what I see on the screen matches the mental model I have. Finally, a bit over 2 hours in, I send a sample 4-block/4-stick job to the printer and 30 minutes later I'm holding it in my hand. Pretty magical. The next day after a few tweaks I printed the version in the video at the top of this post.
+At this point I have a fairly complete and usable Python script that I haven't looked at even once that produces text files that I haven't looked at directly either. I don't even run the script myself, I ask Claude to run it for me and I just open up the resulting 3MF files in Bambu Studio and click around to see if what I see on the screen matches the mental model I have. Finally, a bit over 2 hours in, I send a sample 4-block/4-stick job to the printer and 30 minutes later I'm holding it in my hand. Pretty magical. The next day after a few tweaks (adding "label" blocks that are a bit longer, adding a "handle" to the sticks so they woudln't just push all the way through) I printed the version in the video at the top of this post.
 
-Zooming out a bit, conceptually, this felt almost exactly like vibe coding some more traditional data visualization through a fairly generic pipeline:
+Zooming out a bit, this felt almost exactly like vibe coding some more traditional data visualization through a fairly generic pipeline:
 
 1. Describe in English the thing I want to get at the end.
-2. Claude Code translates this into a parametric program in Python that encodes my intent
-3. Running this program with some parameters produces some specialized digital representation of the output, say a Plotly `figure` object for visualization or a 3MF file for physicalization.
+2. Claude Code translates this into a parametric program in Python that encodes my intent.
+3. Running this program with some parameters produces some specialized digital representation of the output, say a [Plotly `figure` object](https://plotly.com/python/figure-structure/) for visualization or a 3MF file for physicalization.
 4. Translate the specialized representation into something more generic: for visualization it would be an SVG or PNG graphic, for physicalization it was G-code (which in fact Bambu Studio helpfully translates to a 2d visualization for me to preview).
 5. Hand off the generic representation to a device for rendering: a screen or a 3d printer.
 
-I was really impressed at how smooth the process was of describing in my own words what I saw in my head and getting to the output I wanted, and letting Claude take care of all the intermediate technical details. Admittedly the thing I was printing was just a bunch of rectangles and cylinders, but the resulting assembly is pretty complex and works really well!
+I was really impressed at how smooth the process was of describing in my own words what I saw in my head and getting to the output I wanted, and letting Claude take care of all the intermediate technical details. Admittedly the thing I was printing was just a bunch of rectangles and cylinders, but the resulting assembly is pretty complex and works really well as a demonstration of the Bertin reorderable matrix!

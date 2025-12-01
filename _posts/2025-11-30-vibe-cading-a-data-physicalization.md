@@ -2,7 +2,6 @@
 layout: post
 title: "Vibe CADing an Interactive Data Physicalization"
 youtube: 58S16TkHcBg
-github: nicolaskruchten/pyviz_diagram
 image: http://nicolas.kruchten.com/images/bertin_matrix.jpeg
 tags:
   - Data Visualization

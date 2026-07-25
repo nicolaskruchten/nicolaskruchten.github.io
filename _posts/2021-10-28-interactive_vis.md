@@ -2,6 +2,7 @@
 layout : post
 title : "PyData Global 2021: Why Interactive Data Visualization Matters for Data Science in Python"
 youtube: tlcMlOVbEpw
+image: http://nicolas.kruchten.com/images/interactive_vis.png
 github: nicolaskruchten/pydata_global_2021
 tags:
     - Talks

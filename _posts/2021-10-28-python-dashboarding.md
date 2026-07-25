@@ -2,6 +2,7 @@
 layout : post
 title : "PyData Global 2021: Python Dashboarding Shootout and Showdown"
 youtube: 4a-Db1zhTEw
+image: http://nicolas.kruchten.com/images/python-dashboarding.png
 tags:
     - Talks
 ---

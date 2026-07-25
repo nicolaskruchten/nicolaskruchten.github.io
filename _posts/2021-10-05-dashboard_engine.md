@@ -2,6 +2,7 @@
 layout : post
 title : "Introducing Dashboard Engine"
 youtube: PHbFBDfb_QI?start=1427
+image: http://nicolas.kruchten.com/images/dashboard_engine.png
 tags:
     - Talks
     - Data Visualization

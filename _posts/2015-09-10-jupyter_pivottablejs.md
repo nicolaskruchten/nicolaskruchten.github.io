@@ -2,6 +2,7 @@
 layout : post
 title : Drag'n'Drop Pivot Tables and Charts, in Jupyter/IPython Notebook
 youtube: ZbrRrXiWBKc
+image: http://nicolas.kruchten.com/images/jupyter_pivottablejs.jpg
 tags:
     - Tools
 github: nicolaskruchten/jupyter_pivottablejs

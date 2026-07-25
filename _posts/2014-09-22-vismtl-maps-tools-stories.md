@@ -2,6 +2,7 @@
 layout : post
 title : "VisMtl: Maps, Tools, Stories"
 youtube: YtuFR7xN25A
+image: http://nicolas.kruchten.com/images/vismtl-maps-tools-stories.jpg
 github: nicolaskruchten/vismtl
 tags:
     - Data Visualization

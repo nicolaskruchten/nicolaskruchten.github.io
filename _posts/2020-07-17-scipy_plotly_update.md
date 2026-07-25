@@ -2,6 +2,7 @@
 layout : post
 title : "SciPy 2020: Tools Plenary Session"
 youtube: LokNryDOWp0
+image: http://nicolas.kruchten.com/images/scipy_plotly_update.jpg
 tags:
     - Talks
 ---
